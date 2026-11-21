@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-"""Generate editable UFO masters from the verified Akhil Notes release, then compile.
+"""Compile Akhil Notes from committed UFOs, or regenerate masters from provenance.
 
-The generator preserves every original encoded outline. Glyphs that were not in the
-491-character release stay constructed, and are recorded as provisional. Re-running
-this script overwrites sources/ from the provenance font.
+Public / CI default: ``--from-ufo`` (compile only). Does not touch ``sources/masters/``.
+Maintainer-only: ``--from-provenance`` regenerates UFOs from the private TTF, then compiles.
+
+The generator preserves every original encoded outline except the intentional
+``REBUILD_FIGURES`` set. Glyphs that were not in the 491-character release stay
+constructed and are recorded as provisional.
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import math
@@ -623,10 +627,12 @@ def write_ufo(master, metrics, fea, filename, style, sm_family, sm_style):
     info.styleMapFamilyName = sm_family
     info.styleMapStyleName = sm_style
     info.openTypeNameDesigner = "Akhil Desai"
-    info.openTypeNameDesignerURL = "https://www.instagram.com/akhilius_"
+    info.openTypeNameDesignerURL = DESIGNER_URL
     info.openTypeNameManufacturer = "Akhil Desai"
-    info.openTypeNameManufacturerURL = "https://www.instagram.com/akhilius_"
-    info.copyright = "Copyright 2026 Akhil Desai. All rights reserved except as specified in the included font license."
+    info.openTypeNameManufacturerURL = DESIGNER_URL
+    info.copyright = project_copyright()
+    info.openTypeNameLicense = OFL_LICENSE
+    info.openTypeNameLicenseURL = OFL_URL
     rev = {cp: name for cp, name in master.cmap.items()}
     by_name = defaultdict(list)
     for cp, name in rev.items():
@@ -770,9 +776,8 @@ def finalize_file(path, metrics, lic, variable, italic, combined, weight, style)
 
 def original_drift(source, master):
     inst = instantiateVariableFont(source, {"wght": master.weight, "slnt": master.slant}, inplace=False)
-    src_cmap = source.getBestCmap()
     drifted = []
-    for cp, src_name in src_cmap.items():
+    for cp, src_name in source.getBestCmap().items():
         if cp in build.REBUILD_FIGURES:
             continue
         built = master.cmap.get(cp)
@@ -784,7 +789,116 @@ def original_drift(source, master):
     return drifted
 
 
-def main():
+def metrics_from_ufo() -> dict:
+    """Read vertical metrics from the committed Regular UFO (compile mode)."""
+    from ufoLib2 import Font
+
+    regular = MASTER_DIR / "AkhilNotes-Regular.ufo"
+    if not regular.exists():
+        raise SystemExit(f"Missing committed UFO: {regular}")
+    ufo = Font.open(regular)
+    return {
+        "typo_ascender": int(ufo.info.openTypeOS2TypoAscender),
+        "typo_descender": int(ufo.info.openTypeOS2TypoDescender),
+        "win_ascent": int(ufo.info.openTypeOS2WinAscent),
+        "win_descent": int(ufo.info.openTypeOS2WinDescent),
+    }
+
+
+def finalize_outputs(metrics: dict) -> list[str]:
+    """Slant-split VF, finalize names/OFL/STAT, write statics + WOFF2. Returns relative paths."""
+    lic = OFL_LICENSE
+    slant_path = FONT_DIR / "variable-slant" / "AkhilNotes[slnt,wght].ttf"
+    static_dir = FONT_DIR / "ttf"
+    var_dir = FONT_DIR / "variable"
+    web_dir = FONT_DIR / "webfonts"
+    var_dir.mkdir(parents=True, exist_ok=True)
+    web_dir.mkdir(parents=True, exist_ok=True)
+    produced = []
+    for slant, filename, italic in (
+        (0, "AkhilNotes[wght].ttf", False),
+        (-15, "AkhilNotes-Italic[wght].ttf", True),
+    ):
+        inst = instantiateVariableFont(TTFont(slant_path), {"slnt": slant}, inplace=False)
+        out = var_dir / filename
+        inst.save(out)
+        style = "Italic" if italic else "Regular"
+        finalize_file(out, metrics, lic, True, italic, False, 400, style)
+        woff = web_dir / filename.replace(".ttf", ".woff2")
+        wf = TTFont(out)
+        wf.flavor = "woff2"
+        wf.save(woff)
+        produced.append(str(out.relative_to(ROOT)))
+    finalize_file(slant_path, metrics, lic, True, False, True, 400, "Regular")
+    produced.append(str(slant_path.relative_to(ROOT)))
+    for path in sorted(static_dir.glob("*.ttf")):
+        style, weight, italic = style_from_filename(path.stem)
+        finalize_file(path, metrics, lic, False, italic, False, weight, style)
+        canon = static_dir / ("AkhilNotes-" + style.replace(" ", "") + ".ttf")
+        if path != canon:
+            path.replace(canon)
+            path = canon
+        wf = TTFont(path)
+        wf.flavor = "woff2"
+        wf.save(web_dir / (path.stem + ".woff2"))
+        produced.append(str(path.relative_to(ROOT)))
+    return produced
+
+
+def compile_from_ufo(*, package: bool = True) -> dict:
+    """Public build: designspace + committed UFOs → shipping fonts. Never overwrites masters."""
+    ds_path = SOURCES / "AkhilNotes.designspace"
+    if not ds_path.exists():
+        raise SystemExit(f"Missing designspace: {ds_path}")
+    for name in (
+        "AkhilNotes-Regular.ufo",
+        "AkhilNotes-Black.ufo",
+        "AkhilNotes-Italic.ufo",
+        "AkhilNotes-BlackItalic.ufo",
+    ):
+        if not (MASTER_DIR / name).exists():
+            raise SystemExit(f"Missing master UFO: {MASTER_DIR / name}")
+    QA.mkdir(parents=True, exist_ok=True)
+    metrics = metrics_from_ufo()
+    print("compiling from UFO (no provenance)", flush=True)
+    slant_path, static_dir, logs = fontmake(ds_path)
+    (QA / "fontmake.log").write_text(json.dumps(logs, indent=2), encoding="utf-8")
+    produced = finalize_outputs(metrics)
+    # Overlap flags: Fontspector hotfix on shipping VF pair (flags only).
+    try:
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location(
+            "fix_overlap_flags", ROOT / "scripts" / "fix_overlap_flags.py"
+        )
+        mod = importlib.util.module_from_spec(spec)
+        assert spec.loader is not None
+        spec.loader.exec_module(mod)
+        vfs = [
+            FONT_DIR / "variable" / "AkhilNotes[wght].ttf",
+            FONT_DIR / "variable" / "AkhilNotes-Italic[wght].ttf",
+        ]
+        mod.run_fontspector_hotfix([p for p in vfs if p.exists()])
+    except Exception as exc:
+        print(f"overlap hotfix skipped: {exc}", flush=True)
+    report = {
+        "mode": "from-ufo",
+        "designspace": str(ds_path.relative_to(ROOT)),
+        "metrics": metrics,
+        "produced": produced,
+        "license": "OFL 1.1",
+        "copyright": project_copyright(),
+        "repo": REPO_URL,
+    }
+    (QA / "compile-report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(json.dumps({"mode": "from-ufo", "metrics": metrics, "files": len(produced)}, indent=2))
+    if package:
+        subprocess.check_call([sys.executable, str(ROOT / "scripts" / "package_gf.py")], cwd=ROOT)
+    return report
+
+
+def generate_from_provenance(*, package: bool = True) -> dict:
+    """Maintainer-only: regenerate UFOs from private TTF, then compile."""
     verify_source()
     QA.mkdir(parents=True, exist_ok=True)
     MASTER_DIR.mkdir(parents=True, exist_ok=True)
@@ -792,7 +906,6 @@ def main():
     source = TTFont(SRC)
     initial = dict(source.getBestCmap())
     wanted, unencoded_names, name_conflicts = production_maps()
-    lic = OFL_LICENSE
     masters = []
     for weight, slant in ((400, 0), (900, 0), (400, -15), (900, -15)):
         print(f"master {weight} {slant}", flush=True)
@@ -813,7 +926,6 @@ def main():
         master.alts = []
         add_whitespace(master)
         add_dotted_circle(master)
-        # Preserve encoded outlines: make() skips codepoints already in the release.
         drift = original_drift(source, master)
         if drift:
             raise SystemExit(f"Original outlines changed at {weight}/{slant}: {drift[:8]}")
@@ -827,7 +939,6 @@ def main():
     adjusted = []
     for a, b, value in pairs:
         histogram[int(value)] += 1
-        # -75 is the generator floor, not a measured collision. Drop those pairs.
         if value <= -75:
             dropped_floor += 1
             continue
@@ -873,6 +984,7 @@ def main():
     present = set(masters[0].f.getGlyphOrder())
     missing_unencoded = sorted(set(unencoded_names) - present)
     report = {
+        "mode": "from-provenance",
         "source_sha256": sha256(SRC),
         "glyphsets": {"version": "1.1.3", "commit": GLYPHSETS_COMMIT, "sets": list(SETS)},
         "gf_guide": {
@@ -884,6 +996,7 @@ def main():
         "mapped": len(masters[0].cmap),
         "glyphs": len(masters[0].f.getGlyphOrder()),
         "original_preserved": len(initial),
+        "intentional_figure_rebuilds": sorted(f"U+{cp:04X}" for cp in build.REBUILD_FIGURES),
         "original_drift": [],
         "kern_rules": kern_info["rules"],
         "kern_input_pairs": len(adjusted),
@@ -901,51 +1014,48 @@ def main():
             if cp >= 32
         ],
         "experimental_alternates": "disabled; rotated letter alternates are not in the candidate font",
-        "license": "OFL 1.1 adopted. Public git URL still pending (REPO_URL).",
+        "license": "OFL 1.1",
         "copyright": project_copyright(),
+        "repo": REPO_URL,
     }
     (QA / "source-report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print("compiling", flush=True)
     slant_path, static_dir, logs = fontmake(ds_path)
     (QA / "fontmake.log").write_text(json.dumps(logs, indent=2), encoding="utf-8")
-    raw = TTFont(slant_path)
-    var_dir = FONT_DIR / "variable"
-    var_dir.mkdir(parents=True, exist_ok=True)
-    web_dir = FONT_DIR / "webfonts"
-    web_dir.mkdir(parents=True, exist_ok=True)
-    produced = []
-    for slant, filename, italic in (
-        (0, "AkhilNotes[wght].ttf", False),
-        (-15, "AkhilNotes-Italic[wght].ttf", True),
-    ):
-        inst = instantiateVariableFont(TTFont(slant_path), {"slnt": slant}, inplace=False)
-        out = var_dir / filename
-        inst.save(out)
-        style = "Italic" if italic else "Regular"
-        finalize_file(out, metrics, lic, True, italic, False, 400, style)
-        woff = web_dir / filename.replace(".ttf", ".woff2")
-        wf = TTFont(out)
-        wf.flavor = "woff2"
-        wf.save(woff)
-        produced.append(str(out.relative_to(ROOT)))
-    finalize_file(slant_path, metrics, lic, True, False, True, 400, "Regular")
-    produced.append(str(slant_path.relative_to(ROOT)))
-    for path in sorted(static_dir.glob("*.ttf")):
-        # fontmake names files from the instance style name
-        style, weight, italic = style_from_filename(path.stem)
-        finalize_file(path, metrics, lic, False, italic, False, weight, style)
-        # Canonical filename
-        canon = static_dir / ("AkhilNotes-" + style.replace(" ", "") + ".ttf")
-        if path != canon:
-            path.replace(canon)
-            path = canon
-        wf = TTFont(path)
-        wf.flavor = "woff2"
-        wf.save(web_dir / (path.stem + ".woff2"))
-        produced.append(str(path.relative_to(ROOT)))
+    produced = finalize_outputs(metrics)
     report["produced"] = produced
     (QA / "source-report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps({k: report[k] for k in ("mapped", "glyphs", "kern_rules", "kern_clamped", "metrics", "missing_unencoded_production_names")}, indent=2))
+    if package:
+        subprocess.check_call([sys.executable, str(ROOT / "scripts" / "package_gf.py")], cwd=ROOT)
+    return report
+
+
+def main(argv: list[str] | None = None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument(
+        "--from-ufo",
+        dest="mode",
+        action="store_const",
+        const="ufo",
+        help="Compile committed UFOs only (default; no provenance required)",
+    )
+    mode.add_argument(
+        "--from-provenance",
+        dest="mode",
+        action="store_const",
+        const="provenance",
+        help="Regenerate UFO masters from provenance/*.ttf then compile (maintainer-only)",
+    )
+    parser.set_defaults(mode="ufo")
+    parser.add_argument("--no-package", action="store_true", help="Skip ofl/akhilnotes packaging")
+    args = parser.parse_args(argv)
+    package = not args.no_package
+    if args.mode == "provenance":
+        generate_from_provenance(package=package)
+    else:
+        compile_from_ufo(package=package)
 
 
 if __name__ == "__main__":

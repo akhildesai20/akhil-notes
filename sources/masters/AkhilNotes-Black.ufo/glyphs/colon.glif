@@ -69,6 +69,19 @@
       <point x="86" y="-35" type="line"/>
     </contour>
     <contour>
+      <point x="82" y="15" type="line"/>
+      <point x="82" y="15" type="line"/>
+      <point x="80" y="17" type="line"/>
+      <point x="80" y="29" type="line"/>
+      <point x="83" y="36" type="line"/>
+      <point x="85" y="37" type="line"/>
+      <point x="82" y="34" type="line"/>
+      <point x="77" y="30" type="line"/>
+      <point x="81" y="37" type="line"/>
+      <point x="84" y="37" type="line"/>
+      <point x="81" y="33" type="line"/>
+      <point x="86" y="35" type="line"/>
+      <point x="86" y="35" type="line"/>
       <point x="84" y="35" type="line"/>
       <point x="82" y="36" type="line"/>
       <point x="80" y="36" type="line"/>
@@ -87,19 +100,6 @@
       <point x="82" y="15" type="line"/>
       <point x="81" y="15" type="line"/>
       <point x="83" y="14" type="line"/>
-      <point x="82" y="15" type="line"/>
-      <point x="82" y="15" type="line"/>
-      <point x="80" y="17" type="line"/>
-      <point x="80" y="29" type="line"/>
-      <point x="83" y="36" type="line"/>
-      <point x="85" y="37" type="line"/>
-      <point x="82" y="34" type="line"/>
-      <point x="77" y="30" type="line"/>
-      <point x="81" y="37" type="line"/>
-      <point x="84" y="37" type="line"/>
-      <point x="81" y="33" type="line"/>
-      <point x="86" y="35" type="line"/>
-      <point x="86" y="35" type="line"/>
     </contour>
     <contour>
       <point x="100" y="265" type="line"/>
@@ -167,6 +167,19 @@
       <point x="83" y="265" type="line"/>
     </contour>
     <contour>
+      <point x="79" y="315" type="line"/>
+      <point x="79" y="315" type="line"/>
+      <point x="77" y="317" type="line"/>
+      <point x="77" y="329" type="line"/>
+      <point x="80" y="336" type="line"/>
+      <point x="82" y="337" type="line"/>
+      <point x="79" y="334" type="line"/>
+      <point x="74" y="330" type="line"/>
+      <point x="78" y="337" type="line"/>
+      <point x="81" y="337" type="line"/>
+      <point x="78" y="333" type="line"/>
+      <point x="83" y="335" type="line"/>
+      <point x="83" y="335" type="line"/>
       <point x="81" y="335" type="line"/>
       <point x="79" y="336" type="line"/>
       <point x="77" y="336" type="line"/>
@@ -185,19 +198,12 @@
       <point x="79" y="315" type="line"/>
       <point x="78" y="315" type="line"/>
       <point x="80" y="314" type="line"/>
-      <point x="79" y="315" type="line"/>
-      <point x="79" y="315" type="line"/>
-      <point x="77" y="317" type="line"/>
-      <point x="77" y="329" type="line"/>
-      <point x="80" y="336" type="line"/>
-      <point x="82" y="337" type="line"/>
-      <point x="79" y="334" type="line"/>
-      <point x="74" y="330" type="line"/>
-      <point x="78" y="337" type="line"/>
-      <point x="81" y="337" type="line"/>
-      <point x="78" y="333" type="line"/>
-      <point x="83" y="335" type="line"/>
-      <point x="83" y="335" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

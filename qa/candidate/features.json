@@ -1,0 +1,198 @@
+{
+  "font": "fonts\\variable\\AkhilNotes[wght].ttf",
+  "cases": [
+    {
+      "name": "kern",
+      "ok": true,
+      "result": {
+        "text": "To AV",
+        "features": {
+          "kern": true
+        },
+        "glyphs": [
+          "T",
+          "o",
+          "space",
+          "A",
+          "V"
+        ],
+        "x_advance": 3215
+      }
+    },
+    {
+      "name": "mark",
+      "ok": true,
+      "result": {
+        "text": "áê",
+        "features": {
+          "mark": true,
+          "mkmk": true,
+          "ccmp": true
+        },
+        "glyphs": [
+          "aacute",
+          "ecircumflex"
+        ],
+        "x_advance": 1211
+      }
+    },
+    {
+      "name": "mkmk",
+      "ok": true,
+      "result": {
+        "text": "ấ",
+        "features": {
+          "mark": true,
+          "mkmk": true,
+          "ccmp": true
+        },
+        "glyphs": [
+          "acircumflexacute"
+        ],
+        "x_advance": 673
+      }
+    },
+    {
+      "name": "ccmp_fi",
+      "ok": true,
+      "result": {
+        "text": "fi",
+        "features": {
+          "liga": true,
+          "ccmp": true
+        },
+        "glyphs": [
+          "f_i"
+        ],
+        "x_advance": 750
+      }
+    },
+    {
+      "name": "liga",
+      "ok": true,
+      "result": {
+        "text": "fi fl",
+        "features": {
+          "liga": true
+        },
+        "glyphs": [
+          "f_i",
+          "space",
+          "f_l"
+        ],
+        "x_advance": 1939
+      }
+    },
+    {
+      "name": "dlig",
+      "ok": true,
+      "result": {
+        "text": "ct st",
+        "features": {
+          "dlig": true
+        },
+        "glyphs": [
+          "c_t",
+          "space",
+          "s_t"
+        ],
+        "x_advance": 2715
+      }
+    },
+    {
+      "name": "frac",
+      "ok": true,
+      "result": {
+        "text": "1/2",
+        "features": {
+          "frac": true
+        },
+        "glyphs": [
+          "one.numr",
+          "fraction",
+          "two.dnom"
+        ],
+        "x_advance": 1233
+      }
+    },
+    {
+      "name": "tnum",
+      "ok": true,
+      "result": {
+        "text": "0123456789",
+        "features": {
+          "tnum": true
+        },
+        "glyphs": [
+          "zero.tf",
+          "one.tf",
+          "two.tf",
+          "three.tf",
+          "four.tf",
+          "five.tf",
+          "six.tf",
+          "seven.tf",
+          "eight.tf",
+          "nine.tf"
+        ],
+        "x_advance": 9610
+      }
+    },
+    {
+      "name": "pnum",
+      "ok": true,
+      "result": {
+        "text": "0123456789",
+        "features": {
+          "pnum": true
+        },
+        "glyphs": [
+          "zero",
+          "one",
+          "two",
+          "three",
+          "four",
+          "five",
+          "six",
+          "seven",
+          "eight",
+          "nine"
+        ],
+        "x_advance": 7065
+      }
+    },
+    {
+      "name": "locl_CAT",
+      "ok": true,
+      "result": {
+        "text": "l·l",
+        "features": {
+          "locl": true
+        },
+        "glyphs": [
+          "l",
+          "periodcentered.loclCAT",
+          "l"
+        ],
+        "x_advance": 522
+      }
+    },
+    {
+      "name": "locl_TRK",
+      "ok": true,
+      "result": {
+        "text": "fi",
+        "features": {
+          "liga": false,
+          "locl": true
+        },
+        "glyphs": [
+          "f",
+          "idotaccent"
+        ],
+        "x_advance": 736
+      }
+    }
+  ],
+  "failures": []
+}

@@ -191,4 +191,10 @@
       <point x="318.6875" y="529" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

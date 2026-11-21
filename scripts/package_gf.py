@@ -7,6 +7,7 @@ Statics remain under fonts/ttf/ for local install QA.
 from __future__ import annotations
 
 import shutil
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,9 +15,21 @@ OUT = ROOT / "ofl" / "akhilnotes"
 FONT_DIR = ROOT / "fonts"
 
 COPYRIGHT = "Copyright 2026 The Akhil Notes Project Authors (https://github.com/akhildesai20/akhil-notes)"
+REPO_URL = "https://github.com/akhildesai20/akhil-notes"
+
+
+def current_commit() -> str:
+    try:
+        return (
+            subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True)
+            .strip()
+        )
+    except Exception:
+        return "PENDING"
 
 
 def write_metadata(path: Path) -> None:
+    commit = current_commit()
     lines = [
         'name: "Akhil Notes"',
         'designer: "Akhil Desai"',
@@ -50,9 +63,9 @@ def write_metadata(path: Path) -> None:
         "  max_value: 900.0",
         "}",
         "source {",
-        '  repository_url: "https://github.com/akhildesai20/akhil-notes"',
-        '  commit: "PENDING"',
-        '  files {',
+        f'  repository_url: "{REPO_URL}"',
+        f'  commit: "{commit}"',
+        "  files {",
         '    source_file: "OFL.txt"',
         '    dest_file: "OFL.txt"',
         "  }",

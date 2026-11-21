@@ -10,4 +10,10 @@
     <component base="a"/>
     <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="264" yOffset="428"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

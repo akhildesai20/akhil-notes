@@ -10,4 +10,10 @@
     <component base="z"/>
     <component base="asciicircum" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="-6" yOffset="178"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

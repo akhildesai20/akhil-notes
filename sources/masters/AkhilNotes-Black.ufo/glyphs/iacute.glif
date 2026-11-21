@@ -10,4 +10,10 @@
     <component base="i.dotlessInternal"/>
     <component base="quoteright" xScale="0.54998779296875" yScale="0.54998779296875" xOffset="29" yOffset="152"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

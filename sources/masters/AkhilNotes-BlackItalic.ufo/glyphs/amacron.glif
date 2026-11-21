@@ -10,4 +10,10 @@
     <component base="a"/>
     <component base="hyphen" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="59" yOffset="196"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

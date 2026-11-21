@@ -68,6 +68,19 @@
       <point x="77" y="265" type="line"/>
     </contour>
     <contour>
+      <point x="84.07692307692308" y="319" type="line"/>
+      <point x="83.84615384615384" y="319" type="line"/>
+      <point x="82.92307692307692" y="319" type="line"/>
+      <point x="83.3076923076923" y="317" type="line"/>
+      <point x="81" y="320" type="line"/>
+      <point x="80" y="334" type="line"/>
+      <point x="82.5" y="337" type="line"/>
+      <point x="78.75" y="333" type="line"/>
+      <point x="75.25" y="330" type="line"/>
+      <point x="74" y="328" type="line"/>
+      <point x="82.5" y="336" type="line"/>
+      <point x="85" y="336" type="line"/>
+      <point x="83" y="335" type="line"/>
       <point x="84" y="335" type="line"/>
       <point x="83" y="335" type="line"/>
       <point x="82" y="335" type="line"/>
@@ -86,19 +99,12 @@
       <point x="85.75" y="317" type="line"/>
       <point x="91" y="317" type="line"/>
       <point x="88" y="317" type="line"/>
-      <point x="84.07692307692308" y="319" type="line"/>
-      <point x="83.84615384615384" y="319" type="line"/>
-      <point x="82.92307692307692" y="319" type="line"/>
-      <point x="83.3076923076923" y="317" type="line"/>
-      <point x="81" y="320" type="line"/>
-      <point x="80" y="334" type="line"/>
-      <point x="82.5" y="337" type="line"/>
-      <point x="78.75" y="333" type="line"/>
-      <point x="75.25" y="330" type="line"/>
-      <point x="74" y="328" type="line"/>
-      <point x="82.5" y="336" type="line"/>
-      <point x="85" y="336" type="line"/>
-      <point x="83" y="335" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

@@ -13,8 +13,12 @@ playground/
 features/
 fonts/webfonts/
 fonts/variable-slant/
-qa/proofs/
+# Proof PNGs under qa/proofs/ are committed for GF review.
 qa/baseline/
+qa/fontspector/tmp/
+qa/fontspector/interpolation-recheck.json
+qa/fontspector/overlaps-full.json
+
 qa/build.log
 qa/proof_*.py
 CURSOR-PROMPT.md
@@ -23,7 +27,6 @@ report.json
 requirements-baseline.txt
 reference/draft.png
 reference/reference.png
-.github/
 scripts/audit_baseline.py
 scripts/_publish_clean_repo.ps1
 

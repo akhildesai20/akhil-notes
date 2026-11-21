@@ -68,26 +68,32 @@
       <point x="294" y="616" type="line"/>
     </contour>
     <contour>
-      <point x="271.030303030303" y="680" type="line"/>
-      <point x="262.06060606060606" y="677" type="line"/>
-      <point x="256.0909090909091" y="674" type="line"/>
+      <point x="268.72727272727275" y="664" type="line"/>
+      <point x="275" y="664" type="line"/>
+      <point x="270.7692307692308" y="663" type="line"/>
+      <point x="264.6923076923077" y="660" type="line"/>
+      <point x="259.61538461538464" y="659" type="line"/>
+      <point x="260" y="659" type="line"/>
+      <point x="259.66666666666663" y="661" type="line"/>
+      <point x="260" y="666" type="line"/>
+      <point x="257" y="670" type="line"/>
+      <point x="255.5" y="671" type="line"/>
       <point x="252" y="673" type="line"/>
       <point x="249" y="673" type="line"/>
       <point x="252" y="673" type="line"/>
-      <point x="255.5" y="671" type="line"/>
-      <point x="257" y="670" type="line"/>
-      <point x="260" y="666" type="line"/>
-      <point x="259.66666666666663" y="661" type="line"/>
-      <point x="260" y="659" type="line"/>
-      <point x="259.61538461538464" y="659" type="line"/>
-      <point x="264.6923076923077" y="660" type="line"/>
-      <point x="270.7692307692308" y="663" type="line"/>
-      <point x="275" y="664" type="line"/>
-      <point x="268.72727272727275" y="664" type="line"/>
-      <point x="267" y="664" type="line"/>
-      <point x="269.66666666666663" y="659" type="line"/>
-      <point x="262" y="668" type="line"/>
+      <point x="256.0909090909091" y="674" type="line"/>
+      <point x="262.06060606060606" y="677" type="line"/>
+      <point x="271.030303030303" y="680" type="line"/>
       <point x="275.8787878787879" y="682" type="line"/>
+      <point x="262" y="668" type="line"/>
+      <point x="269.66666666666663" y="659" type="line"/>
+      <point x="267" y="664" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

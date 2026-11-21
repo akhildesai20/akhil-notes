@@ -1,0 +1,28 @@
+{
+  "dry_run": false,
+  "proposals": 2,
+  "applied": 2,
+  "skipped": 0,
+  "reports": [
+    {
+      "ufo": "AkhilNotes-BlackItalic.ufo",
+      "applied": [
+        {
+          "glyph": "ellipsis",
+          "contour": 1,
+          "start": 37,
+          "reverse": true,
+          "points": 31
+        },
+        {
+          "glyph": "ellipsis",
+          "contour": 3,
+          "start": 37,
+          "reverse": true,
+          "points": 31
+        }
+      ],
+      "skipped": []
+    }
+  ]
+}

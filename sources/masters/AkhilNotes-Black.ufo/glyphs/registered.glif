@@ -520,6 +520,13 @@
       <point x="365" y="353" type="line"/>
     </contour>
     <contour>
+      <point x="291" y="367" type="line"/>
+      <point x="292" y="359" type="line"/>
+      <point x="293" y="353" type="line"/>
+      <point x="293" y="344" type="line"/>
+      <point x="296" y="368" type="line"/>
+      <point x="326" y="362" type="line"/>
+      <point x="315" y="368" type="line"/>
       <point x="313" y="370" type="line"/>
       <point x="315" y="366" type="line"/>
       <point x="315" y="362" type="line"/>
@@ -532,13 +539,12 @@
       <point x="310" y="352" type="line"/>
       <point x="314" y="353" type="line"/>
       <point x="294" y="353" type="line"/>
-      <point x="291" y="367" type="line"/>
-      <point x="292" y="359" type="line"/>
-      <point x="293" y="353" type="line"/>
-      <point x="293" y="344" type="line"/>
-      <point x="296" y="368" type="line"/>
-      <point x="326" y="362" type="line"/>
-      <point x="315" y="368" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

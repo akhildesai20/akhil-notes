@@ -68,26 +68,26 @@
       <point x="415" y="47" type="line"/>
     </contour>
     <contour>
-      <point x="411" y="-25" type="line"/>
-      <point x="420" y="-21" type="line"/>
-      <point x="428" y="-17" type="line"/>
-      <point x="436" y="-14" type="line"/>
-      <point x="441" y="-13" type="line"/>
-      <point x="444" y="-13" type="line"/>
-      <point x="444" y="-13" type="line"/>
-      <point x="441" y="-12" type="line"/>
-      <point x="437" y="-9" type="line"/>
-      <point x="435" y="-7" type="line"/>
-      <point x="434" y="-4" type="line"/>
-      <point x="436" y="2" type="line"/>
-      <point x="435" y="2" type="line"/>
-      <point x="430" y="0" type="line"/>
-      <point x="423" y="-2" type="line"/>
-      <point x="418" y="-4" type="line"/>
-      <point x="424" y="-4" type="line"/>
       <point x="423" y="-3" type="line"/>
-      <point x="419" y="3" type="line"/>
+      <point x="424" y="-4" type="line"/>
+      <point x="418" y="-4" type="line"/>
+      <point x="423" y="-2" type="line"/>
+      <point x="430" y="0" type="line"/>
+      <point x="435" y="2" type="line"/>
+      <point x="436" y="2" type="line"/>
+      <point x="434" y="-4" type="line"/>
+      <point x="435" y="-7" type="line"/>
+      <point x="437" y="-9" type="line"/>
+      <point x="441" y="-12" type="line"/>
+      <point x="444" y="-13" type="line"/>
+      <point x="444" y="-13" type="line"/>
+      <point x="441" y="-13" type="line"/>
+      <point x="436" y="-14" type="line"/>
+      <point x="428" y="-17" type="line"/>
+      <point x="420" y="-21" type="line"/>
+      <point x="411" y="-25" type="line"/>
       <point x="432" y="-13" type="line"/>
+      <point x="419" y="3" type="line"/>
     </contour>
     <contour>
       <point x="112" y="32" type="line"/>

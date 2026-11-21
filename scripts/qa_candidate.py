@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import sys
 import unicodedata as ud
 from pathlib import Path
 
@@ -14,6 +15,8 @@ from fontTools.varLib.instancer import instantiateVariableFont
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+import build as build_mod  # noqa: E402
 SRC = ROOT / "provenance" / "AkhilsNotes-Variable.ttf"
 CAND = ROOT / "fonts" / "ttf" / "AkhilNotes-Regular.ttf"
 CAND_ITAL = ROOT / "fonts" / "ttf" / "AkhilNotes-Italic.ttf"
@@ -165,18 +168,29 @@ def main():
         count = ends[-1] + 1
         return [(int(coords[i][0]), int(coords[i][1])) for i in range(count)]
 
-    drift = []
+    intentional_figure_rebuilds = []
+    unexpected_drift = []
     for cp, src_name in src_cmap.items():
         built = reg_cmap.get(cp)
         if not built:
-            drift.append({"cp": hex(cp), "issue": "lost"})
+            unexpected_drift.append({"cp": hex(cp), "issue": "lost"})
             continue
         a, b = pts(inst, src_name), pts(regular, built)
         if a != b:
             delta = None
             if a and b and len(a) == len(b):
                 delta = max(max(abs(p[0] - q[0]), abs(p[1] - q[1])) for p, q in zip(a, b))
-            drift.append({"cp": f"U+{cp:04X}", "points": None if not a or not b else [len(a), len(b)], "max_delta": delta})
+            row = {
+                "cp": f"U+{cp:04X}",
+                "points": None if not a or not b else [len(a), len(b)],
+                "max_delta": delta,
+            }
+            if cp in build_mod.REBUILD_FIGURES:
+                intentional_figure_rebuilds.append(row)
+            else:
+                unexpected_drift.append(row)
+    # Back-compat alias used by older notes; prefer intentional_figure_rebuilds.
+    drift = intentional_figure_rebuilds + unexpected_drift
 
     # Extremes and contour notes on the regular and black statics.
     extremes = []
@@ -327,8 +341,13 @@ def main():
     column(CAND_ITAL, narrow, 16, {"kern": True}).save(OUT / "narrow-column-italic-16.png")
 
     audit = {
-        "compiled_original_drift_count": len(drift),
-        "compiled_original_drift": drift[:30],
+        "intentional_figure_rebuilds_count": len(intentional_figure_rebuilds),
+        "intentional_figure_rebuilds": intentional_figure_rebuilds,
+        "unexpected_original_drift_count": len(unexpected_drift),
+        "unexpected_original_drift": unexpected_drift[:30],
+        # Deprecated alias (was misread as regression): 38 = intentional supers/subs/fractions.
+        "compiled_original_drift_count": len(intentional_figure_rebuilds),
+        "compiled_original_drift": intentional_figure_rebuilds[:30],
         "extremes": extremes,
         "contour_flags": contour_notes,
         "shaping": tests,
@@ -336,7 +355,12 @@ def main():
         "proofs": sorted(p.name for p in OUT.glob("*.png")),
     }
     (QA / "qa.json").write_text(json.dumps(audit, indent=2, ensure_ascii=False), encoding="utf-8")
-    print("drift", len(drift))
+    print(
+        "intentional_figure_rebuilds",
+        len(intentional_figure_rebuilds),
+        "unexpected_drift",
+        len(unexpected_drift),
+    )
     print("extremes", extremes)
     print("contour flags", len(contour_notes))
     print("proofs", audit["proofs"])

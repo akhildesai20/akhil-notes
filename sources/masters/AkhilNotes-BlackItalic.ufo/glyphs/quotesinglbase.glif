@@ -69,25 +69,25 @@
     </contour>
     <contour>
       <point x="114" y="-8" type="line"/>
-      <point x="100" y="-22" type="line"/>
-      <point x="105" y="-20" type="line"/>
-      <point x="114" y="-17" type="line"/>
-      <point x="121" y="-14" type="line"/>
+      <point x="106" y="1" type="line"/>
+      <point x="109" y="-4" type="line"/>
+      <point x="108" y="-4" type="line"/>
+      <point x="101" y="-4" type="line"/>
+      <point x="105" y="-3" type="line"/>
+      <point x="111" y="0" type="line"/>
+      <point x="116" y="1" type="line"/>
+      <point x="116" y="1" type="line"/>
+      <point x="116" y="-1" type="line"/>
+      <point x="116" y="-6" type="line"/>
+      <point x="119" y="-10" type="line"/>
+      <point x="121" y="-11" type="line"/>
       <point x="124" y="-13" type="line"/>
       <point x="127" y="-13" type="line"/>
       <point x="124" y="-13" type="line"/>
-      <point x="121" y="-11" type="line"/>
-      <point x="119" y="-10" type="line"/>
-      <point x="116" y="-6" type="line"/>
-      <point x="116" y="-1" type="line"/>
-      <point x="116" y="1" type="line"/>
-      <point x="116" y="1" type="line"/>
-      <point x="111" y="0" type="line"/>
-      <point x="105" y="-3" type="line"/>
-      <point x="101" y="-4" type="line"/>
-      <point x="108" y="-4" type="line"/>
-      <point x="109" y="-4" type="line"/>
-      <point x="106" y="1" type="line"/>
+      <point x="121" y="-14" type="line"/>
+      <point x="114" y="-17" type="line"/>
+      <point x="105" y="-20" type="line"/>
+      <point x="100" y="-22" type="line"/>
     </contour>
   </outline>
   <lib>

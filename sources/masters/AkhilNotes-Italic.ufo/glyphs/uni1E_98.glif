@@ -10,4 +10,10 @@
     <component base="w"/>
     <component base="degree" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="246" yOffset="283"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

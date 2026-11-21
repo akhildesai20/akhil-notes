@@ -10,4 +10,10 @@
     <component base="j.dotlessInternal"/>
     <component base="asciicircum" xScale="0.54998779296875" yScale="0.54998779296875" xOffset="35" yOffset="239"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

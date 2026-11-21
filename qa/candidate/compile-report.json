@@ -1,0 +1,30 @@
+{
+  "mode": "from-ufo",
+  "designspace": "sources\\AkhilNotes.designspace",
+  "metrics": {
+    "typo_ascender": 976,
+    "typo_descender": -530,
+    "win_ascent": 1140,
+    "win_descent": 523
+  },
+  "produced": [
+    "fonts\\variable\\AkhilNotes[wght].ttf",
+    "fonts\\variable\\AkhilNotes-Italic[wght].ttf",
+    "fonts\\variable-slant\\AkhilNotes[slnt,wght].ttf",
+    "fonts\\ttf\\AkhilNotes-Black.ttf",
+    "fonts\\ttf\\AkhilNotes-BlackItalic.ttf",
+    "fonts\\ttf\\AkhilNotes-Bold.ttf",
+    "fonts\\ttf\\AkhilNotes-BoldItalic.ttf",
+    "fonts\\ttf\\AkhilNotes-ExtraBold.ttf",
+    "fonts\\ttf\\AkhilNotes-ExtraBoldItalic.ttf",
+    "fonts\\ttf\\AkhilNotes-Italic.ttf",
+    "fonts\\ttf\\AkhilNotes-Medium.ttf",
+    "fonts\\ttf\\AkhilNotes-MediumItalic.ttf",
+    "fonts\\ttf\\AkhilNotes-Regular.ttf",
+    "fonts\\ttf\\AkhilNotes-SemiBold.ttf",
+    "fonts\\ttf\\AkhilNotes-SemiBoldItalic.ttf"
+  ],
+  "license": "OFL 1.1",
+  "copyright": "Copyright 2026 The Akhil Notes Project Authors (https://github.com/akhildesai20/akhil-notes)",
+  "repo": "https://github.com/akhildesai20/akhil-notes"
+}

@@ -26,17 +26,120 @@
     "candidate_original_point_drift": 0
   },
   "checks": [
-    {"id": "baseline-recount", "result": "pass", "evidence": "qa/baseline/audit.json"},
-    {"id": "original-outline-drift", "result": "pass", "evidence": "qa/candidate/qa.json"},
-    {"id": "ots", "result": "pass", "evidence": "qa/candidate/ots-instantiate.json"},
-    {"id": "fonttools-instantiate", "result": "pass", "evidence": "qa/candidate/ots-instantiate.json"},
-    {"id": "harfbuzz-shaping", "result": "pass", "evidence": "qa/candidate/qa.json"},
-    {"id": "freetype-proofs", "result": "pass", "evidence": "qa/proofs/"},
-    {"id": "fontspector-googlefonts", "result": "fail", "fail": 16, "warn": 1228, "error": 0, "fatal": 0, "evidence": "qa/fontspector/googlefonts.json"},
-    {"id": "fontspector-copyright", "result": "pending", "reason": "No repository URL, and the OFL is not approved.", "evidence": "documentation/LICENSE-STATUS.md"},
-    {"id": "fontspector-dirname", "result": "pending", "reason": "Local fonts live in fonts/ttf, not a directory named akhilnotes."},
-    {"id": "ofl", "result": "pending", "evidence": "OFL.txt"},
-    {"id": "gftools-builder", "result": "not-run", "evidence": "sources/config.yaml"},
-    {"id": "device-browser-app", "result": "not-run", "evidence": "documentation/HUMAN-REVIEW.md"}
-  ]
+    {
+      "id": "baseline-recount",
+      "result": "pass",
+      "evidence": "qa/baseline/audit.json"
+    },
+    {
+      "id": "original-outline-drift",
+      "result": "pass",
+      "evidence": "qa/candidate/qa.json"
+    },
+    {
+      "id": "ots",
+      "result": "pass",
+      "evidence": "qa/candidate/ots-instantiate.json"
+    },
+    {
+      "id": "fonttools-instantiate",
+      "result": "pass",
+      "evidence": "qa/candidate/ots-instantiate.json"
+    },
+    {
+      "id": "harfbuzz-shaping",
+      "result": "pass",
+      "evidence": "qa/candidate/qa.json"
+    },
+    {
+      "id": "freetype-proofs",
+      "result": "pass",
+      "evidence": "qa/proofs/"
+    },
+    {
+      "id": "fontspector-googlefonts",
+      "result": "fail",
+      "fail": 16,
+      "warn": 1228,
+      "error": 0,
+      "fatal": 0,
+      "evidence": "qa/fontspector/googlefonts.json"
+    },
+    {
+      "id": "fontspector-copyright",
+      "result": "pending",
+      "reason": "No repository URL, and the OFL is not approved.",
+      "evidence": "documentation/LICENSE-STATUS.md"
+    },
+    {
+      "id": "fontspector-dirname",
+      "result": "pending",
+      "reason": "Local fonts live in fonts/ttf, not a directory named akhilnotes."
+    },
+    {
+      "id": "ofl",
+      "result": "pending",
+      "evidence": "OFL.txt"
+    },
+    {
+      "id": "gftools-builder",
+      "result": "not-run",
+      "evidence": "sources/config.yaml"
+    },
+    {
+      "id": "device-browser-app",
+      "result": "not-run",
+      "evidence": "documentation/HUMAN-REVIEW.md"
+    }
+  ],
+  "regenerated": "2026-11-21",
+  "note": "Regenerated during GF technical readiness; see RELEASE-STATUS.md and ots-instantiate.json",
+  "ots_failures": 0,
+  "parity": {
+    "glyph_count_upright": 846,
+    "glyph_count_italic": 846,
+    "glyphs_only_upright": [],
+    "glyphs_only_italic": [],
+    "cmap_only_upright": [],
+    "cmap_only_italic": [],
+    "features_upright": [
+      "ccmp",
+      "dlig",
+      "dnom",
+      "frac",
+      "kern",
+      "liga",
+      "locl",
+      "mark",
+      "mkmk",
+      "numr",
+      "pnum",
+      "subs",
+      "sups",
+      "tnum",
+      "zero"
+    ],
+    "features_italic": [
+      "ccmp",
+      "dlig",
+      "dnom",
+      "frac",
+      "kern",
+      "liga",
+      "locl",
+      "mark",
+      "mkmk",
+      "numr",
+      "pnum",
+      "subs",
+      "sups",
+      "tnum",
+      "zero"
+    ],
+    "features_only_upright": [],
+    "features_only_italic": [],
+    "glyph_set_match": true,
+    "cmap_match": true,
+    "features_match": true
+  }
 }

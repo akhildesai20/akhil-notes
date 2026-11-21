@@ -8,5 +8,6 @@ Profile: googlefonts (bundled). No checks were excluded. Network checks skipped 
 Package: ofl/akhilnotes/ (variable pair only). Statics stay under fonts/ttf/.
 Full JSON: qa/fontspector/googlefonts.json
 Markdown: qa/fontspector/googlefonts.md
-Latest summary: SKIP 95  INFO 22  PASS 243  WARN 649  FAIL 0  FATAL 0  ERROR 0
+Latest summary: SKIP 95  INFO 22  PASS 244  WARN 23  FAIL 0  FATAL 0  ERROR 0
+Start-point WARNs cut via scripts/fix_start_points.py; overlap flags via UFO lib + hotfix.
 Copyright name ID 0: Copyright 2026 The Akhil Notes Project Authors (https://github.com/akhildesai20/akhil-notes)

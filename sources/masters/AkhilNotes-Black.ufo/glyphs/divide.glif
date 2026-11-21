@@ -92,20 +92,6 @@
       <point x="262" y="475" type="line"/>
     </contour>
     <contour>
-      <point x="263" y="545" type="line"/>
-      <point x="262" y="545" type="line"/>
-      <point x="261" y="545" type="line"/>
-      <point x="259" y="546" type="line"/>
-      <point x="259" y="546" type="line"/>
-      <point x="259" y="546" type="line"/>
-      <point x="262" y="542" type="line"/>
-      <point x="263" y="539" type="line"/>
-      <point x="264" y="538" type="line"/>
-      <point x="263" y="537" type="line"/>
-      <point x="263" y="534" type="line"/>
-      <point x="257" y="528" type="line"/>
-      <point x="255" y="527" type="line"/>
-      <point x="255" y="527" type="line"/>
       <point x="254" y="527" type="line"/>
       <point x="257" y="527" type="line"/>
       <point x="262" y="527" type="line"/>
@@ -123,6 +109,20 @@
       <point x="260" y="546" type="line"/>
       <point x="264" y="546" type="line"/>
       <point x="262" y="545" type="line"/>
+      <point x="263" y="545" type="line"/>
+      <point x="262" y="545" type="line"/>
+      <point x="261" y="545" type="line"/>
+      <point x="259" y="546" type="line"/>
+      <point x="259" y="546" type="line"/>
+      <point x="259" y="546" type="line"/>
+      <point x="262" y="542" type="line"/>
+      <point x="263" y="539" type="line"/>
+      <point x="264" y="538" type="line"/>
+      <point x="263" y="537" type="line"/>
+      <point x="263" y="534" type="line"/>
+      <point x="257" y="528" type="line"/>
+      <point x="255" y="527" type="line"/>
+      <point x="255" y="527" type="line"/>
     </contour>
     <contour>
       <point x="264" y="80" type="line"/>
@@ -189,20 +189,6 @@
       <point x="262" y="80" type="line"/>
     </contour>
     <contour>
-      <point x="263" y="150" type="line"/>
-      <point x="262" y="150" type="line"/>
-      <point x="261" y="150" type="line"/>
-      <point x="259" y="151" type="line"/>
-      <point x="259" y="151" type="line"/>
-      <point x="259" y="151" type="line"/>
-      <point x="262" y="147" type="line"/>
-      <point x="263" y="144" type="line"/>
-      <point x="264" y="143" type="line"/>
-      <point x="263" y="142" type="line"/>
-      <point x="263" y="139" type="line"/>
-      <point x="257" y="133" type="line"/>
-      <point x="255" y="132" type="line"/>
-      <point x="255" y="132" type="line"/>
       <point x="254" y="132" type="line"/>
       <point x="257" y="132" type="line"/>
       <point x="262" y="132" type="line"/>
@@ -220,6 +206,26 @@
       <point x="260" y="151" type="line"/>
       <point x="264" y="151" type="line"/>
       <point x="262" y="150" type="line"/>
+      <point x="263" y="150" type="line"/>
+      <point x="262" y="150" type="line"/>
+      <point x="261" y="150" type="line"/>
+      <point x="259" y="151" type="line"/>
+      <point x="259" y="151" type="line"/>
+      <point x="259" y="151" type="line"/>
+      <point x="262" y="147" type="line"/>
+      <point x="263" y="144" type="line"/>
+      <point x="264" y="143" type="line"/>
+      <point x="263" y="142" type="line"/>
+      <point x="263" y="139" type="line"/>
+      <point x="257" y="133" type="line"/>
+      <point x="255" y="132" type="line"/>
+      <point x="255" y="132" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

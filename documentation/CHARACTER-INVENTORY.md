@@ -312,6 +312,7 @@ Encoded characters in `fonts/ttf/AkhilNotes-Regular.ttf`.
 | U+017C | ż | `zdotaccent` |
 | U+017D | Ž | `Zcaron` |
 | U+017E | ž | `zcaron` |
+| U+017F | ſ | `longs` |
 | U+01A0 | Ơ | `Ohorn` |
 | U+01A1 | ơ | `ohorn` |
 | U+01AF | Ư | `Uhorn` |

@@ -5,4 +5,10 @@
   <outline>
     <component base="notequal"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

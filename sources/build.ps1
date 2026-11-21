@@ -1,5 +1,5 @@
-# Regenerates UFO masters from the private release and compiles the candidate.
-# Run from the repository root.
+# Compile shipping fonts from committed UFO masters (no provenance required).
+# Run from the repository root, or call this script from anywhere.
 $ErrorActionPreference = "Stop"
 Set-Location (Split-Path $PSScriptRoot -Parent)
 if (-not (Test-Path ".\.venv\Scripts\python.exe")) {
@@ -7,4 +7,4 @@ if (-not (Test-Path ".\.venv\Scripts\python.exe")) {
   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 }
 $env:PYTHONUTF8 = "1"
-.\.venv\Scripts\python.exe scripts\build_candidate.py
+.\.venv\Scripts\python.exe scripts\build_candidate.py --from-ufo

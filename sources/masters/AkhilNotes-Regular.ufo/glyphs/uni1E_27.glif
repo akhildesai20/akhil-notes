@@ -11,4 +11,10 @@
     <component base="period" xScale="0.67999267578125" yScale="0.67999267578125" xOffset="74" yOffset="784"/>
     <component base="period" xScale="0.67999267578125" yScale="0.67999267578125" xOffset="208" yOffset="784"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

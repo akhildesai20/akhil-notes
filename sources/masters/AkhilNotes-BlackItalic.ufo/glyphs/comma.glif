@@ -68,26 +68,32 @@
       <point x="157.51999999999998" y="80" type="line"/>
     </contour>
     <contour>
-      <point x="127.03999999999999" y="140" type="line"/>
-      <point x="120.08" y="137" type="line"/>
-      <point x="113" y="135" type="line"/>
-      <point x="108" y="134" type="line"/>
-      <point x="106" y="134" type="line"/>
-      <point x="105" y="134" type="line"/>
-      <point x="109.2" y="132" type="line"/>
-      <point x="112.4" y="130" type="line"/>
-      <point x="116" y="125" type="line"/>
-      <point x="113.66666666666666" y="118" type="line"/>
-      <point x="114" y="116" type="line"/>
-      <point x="115.61538461538461" y="117" type="line"/>
-      <point x="118.53846153846155" y="118" type="line"/>
-      <point x="123.76923076923077" y="120" type="line"/>
-      <point x="131" y="122" type="line"/>
       <point x="125.66666666666666" y="120" type="line"/>
-      <point x="123" y="122" type="line"/>
-      <point x="126.66666666666666" y="115" type="line"/>
-      <point x="116" y="126" type="line"/>
+      <point x="131" y="122" type="line"/>
+      <point x="123.76923076923077" y="120" type="line"/>
+      <point x="118.53846153846155" y="118" type="line"/>
+      <point x="115.61538461538461" y="117" type="line"/>
+      <point x="114" y="116" type="line"/>
+      <point x="113.66666666666666" y="118" type="line"/>
+      <point x="116" y="125" type="line"/>
+      <point x="112.4" y="130" type="line"/>
+      <point x="109.2" y="132" type="line"/>
+      <point x="105" y="134" type="line"/>
+      <point x="106" y="134" type="line"/>
+      <point x="108" y="134" type="line"/>
+      <point x="113" y="135" type="line"/>
+      <point x="120.08" y="137" type="line"/>
+      <point x="127.03999999999999" y="140" type="line"/>
       <point x="131.88" y="142" type="line"/>
+      <point x="116" y="126" type="line"/>
+      <point x="126.66666666666666" y="115" type="line"/>
+      <point x="123" y="122" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
 </glyph>

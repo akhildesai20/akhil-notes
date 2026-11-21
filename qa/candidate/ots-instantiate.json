@@ -98,29 +98,36 @@
         "location": {
           "wght": 400
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
           "wght": 500
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
           "wght": 650
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
+      },
+      {
+        "location": {
+          "wght": 700
+        },
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
           "wght": 900
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
       }
     ],
     "AkhilNotes-Italic[wght].ttf": [
@@ -128,29 +135,36 @@
         "location": {
           "wght": 400
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
           "wght": 500
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
           "wght": 650
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
+      },
+      {
+        "location": {
+          "wght": 700
+        },
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
           "wght": 900
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
       }
     ],
     "AkhilNotes[slnt,wght].ttf": [
@@ -159,42 +173,136 @@
           "wght": 400,
           "slnt": 0
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
+      },
+      {
+        "location": {
+          "wght": 400,
+          "slnt": -15
+        },
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
           "wght": 500,
           "slnt": 0
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
+      },
+      {
+        "location": {
+          "wght": 500,
+          "slnt": -15
+        },
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
           "wght": 650,
           "slnt": 0
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
-          "wght": 900,
+          "wght": 650,
+          "slnt": -15
+        },
+        "glyphs": 846,
+        "cmap": 698
+      },
+      {
+        "location": {
+          "wght": 700,
           "slnt": 0
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
       },
       {
         "location": {
           "wght": 700,
           "slnt": -15
         },
-        "glyphs": 845,
-        "cmap": 697
+        "glyphs": 846,
+        "cmap": 698
+      },
+      {
+        "location": {
+          "wght": 900,
+          "slnt": 0
+        },
+        "glyphs": 846,
+        "cmap": 698
+      },
+      {
+        "location": {
+          "wght": 900,
+          "slnt": -15
+        },
+        "glyphs": 846,
+        "cmap": 698
       }
     ]
   },
-  "ots_failures": []
+  "ots_failures": [],
+  "upright_italic_parity": {
+    "glyph_count_upright": 846,
+    "glyph_count_italic": 846,
+    "glyphs_only_upright": [],
+    "glyphs_only_italic": [],
+    "cmap_only_upright": [],
+    "cmap_only_italic": [],
+    "features_upright": [
+      "ccmp",
+      "dlig",
+      "dnom",
+      "frac",
+      "kern",
+      "liga",
+      "locl",
+      "mark",
+      "mkmk",
+      "numr",
+      "pnum",
+      "subs",
+      "sups",
+      "tnum",
+      "zero"
+    ],
+    "features_italic": [
+      "ccmp",
+      "dlig",
+      "dnom",
+      "frac",
+      "kern",
+      "liga",
+      "locl",
+      "mark",
+      "mkmk",
+      "numr",
+      "pnum",
+      "subs",
+      "sups",
+      "tnum",
+      "zero"
+    ],
+    "features_only_upright": [],
+    "features_only_italic": [],
+    "glyph_set_match": true,
+    "cmap_match": true,
+    "features_match": true
+  },
+  "instantiate_weights": [
+    400,
+    500,
+    650,
+    700,
+    900
+  ]
 }

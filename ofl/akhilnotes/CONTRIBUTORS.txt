@@ -1,5 +1,2 @@
 Akhil Desai
 https://www.instagram.com/akhilius_
-
-# Local engineering on this candidate did not add a separate contributor.
-# Add a name here only for a person who actually worked on the sources.

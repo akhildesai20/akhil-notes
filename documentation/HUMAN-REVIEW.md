@@ -11,8 +11,15 @@
 ## Design
 
 - [x] Digraphs, barred letters, currencies, and long s built from the handwritten stems.
+- [ ] Optical review of constructed set / stroke weight — [`OPTICAL-REVIEW.md`](OPTICAL-REVIEW.md) (no geometric cleanup).
 - [ ] Optional: raise typo ascender if Black Â (y≈1139) collides with the line above.
-- [ ] Optional: draw stylistic alternates for repeated letters.
+- [ ] Optional: stylistic alternates only from real handwriting samples (not rotations).
+
+## Technical readiness
+
+- [x] Public UFO-only build (`--from-ufo`); see [`RELEASE-STATUS.md`](RELEASE-STATUS.md).
+- [x] Interpolation start points fixed (order-only); Fontspector FAIL 0.
+- [ ] Device matrix (Figma / browser / OS) on the shipping VF pair.
 
 ## License and packaging
 
