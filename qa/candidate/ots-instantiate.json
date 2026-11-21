@@ -1,0 +1,200 @@
+{
+  "ots": "9.2.0",
+  "ots_results": [
+    {
+      "path": "fonts\\variable\\AkhilNotes[wght].ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\variable\\AkhilNotes-Italic[wght].ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\variable-slant\\AkhilNotes[slnt,wght].ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-Black.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-BlackItalic.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-Bold.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-BoldItalic.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-ExtraBold.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-ExtraBoldItalic.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-Italic.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-Medium.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-MediumItalic.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-Regular.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-SemiBold.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "fonts\\ttf\\AkhilNotes-SemiBoldItalic.ttf",
+      "ok": true,
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "instantiate": {
+    "AkhilNotes[wght].ttf": [
+      {
+        "location": {
+          "wght": 400
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 500
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 650
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 900
+        },
+        "glyphs": 845,
+        "cmap": 697
+      }
+    ],
+    "AkhilNotes-Italic[wght].ttf": [
+      {
+        "location": {
+          "wght": 400
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 500
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 650
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 900
+        },
+        "glyphs": 845,
+        "cmap": 697
+      }
+    ],
+    "AkhilNotes[slnt,wght].ttf": [
+      {
+        "location": {
+          "wght": 400,
+          "slnt": 0
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 500,
+          "slnt": 0
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 650,
+          "slnt": 0
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 900,
+          "slnt": 0
+        },
+        "glyphs": 845,
+        "cmap": 697
+      },
+      {
+        "location": {
+          "wght": 700,
+          "slnt": -15
+        },
+        "glyphs": 845,
+        "cmap": 697
+      }
+    ]
+  },
+  "ots_failures": []
+}

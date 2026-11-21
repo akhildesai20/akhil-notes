@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="caroncomb" format="2">
+  <unicode hex="030C"/>
+  <anchor x="0" y="0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-97" y="154" type="line"/>
+      <point x="-110" y="155" type="line"/>
+      <point x="-123" y="150" type="line"/>
+      <point x="-133" y="141" type="line"/>
+      <point x="-139" y="129" type="line"/>
+      <point x="-140" y="115" type="line"/>
+      <point x="-135" y="102" type="line"/>
+      <point x="-126" y="92" type="line"/>
+      <point x="0" y="0" type="line"/>
+      <point x="126" y="92" type="line"/>
+      <point x="135" y="102" type="line"/>
+      <point x="140" y="115" type="line"/>
+      <point x="139" y="129" type="line"/>
+      <point x="133" y="141" type="line"/>
+      <point x="123" y="150" type="line"/>
+      <point x="110" y="155" type="line"/>
+      <point x="97" y="154" type="line"/>
+      <point x="84" y="149" type="line"/>
+      <point x="0" y="87" type="line"/>
+      <point x="-84" y="149" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

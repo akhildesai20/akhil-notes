@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="rightanglebracket.math" format="2">
+  <advance width="275"/>
+  <unicode hex="27E9"/>
+  <outline>
+    <contour>
+      <point x="54" y="719" type="line"/>
+      <point x="50" y="721" type="line"/>
+      <point x="46" y="722" type="line"/>
+      <point x="41" y="721" type="line"/>
+      <point x="37" y="718" type="line"/>
+      <point x="35" y="714" type="line"/>
+      <point x="34" y="710" type="line"/>
+      <point x="35" y="705" type="line"/>
+      <point x="203" y="340" type="line"/>
+      <point x="35" y="-15" type="line"/>
+      <point x="34" y="-19" type="line"/>
+      <point x="35" y="-24" type="line"/>
+      <point x="37" y="-28" type="line"/>
+      <point x="41" y="-31" type="line"/>
+      <point x="45" y="-32" type="line"/>
+      <point x="50" y="-31" type="line"/>
+      <point x="54" y="-29" type="line"/>
+      <point x="57" y="-25" type="line"/>
+      <point x="229" y="340" type="line"/>
+      <point x="57" y="715" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

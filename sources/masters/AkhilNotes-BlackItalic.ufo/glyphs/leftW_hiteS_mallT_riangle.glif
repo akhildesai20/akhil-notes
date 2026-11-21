@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="leftWhiteSmallTriangle" format="2">
+  <advance width="441"/>
+  <unicode hex="25C3"/>
+  <outline>
+    <contour>
+      <point x="276" y="210" type="line"/>
+      <point x="290" y="212" type="line"/>
+      <point x="304" y="219" type="line"/>
+      <point x="315" y="229" type="line"/>
+      <point x="322" y="243" type="line"/>
+      <point x="324" y="256" type="line"/>
+      <point x="321" y="268" type="line"/>
+      <point x="312" y="276" type="line"/>
+      <point x="161" y="355" type="line"/>
+      <point x="299" y="411" type="line"/>
+      <point x="253" y="245" type="line"/>
+      <point x="252" y="232" type="line"/>
+      <point x="257" y="220" type="line"/>
+      <point x="266" y="213" type="line"/>
+      <point x="279" y="210" type="line"/>
+      <point x="293" y="213" type="line"/>
+      <point x="306" y="220" type="line"/>
+      <point x="317" y="232" type="line"/>
+      <point x="323" y="245" type="line"/>
+      <point x="395" y="519" type="line"/>
+      <point x="34" y="355" type="line"/>
+      <point x="264" y="214" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

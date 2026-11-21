@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="downBlackSmallTriangle" format="2">
+  <advance width="381"/>
+  <unicode hex="25BE"/>
+  <outline>
+    <contour>
+      <point x="34" y="403" type="line"/>
+      <point x="122" y="210" type="line"/>
+      <point x="140" y="221" type="line"/>
+      <point x="158" y="234" type="line"/>
+      <point x="178" y="249" type="line"/>
+      <point x="198" y="265" type="line"/>
+      <point x="218" y="282" type="line"/>
+      <point x="238" y="299" type="line"/>
+      <point x="257" y="317" type="line"/>
+      <point x="276" y="334" type="line"/>
+      <point x="293" y="351" type="line"/>
+      <point x="309" y="367" type="line"/>
+      <point x="323" y="381" type="line"/>
+      <point x="335" y="393" type="line"/>
+      <point x="319" y="390" type="line"/>
+      <point x="302" y="388" type="line"/>
+      <point x="281" y="387" type="line"/>
+      <point x="259" y="387" type="line"/>
+      <point x="236" y="387" type="line"/>
+      <point x="212" y="388" type="line"/>
+      <point x="187" y="389" type="line"/>
+      <point x="162" y="390" type="line"/>
+      <point x="138" y="392" type="line"/>
+      <point x="114" y="394" type="line"/>
+      <point x="91" y="396" type="line"/>
+      <point x="70" y="399" type="line"/>
+      <point x="51" y="401" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

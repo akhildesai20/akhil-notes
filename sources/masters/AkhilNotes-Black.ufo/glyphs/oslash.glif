@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="oslash" format="2">
+  <advance width="574"/>
+  <unicode hex="00F8"/>
+  <anchor x="265" y="533" name="top"/>
+  <anchor x="265" y="-159" name="bottom"/>
+  <anchor x="489" y="408" name="horn"/>
+  <anchor x="584" y="398" name="caron"/>
+  <outline>
+    <component base="o"/>
+    <component base="slash" xOffset="97" yOffset="-157"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

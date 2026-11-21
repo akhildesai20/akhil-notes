@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="macroncomb" format="2">
+  <unicode hex="0304"/>
+  <anchor x="0" y="0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-125" y="67" type="line"/>
+      <point x="-137" y="60" type="line"/>
+      <point x="-144" y="48" type="line"/>
+      <point x="-147" y="35" type="line"/>
+      <point x="-144" y="22" type="line"/>
+      <point x="-137" y="10" type="line"/>
+      <point x="-125" y="3" type="line"/>
+      <point x="-112" y="0" type="line"/>
+      <point x="112" y="0" type="line"/>
+      <point x="125" y="3" type="line"/>
+      <point x="137" y="10" type="line"/>
+      <point x="144" y="22" type="line"/>
+      <point x="147" y="35" type="line"/>
+      <point x="144" y="48" type="line"/>
+      <point x="137" y="60" type="line"/>
+      <point x="125" y="67" type="line"/>
+      <point x="112" y="70" type="line"/>
+      <point x="-112" y="70" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

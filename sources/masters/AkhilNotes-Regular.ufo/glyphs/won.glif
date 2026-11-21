@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="won" format="2">
+  <advance width="871"/>
+  <unicode hex="20A9"/>
+  <outline>
+    <component base="W"/>
+    <component base="endash" xOffset="10" yOffset="241"/>
+    <component base="endash" xOffset="10" yOffset="131"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

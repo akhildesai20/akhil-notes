@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="brokenbar" format="2">
+  <advance width="150"/>
+  <unicode hex="00A6"/>
+  <outline>
+    <contour>
+      <point x="37" y="-38" type="line"/>
+      <point x="44" y="-50" type="line"/>
+      <point x="56" y="-57" type="line"/>
+      <point x="69" y="-60" type="line"/>
+      <point x="82" y="-57" type="line"/>
+      <point x="94" y="-50" type="line"/>
+      <point x="101" y="-38" type="line"/>
+      <point x="104" y="-25" type="line"/>
+      <point x="104" y="295" type="line"/>
+      <point x="101" y="308" type="line"/>
+      <point x="94" y="320" type="line"/>
+      <point x="82" y="327" type="line"/>
+      <point x="69" y="330" type="line"/>
+      <point x="56" y="327" type="line"/>
+      <point x="44" y="320" type="line"/>
+      <point x="37" y="308" type="line"/>
+      <point x="34" y="295" type="line"/>
+      <point x="34" y="-25" type="line"/>
+    </contour>
+    <contour>
+      <point x="37" y="432" type="line"/>
+      <point x="44" y="420" type="line"/>
+      <point x="56" y="413" type="line"/>
+      <point x="69" y="410" type="line"/>
+      <point x="82" y="413" type="line"/>
+      <point x="94" y="420" type="line"/>
+      <point x="101" y="432" type="line"/>
+      <point x="104" y="445" type="line"/>
+      <point x="104" y="775" type="line"/>
+      <point x="101" y="788" type="line"/>
+      <point x="94" y="800" type="line"/>
+      <point x="82" y="807" type="line"/>
+      <point x="69" y="810" type="line"/>
+      <point x="56" y="807" type="line"/>
+      <point x="44" y="800" type="line"/>
+      <point x="37" y="788" type="line"/>
+      <point x="34" y="775" type="line"/>
+      <point x="34" y="445" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

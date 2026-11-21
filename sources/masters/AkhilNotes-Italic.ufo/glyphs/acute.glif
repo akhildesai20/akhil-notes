@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="acute" format="2">
+  <advance width="206"/>
+  <unicode hex="00B4"/>
+  <outline>
+    <contour>
+      <point x="36" y="507" type="line"/>
+      <point x="34" y="502" type="line"/>
+      <point x="34" y="497" type="line"/>
+      <point x="36" y="494" type="line"/>
+      <point x="39" y="491" type="line"/>
+      <point x="43" y="490" type="line"/>
+      <point x="48" y="491" type="line"/>
+      <point x="53" y="494" type="line"/>
+      <point x="154" y="574" type="line"/>
+      <point x="158" y="577" type="line"/>
+      <point x="160" y="582" type="line"/>
+      <point x="160" y="587" type="line"/>
+      <point x="159" y="590" type="line"/>
+      <point x="155" y="593" type="line"/>
+      <point x="151" y="594" type="line"/>
+      <point x="146" y="593" type="line"/>
+      <point x="142" y="590" type="line"/>
+      <point x="40" y="510" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

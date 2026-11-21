@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="edieresis" format="2">
+  <advance width="613"/>
+  <unicode hex="00EB"/>
+  <anchor x="406" y="528" name="top"/>
+  <anchor x="256" y="-30" name="bottom"/>
+  <anchor x="573" y="403" name="horn"/>
+  <anchor x="665" y="393" name="caron"/>
+  <outline>
+    <component base="e"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="154" yOffset="446"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="288" yOffset="446"/>
+  </outline>
+</glyph>

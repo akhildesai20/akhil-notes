@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="imacron" format="2">
+  <advance width="237"/>
+  <unicode hex="012B"/>
+  <anchor x="139" y="482" name="top"/>
+  <anchor x="4" y="-21" name="bottom"/>
+  <anchor x="193" y="357" name="horn"/>
+  <anchor x="285" y="347" name="caron"/>
+  <outline>
+    <component base="i.dotlessInternal"/>
+    <component base="hyphen" xScale="0.54998779296875" yScale="0.54998779296875" xOffset="-57" yOffset="258"/>
+  </outline>
+</glyph>

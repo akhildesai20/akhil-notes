@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Uring" format="2">
+  <advance width="609"/>
+  <unicode hex="016E"/>
+  <anchor x="300" y="920" name="top"/>
+  <anchor x="300" y="-30" name="bottom"/>
+  <anchor x="536" y="795" name="horn"/>
+  <anchor x="631" y="785" name="caron"/>
+  <outline>
+    <component base="U"/>
+    <component base="degree" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="205" yOffset="530"/>
+  </outline>
+</glyph>

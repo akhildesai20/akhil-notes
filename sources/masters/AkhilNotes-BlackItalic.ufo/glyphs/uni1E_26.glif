@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni1E26" format="2">
+  <advance width="788"/>
+  <unicode hex="1E26"/>
+  <anchor x="582" y="925" name="top"/>
+  <anchor x="320" y="-53" name="bottom"/>
+  <anchor x="842" y="800" name="horn"/>
+  <anchor x="935" y="790" name="caron"/>
+  <outline>
+    <component base="H"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="302" yOffset="823"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="436" yOffset="823"/>
+  </outline>
+</glyph>

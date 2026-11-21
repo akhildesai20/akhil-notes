@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_circleRing" format="2">
+  <advance width="898"/>
+  <outline>
+    <contour>
+      <point x="852" y="467" type="line"/>
+      <point x="838" y="563" type="line"/>
+      <point x="797" y="644" type="line"/>
+      <point x="732" y="707" type="line"/>
+      <point x="647" y="747" type="line"/>
+      <point x="549" y="760" type="line"/>
+      <point x="443" y="747" type="line"/>
+      <point x="337" y="707" type="line"/>
+      <point x="238" y="644" type="line"/>
+      <point x="154" y="562" type="line"/>
+      <point x="89" y="467" type="line"/>
+      <point x="48" y="365" type="line"/>
+      <point x="34" y="263" type="line"/>
+      <point x="48" y="168" type="line"/>
+      <point x="89" y="86" type="line"/>
+      <point x="154" y="23" type="line"/>
+      <point x="238" y="-17" type="line"/>
+      <point x="337" y="-30" type="line"/>
+      <point x="443" y="-17" type="line"/>
+      <point x="549" y="23" type="line"/>
+      <point x="647" y="86" type="line"/>
+      <point x="732" y="168" type="line"/>
+      <point x="797" y="263" type="line"/>
+      <point x="838" y="365" type="line"/>
+    </contour>
+    <contour>
+      <point x="768" y="365" type="line"/>
+      <point x="734" y="281" type="line"/>
+      <point x="681" y="203" type="line"/>
+      <point x="611" y="135" type="line"/>
+      <point x="530" y="84" type="line"/>
+      <point x="443" y="51" type="line"/>
+      <point x="356" y="40" type="line"/>
+      <point x="275" y="51" type="line"/>
+      <point x="205" y="84" type="line"/>
+      <point x="152" y="135" type="line"/>
+      <point x="118" y="203" type="line"/>
+      <point x="106" y="281" type="line"/>
+      <point x="118" y="365" type="line"/>
+      <point x="152" y="449" type="line"/>
+      <point x="205" y="527" type="line"/>
+      <point x="275" y="595" type="line"/>
+      <point x="356" y="646" type="line"/>
+      <point x="443" y="679" type="line"/>
+      <point x="530" y="690" type="line"/>
+      <point x="611" y="679" type="line"/>
+      <point x="681" y="646" type="line"/>
+      <point x="734" y="595" type="line"/>
+      <point x="768" y="528" type="line"/>
+      <point x="779" y="449" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

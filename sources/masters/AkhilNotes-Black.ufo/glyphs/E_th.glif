@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Eth" format="2">
+  <advance width="783"/>
+  <unicode hex="00D0"/>
+  <anchor x="224" y="760" name="top"/>
+  <anchor x="224" y="-53" name="bottom"/>
+  <anchor x="698" y="635" name="horn"/>
+  <anchor x="793" y="625" name="caron"/>
+  <outline>
+    <component base="D"/>
+    <component base="endash" xOffset="-300" yOffset="9"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

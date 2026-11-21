@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gbreve" format="2">
+  <advance width="819"/>
+  <unicode hex="011E"/>
+  <anchor x="388" y="1163" name="top"/>
+  <anchor x="388" y="-54" name="bottom"/>
+  <anchor x="735" y="1038" name="horn"/>
+  <anchor x="830" y="1028" name="caron"/>
+  <outline>
+    <component base="G"/>
+    <component base="asciicircum" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="135" yOffset="520"/>
+  </outline>
+</glyph>

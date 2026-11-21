@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ucircumflex" format="2">
+  <advance width="648"/>
+  <unicode hex="00FB"/>
+  <anchor x="445" y="864" name="top"/>
+  <anchor x="199" y="-53" name="bottom"/>
+  <anchor x="688" y="739" name="horn"/>
+  <anchor x="780" y="729" name="caron"/>
+  <outline>
+    <component base="u"/>
+    <component base="asciicircum" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="-43" yOffset="221"/>
+  </outline>
+</glyph>

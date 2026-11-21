@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ograve" format="2">
+  <advance width="819"/>
+  <unicode hex="00D2"/>
+  <anchor x="405" y="914" name="top"/>
+  <anchor x="405" y="-30" name="bottom"/>
+  <anchor x="746" y="789" name="horn"/>
+  <anchor x="841" y="779" name="caron"/>
+  <outline>
+    <component base="O"/>
+    <component base="grave" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="310" yOffset="397"/>
+  </outline>
+</glyph>

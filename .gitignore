@@ -1,0 +1,32 @@
+# Local / private
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.cursor/
+provenance/*.ttf
+tools/
+
+# Not part of the public upstream
+baseline/
+playground/
+features/
+fonts/webfonts/
+fonts/variable-slant/
+qa/proofs/
+qa/baseline/
+qa/build.log
+qa/proof_*.py
+CURSOR-PROMPT.md
+OFL-PROPOSED.txt
+report.json
+requirements-baseline.txt
+reference/draft.png
+reference/reference.png
+.github/
+scripts/audit_baseline.py
+scripts/_publish_clean_repo.ps1
+
+# Build caches
+master_ufo/
+instance_ufo/

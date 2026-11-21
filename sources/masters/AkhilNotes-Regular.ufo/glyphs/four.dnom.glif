@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="four.dnom" format="2">
+  <advance width="487"/>
+  <outline>
+    <contour>
+      <point x="212" y="476" type="line"/>
+      <point x="203" y="459" type="line"/>
+      <point x="193" y="441" type="line"/>
+      <point x="181" y="420" type="line"/>
+      <point x="168" y="399" type="line"/>
+      <point x="154" y="376" type="line"/>
+      <point x="138" y="353" type="line"/>
+      <point x="120" y="328" type="line"/>
+      <point x="101" y="303" type="line"/>
+      <point x="81" y="278" type="line"/>
+      <point x="60" y="254" type="line"/>
+      <point x="37" y="229" type="line"/>
+      <point x="35" y="225" type="line"/>
+      <point x="34" y="222" type="line"/>
+      <point x="34" y="218" type="line"/>
+      <point x="36" y="214" type="line"/>
+      <point x="39" y="211" type="line"/>
+      <point x="42" y="209" type="line"/>
+      <point x="46" y="209" type="line"/>
+      <point x="66" y="209" type="line"/>
+      <point x="89" y="209" type="line"/>
+      <point x="114" y="209" type="line"/>
+      <point x="140" y="209" type="line"/>
+      <point x="167" y="209" type="line"/>
+      <point x="195" y="209" type="line"/>
+      <point x="223" y="209" type="line"/>
+      <point x="251" y="209" type="line"/>
+      <point x="278" y="209" type="line"/>
+      <point x="306" y="209" type="line"/>
+      <point x="319" y="213" type="line"/>
+      <point x="319" y="7" type="line"/>
+      <point x="319" y="3" type="line"/>
+      <point x="321" y="0" type="line"/>
+      <point x="324" y="-3" type="line"/>
+      <point x="327" y="-4" type="line"/>
+      <point x="331" y="-5" type="line"/>
+      <point x="335" y="-4" type="line"/>
+      <point x="338" y="-3" type="line"/>
+      <point x="341" y="0" type="line"/>
+      <point x="342" y="3" type="line"/>
+      <point x="343" y="7" type="line"/>
+      <point x="343" y="212" type="line"/>
+      <point x="346" y="209" type="line"/>
+      <point x="361" y="209" type="line"/>
+      <point x="375" y="209" type="line"/>
+      <point x="388" y="209" type="line"/>
+      <point x="399" y="209" type="line"/>
+      <point x="409" y="209" type="line"/>
+      <point x="418" y="209" type="line"/>
+      <point x="426" y="209" type="line"/>
+      <point x="430" y="209" type="line"/>
+      <point x="433" y="211" type="line"/>
+      <point x="436" y="214" type="line"/>
+      <point x="437" y="218" type="line"/>
+      <point x="438" y="222" type="line"/>
+      <point x="436" y="226" type="line"/>
+      <point x="428" y="244" type="line"/>
+      <point x="428" y="245" type="line"/>
+      <point x="417" y="264" type="line"/>
+      <point x="416" y="265" type="line"/>
+      <point x="403" y="285" type="line"/>
+      <point x="402" y="286" type="line"/>
+      <point x="388" y="305" type="line"/>
+      <point x="388" y="305" type="line"/>
+      <point x="374" y="324" type="line"/>
+      <point x="360" y="338" type="line"/>
+      <point x="359" y="339" type="line"/>
+      <point x="348" y="351" type="line"/>
+      <point x="346" y="352" type="line"/>
+      <point x="337" y="357" type="line"/>
+      <point x="334" y="358" type="line"/>
+      <point x="330" y="359" type="line"/>
+      <point x="326" y="358" type="line"/>
+      <point x="324" y="356" type="line"/>
+      <point x="321" y="354" type="line"/>
+      <point x="319" y="350" type="line"/>
+      <point x="319" y="347" type="line"/>
+      <point x="319" y="230" type="line"/>
+      <point x="306" y="233" type="line"/>
+      <point x="279" y="233" type="line"/>
+      <point x="251" y="233" type="line"/>
+      <point x="223" y="233" type="line"/>
+      <point x="195" y="234" type="line"/>
+      <point x="167" y="234" type="line"/>
+      <point x="140" y="233" type="line"/>
+      <point x="114" y="233" type="line"/>
+      <point x="89" y="233" type="line"/>
+      <point x="66" y="233" type="line"/>
+      <point x="68" y="227" type="line"/>
+      <point x="77" y="237" type="line"/>
+      <point x="78" y="238" type="line"/>
+      <point x="100" y="263" type="line"/>
+      <point x="120" y="288" type="line"/>
+      <point x="120" y="289" type="line"/>
+      <point x="139" y="314" type="line"/>
+      <point x="139" y="314" type="line"/>
+      <point x="157" y="339" type="line"/>
+      <point x="157" y="339" type="line"/>
+      <point x="174" y="363" type="line"/>
+      <point x="188" y="386" type="line"/>
+      <point x="202" y="408" type="line"/>
+      <point x="202" y="408" type="line"/>
+      <point x="214" y="429" type="line"/>
+      <point x="225" y="448" type="line"/>
+      <point x="233" y="464" type="line"/>
+      <point x="234" y="465" type="line"/>
+      <point x="241" y="479" type="line"/>
+      <point x="247" y="492" type="line"/>
+      <point x="248" y="496" type="line"/>
+      <point x="248" y="499" type="line"/>
+      <point x="247" y="503" type="line"/>
+      <point x="244" y="506" type="line"/>
+      <point x="241" y="508" type="line"/>
+      <point x="238" y="509" type="line"/>
+      <point x="234" y="509" type="line"/>
+      <point x="230" y="508" type="line"/>
+      <point x="227" y="505" type="line"/>
+      <point x="225" y="502" type="line"/>
+      <point x="219" y="490" type="line"/>
+    </contour>
+    <contour>
+      <point x="361" y="312" type="line"/>
+      <point x="374" y="295" type="line"/>
+      <point x="388" y="276" type="line"/>
+      <point x="402" y="255" type="line"/>
+      <point x="413" y="236" type="line"/>
+      <point x="416" y="228" type="line"/>
+      <point x="409" y="225" type="line"/>
+      <point x="399" y="225" type="line"/>
+      <point x="388" y="225" type="line"/>
+      <point x="375" y="225" type="line"/>
+      <point x="361" y="225" type="line"/>
+      <point x="346" y="226" type="line"/>
+      <point x="336" y="229" type="line"/>
+      <point x="336" y="331" type="line"/>
+      <point x="348" y="327" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

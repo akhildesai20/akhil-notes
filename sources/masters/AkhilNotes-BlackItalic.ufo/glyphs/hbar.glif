@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hbar" format="2">
+  <advance width="544"/>
+  <unicode hex="0127"/>
+  <anchor x="256" y="760" name="top"/>
+  <anchor x="38" y="-53" name="bottom"/>
+  <anchor x="597" y="635" name="horn"/>
+  <anchor x="689" y="625" name="caron"/>
+  <outline>
+    <component base="h"/>
+    <component base="endash" xOffset="-385" yOffset="178"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

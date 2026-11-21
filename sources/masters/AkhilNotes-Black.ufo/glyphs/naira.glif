@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="naira" format="2">
+  <advance width="731"/>
+  <unicode hex="20A6"/>
+  <outline>
+    <component base="N"/>
+    <component base="endash" xOffset="-78" yOffset="-56"/>
+    <component base="endash" xOffset="-78" yOffset="74"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

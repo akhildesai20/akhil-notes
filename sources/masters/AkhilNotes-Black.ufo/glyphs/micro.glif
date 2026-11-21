@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="micro" format="2">
+  <advance width="573"/>
+  <unicode hex="00B5"/>
+  <anchor x="242" y="560" name="top"/>
+  <anchor x="242" y="-253" name="bottom"/>
+  <anchor x="488" y="435" name="horn"/>
+  <anchor x="583" y="425" name="caron"/>
+  <outline>
+    <component base="u"/>
+    <component base="l" xOffset="-46" yOffset="-200"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

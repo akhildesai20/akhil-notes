@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Zdotaccent" format="2">
+  <advance width="1133"/>
+  <unicode hex="017B"/>
+  <anchor x="562" y="862" name="top"/>
+  <anchor x="562" y="-30" name="bottom"/>
+  <anchor x="1060" y="737" name="horn"/>
+  <anchor x="1155" y="727" name="caron"/>
+  <outline>
+    <component base="Z"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="494" yOffset="780"/>
+  </outline>
+</glyph>

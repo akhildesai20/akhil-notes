@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ruble" format="2">
+  <advance width="596"/>
+  <unicode hex="20BD"/>
+  <outline>
+    <component base="P"/>
+    <component base="endash" xOffset="-241" yOffset="9"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

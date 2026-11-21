@@ -1,0 +1,12 @@
+﻿cd ofl/akhilnotes
+fontspector -p googlefonts --skip-network --json ../../qa/fontspector/googlefonts.json --ghmarkdown ../../qa/fontspector/googlefonts.md "AkhilNotes[wght].ttf" "AkhilNotes-Italic[wght].ttf"
+Binary: tools/fontspector/fontspector-1.9.1-x86_64-pc-windows-gnu/fontspector.exe
+Release asset: fontspector-1.9.1-x86_64-pc-windows-gnu.zip
+SHA-256: 482891cd94d6cb16918552ee4c832b51743d6abc687249340d96e60010e49370
+--version reports fontspector 1.9.0, tag fontspector-v1.9.1, commit 990bb930, built 2026-11-10.
+Profile: googlefonts (bundled). No checks were excluded. Network checks skipped for local packaging.
+Package: ofl/akhilnotes/ (variable pair only). Statics stay under fonts/ttf/.
+Full JSON: qa/fontspector/googlefonts.json
+Markdown: qa/fontspector/googlefonts.md
+Latest summary: SKIP 95  INFO 22  PASS 243  WARN 649  FAIL 0  FATAL 0  ERROR 0
+Copyright name ID 0: Copyright 2026 The Akhil Notes Project Authors (https://github.com/akhildesai20/akhil-notes)

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ccaron" format="2">
+  <advance width="469"/>
+  <unicode hex="010D"/>
+  <anchor x="230" y="750" name="top"/>
+  <anchor x="230" y="-30" name="bottom"/>
+  <anchor x="425" y="625" name="horn"/>
+  <anchor x="520" y="615" name="caron"/>
+  <outline>
+    <component base="c"/>
+    <component base="asciicircum" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="-23" yOffset="126"/>
+  </outline>
+</glyph>

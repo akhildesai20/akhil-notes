@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idieresis" format="2">
+  <advance width="197"/>
+  <unicode hex="00EF"/>
+  <anchor x="78" y="528" name="top"/>
+  <anchor x="78" y="-44" name="bottom"/>
+  <anchor x="160" y="403" name="horn"/>
+  <anchor x="255" y="393" name="caron"/>
+  <outline>
+    <component base="i.dotlessInternal"/>
+    <component base="period" xScale="0.67999267578125" yScale="0.67999267578125" xOffset="-41" yOffset="443"/>
+    <component base="period" xScale="0.67999267578125" yScale="0.67999267578125" xOffset="92" yOffset="443"/>
+  </outline>
+</glyph>

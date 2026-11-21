@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Udieresis" format="2">
+  <advance width="644"/>
+  <unicode hex="00DC"/>
+  <anchor x="300" y="925" name="top"/>
+  <anchor x="300" y="-53" name="bottom"/>
+  <anchor x="559" y="800" name="horn"/>
+  <anchor x="654" y="790" name="caron"/>
+  <outline>
+    <component base="U"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="165" yOffset="823"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="299" yOffset="823"/>
+  </outline>
+</glyph>

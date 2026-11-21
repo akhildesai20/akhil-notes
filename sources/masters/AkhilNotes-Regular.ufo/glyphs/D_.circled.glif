@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="D.circled" format="2">
+  <advance width="824"/>
+  <unicode hex="24B9"/>
+  <outline>
+    <component base="_circleRing"/>
+    <component base="_Dsmall"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,46 @@
+FONTLOG for Akhil Notes
+-----------------------
+
+This file provides detailed information on the Akhil Notes Font Software.
+This information should be distributed along with the Akhil Notes fonts
+and any derivative works.
+
+
+Basic Font Information
+----------------------
+
+Akhil Notes is a handwriting family for notes and everyday digital writing.
+Designer: Akhil Desai.
+
+Supported glyphsets (glyphsets 1.1.3): GF_Latin_Core, GF_Latin_Plus, GF_Latin_Vietnamese.
+
+Axes: wght 400–900. Italic is a separate family file (not a slant axis on the GF pair).
+
+
+ChangeLog
+---------
+
+2.101 (21 November 2026)
+- Adopted SIL OFL 1.1 in name IDs 13/14 (public git URL still pending).
+- Added meta script tags, WWS fsSelection bit, GF packaging stubs.
+- Improved provisional AE/OE/æ/œ/ß/ẞ/Þ/þ/ð constructions; ligature joins retained.
+- Section sign as squeezed S + centered zero; currency overlays as composites.
+
+2.100 (21 November 2026)
+- Engineering candidate from the 1.000 release outlines.
+- UFO masters, designspace, fontmake build, kerning, fractions, Vietnamese.
+
+1.000
+- Original variable release by Akhil Desai (491 encoded characters).
+
+
+Acknowledgements
+----------------
+
+If you make modifications, be sure to add your name (N), email (E),
+web-address (W), and description (D) below. This list is sorted by
+last name in alphabetical order.
+
+N: Akhil Desai
+W: https://www.instagram.com/akhilius_
+D: Original design and authorship

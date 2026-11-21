@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lari" format="2">
+  <advance width="662"/>
+  <unicode hex="20BE"/>
+  <outline>
+    <component base="_lariBase"/>
+    <component base="l" xOffset="192"/>
+    <component base="l" xOffset="302"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="emptyset" format="2">
+  <advance width="854"/>
+  <unicode hex="2205"/>
+  <outline>
+    <component base="O"/>
+    <component base="slash" xOffset="237" yOffset="10"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

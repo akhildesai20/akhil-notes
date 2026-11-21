@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name=".notdef" format="2">
+  <advance width="600"/>
+  <outline>
+    <contour>
+      <point x="11" y="-105" type="line"/>
+      <point x="12" y="-108" type="line"/>
+      <point x="16" y="-111" type="line"/>
+      <point x="20" y="-112" type="line"/>
+      <point x="25" y="-111" type="line"/>
+      <point x="29" y="-108" type="line"/>
+      <point x="33" y="-105" type="line"/>
+      <point x="35" y="-100" type="line"/>
+      <point x="252" y="708" type="line"/>
+      <point x="728" y="708" type="line"/>
+      <point x="514" y="-88" type="line"/>
+      <point x="26" y="-88" type="line"/>
+      <point x="22" y="-89" type="line"/>
+      <point x="17" y="-92" type="line"/>
+      <point x="13" y="-95" type="line"/>
+      <point x="11" y="-100" type="line"/>
+      <point x="11" y="-105" type="line"/>
+      <point x="12" y="-108" type="line"/>
+      <point x="16" y="-111" type="line"/>
+      <point x="20" y="-112" type="line"/>
+      <point x="532" y="-112" type="line"/>
+      <point x="758" y="732" type="line"/>
+      <point x="234" y="732" type="line"/>
+      <point x="11" y="-100" type="line"/>
+    </contour>
+    <contour>
+      <point x="37" y="-78" type="line"/>
+      <point x="36" y="-83" type="line"/>
+      <point x="37" y="-87" type="line"/>
+      <point x="40" y="-90" type="line"/>
+      <point x="44" y="-92" type="line"/>
+      <point x="48" y="-92" type="line"/>
+      <point x="53" y="-90" type="line"/>
+      <point x="57" y="-86" type="line"/>
+      <point x="726" y="694" type="line"/>
+      <point x="729" y="698" type="line"/>
+      <point x="730" y="703" type="line"/>
+      <point x="729" y="707" type="line"/>
+      <point x="726" y="710" type="line"/>
+      <point x="722" y="712" type="line"/>
+      <point x="718" y="712" type="line"/>
+      <point x="713" y="710" type="line"/>
+      <point x="709" y="706" type="line"/>
+      <point x="40" y="-74" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

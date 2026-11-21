@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ascender</key>
+    <integer>976</integer>
+    <key>copyright</key>
+    <string>Copyright 2026 Akhil Desai. All rights reserved except as specified in the included font license.</string>
+    <key>descender</key>
+    <integer>-530</integer>
+    <key>familyName</key>
+    <string>Akhil Notes</string>
+    <key>italicAngle</key>
+    <integer>0</integer>
+    <key>openTypeHheaAscender</key>
+    <integer>976</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-530</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>0</integer>
+    <key>openTypeNameDesigner</key>
+    <string>Akhil Desai</string>
+    <key>openTypeNameDesignerURL</key>
+    <string>https://www.instagram.com/akhilius_</string>
+    <key>openTypeNameManufacturer</key>
+    <string>Akhil Desai</string>
+    <key>openTypeNameManufacturerURL</key>
+    <string>https://www.instagram.com/akhilius_</string>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>976</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-530</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>0</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>AKHL</string>
+    <key>openTypeOS2WinAscent</key>
+    <integer>1140</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>523</integer>
+    <key>styleMapFamilyName</key>
+    <string>Akhil Notes Black</string>
+    <key>styleMapStyleName</key>
+    <string>regular</string>
+    <key>styleName</key>
+    <string>Black</string>
+    <key>unitsPerEm</key>
+    <integer>1000</integer>
+    <key>versionMajor</key>
+    <integer>2</integer>
+    <key>versionMinor</key>
+    <integer>101</integer>
+  </dict>
+</plist>

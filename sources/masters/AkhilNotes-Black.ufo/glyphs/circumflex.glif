@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflex" format="2">
+  <advance width="359"/>
+  <unicode hex="02C6"/>
+  <anchor x="174" y="670" name="top"/>
+  <anchor x="174" y="472" name="bottom"/>
+  <anchor x="283" y="545" name="horn"/>
+  <anchor x="378" y="535" name="caron"/>
+  <outline>
+    <contour>
+      <point x="39" y="543" type="line"/>
+      <point x="34" y="530" type="line"/>
+      <point x="35" y="516" type="line"/>
+      <point x="40" y="504" type="line"/>
+      <point x="50" y="495" type="line"/>
+      <point x="63" y="490" type="line"/>
+      <point x="77" y="491" type="line"/>
+      <point x="89" y="496" type="line"/>
+      <point x="174" y="558" type="line"/>
+      <point x="258" y="496" type="line"/>
+      <point x="270" y="491" type="line"/>
+      <point x="284" y="490" type="line"/>
+      <point x="297" y="495" type="line"/>
+      <point x="307" y="504" type="line"/>
+      <point x="313" y="516" type="line"/>
+      <point x="313" y="530" type="line"/>
+      <point x="309" y="543" type="line"/>
+      <point x="299" y="553" type="line"/>
+      <point x="174" y="645" type="line"/>
+      <point x="48" y="553" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

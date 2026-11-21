@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="manat" format="2">
+  <advance width="627"/>
+  <unicode hex="20BC"/>
+  <outline>
+    <component base="_manatBase"/>
+    <component base="l" xOffset="106" yOffset="-166"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

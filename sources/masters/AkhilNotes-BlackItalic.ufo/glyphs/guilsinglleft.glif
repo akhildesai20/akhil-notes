@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="guilsinglleft" format="2">
+  <advance width="337"/>
+  <unicode hex="2039"/>
+  <outline>
+    <contour>
+      <point x="285" y="473" type="line"/>
+      <point x="291" y="486" type="line"/>
+      <point x="291" y="500" type="line"/>
+      <point x="286" y="511" type="line"/>
+      <point x="277" y="518" type="line"/>
+      <point x="264" y="520" type="line"/>
+      <point x="250" y="517" type="line"/>
+      <point x="236" y="509" type="line"/>
+      <point x="34" y="340" type="line"/>
+      <point x="146" y="171" type="line"/>
+      <point x="155" y="163" type="line"/>
+      <point x="167" y="160" type="line"/>
+      <point x="181" y="162" type="line"/>
+      <point x="195" y="169" type="line"/>
+      <point x="206" y="180" type="line"/>
+      <point x="213" y="194" type="line"/>
+      <point x="214" y="207" type="line"/>
+      <point x="210" y="219" type="line"/>
+      <point x="130" y="340" type="line"/>
+      <point x="275" y="461" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

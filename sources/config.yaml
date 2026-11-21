@@ -1,0 +1,13 @@
+# gftools builder config. Not executed as the canonical build.
+# The verified build is: python scripts/build_candidate.py
+# which writes these UFOs and compiles them with fontmake.
+sources:
+  - AkhilNotes.designspace
+familyName: Akhil Notes
+axisOrder:
+  - slnt
+  - wght
+buildStatic: true
+buildVariable: true
+# OFL 1.1 is adopted in the candidate fonts. Set REPO_URL before a GF PR.
+# Canonical build remains: python scripts/build_candidate.py

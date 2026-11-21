@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni01F0" format="2">
+  <advance width="416"/>
+  <unicode hex="01F0"/>
+  <anchor x="204" y="665" name="top"/>
+  <anchor x="204" y="-258" name="bottom"/>
+  <anchor x="343" y="540" name="horn"/>
+  <anchor x="438" y="530" name="caron"/>
+  <outline>
+    <component base="j.dotlessInternal"/>
+    <component base="asciicircum" xScale="0.54998779296875" yScale="0.54998779296875" xOffset="35" yOffset="239"/>
+  </outline>
+</glyph>

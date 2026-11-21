@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ihookabove" format="2">
+  <advance width="203"/>
+  <unicode hex="1EC8"/>
+  <anchor x="95" y="960" name="top"/>
+  <anchor x="95" y="-53" name="bottom"/>
+  <anchor x="149" y="835" name="horn"/>
+  <anchor x="244" y="825" name="caron"/>
+  <outline>
+    <contour>
+      <point x="78" y="-5" type="line"/>
+      <point x="81" y="-13" type="line"/>
+      <point x="85" y="-22" type="line"/>
+      <point x="92" y="-29" type="line"/>
+      <point x="105" y="-35" type="line"/>
+      <point x="118" y="-35" type="line"/>
+      <point x="126" y="-32" type="line"/>
+      <point x="135" y="-28" type="line"/>
+      <point x="142" y="-21" type="line"/>
+      <point x="148" y="-8" type="line"/>
+      <point x="148" y="2" type="line"/>
+      <point x="113" y="705" type="line"/>
+      <point x="110" y="713" type="line"/>
+      <point x="106" y="722" type="line"/>
+      <point x="99" y="729" type="line"/>
+      <point x="86" y="735" type="line"/>
+      <point x="73" y="735" type="line"/>
+      <point x="65" y="732" type="line"/>
+      <point x="56" y="728" type="line"/>
+      <point x="49" y="721" type="line"/>
+      <point x="43" y="708" type="line"/>
+      <point x="43" y="698" type="line"/>
+    </contour>
+    <contour>
+      <point x="12" y="859" type="line"/>
+      <point x="15" y="846" type="line"/>
+      <point x="23" y="835" type="line"/>
+      <point x="35" y="828" type="line"/>
+      <point x="48" y="826" type="line"/>
+      <point x="62" y="829" type="line"/>
+      <point x="73" y="837" type="line"/>
+      <point x="80" y="849" type="line"/>
+      <point x="84" y="859" type="line"/>
+      <point x="86" y="861" type="line"/>
+      <point x="91" y="864" type="line"/>
+      <point x="98" y="865" type="line"/>
+      <point x="106" y="864" type="line"/>
+      <point x="109" y="862" type="line"/>
+      <point x="107" y="864" type="line"/>
+      <point x="106" y="870" type="line"/>
+      <point x="105" y="866" type="line"/>
+      <point x="104" y="864" type="line"/>
+      <point x="102" y="863" type="line"/>
+      <point x="99" y="860" type="line"/>
+      <point x="93" y="855" type="line"/>
+      <point x="86" y="849" type="line"/>
+      <point x="76" y="841" type="line"/>
+      <point x="67" y="830" type="line"/>
+      <point x="60" y="814" type="line"/>
+      <point x="57" y="800" type="line"/>
+      <point x="58" y="787" type="line"/>
+      <point x="64" y="774" type="line"/>
+      <point x="74" y="765" type="line"/>
+      <point x="86" y="760" type="line"/>
+      <point x="100" y="760" type="line"/>
+      <point x="112" y="766" type="line"/>
+      <point x="122" y="776" type="line"/>
+      <point x="127" y="789" type="line"/>
+      <point x="127" y="793" type="line"/>
+      <point x="127" y="792" type="line"/>
+      <point x="127" y="793" type="line"/>
+      <point x="130" y="796" type="line"/>
+      <point x="136" y="800" type="line"/>
+      <point x="143" y="806" type="line"/>
+      <point x="153" y="814" type="line"/>
+      <point x="162" y="825" type="line"/>
+      <point x="169" y="839" type="line"/>
+      <point x="179" y="867" type="line"/>
+      <point x="171" y="899" type="line"/>
+      <point x="150" y="921" type="line"/>
+      <point x="125" y="932" type="line"/>
+      <point x="98" y="935" type="line"/>
+      <point x="72" y="932" type="line"/>
+      <point x="45" y="920" type="line"/>
+      <point x="23" y="897" type="line"/>
+      <point x="14" y="873" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

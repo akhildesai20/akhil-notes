@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hungarumlautcomb" format="2">
+  <unicode hex="030B"/>
+  <anchor x="0" y="0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-122" y="17" type="line"/>
+      <point x="-124" y="12" type="line"/>
+      <point x="-124" y="7" type="line"/>
+      <point x="-123" y="4" type="line"/>
+      <point x="-119" y="1" type="line"/>
+      <point x="-115" y="0" type="line"/>
+      <point x="-110" y="1" type="line"/>
+      <point x="-106" y="4" type="line"/>
+      <point x="-4" y="84" type="line"/>
+      <point x="0" y="87" type="line"/>
+      <point x="2" y="92" type="line"/>
+      <point x="2" y="97" type="line"/>
+      <point x="0" y="100" type="line"/>
+      <point x="-3" y="103" type="line"/>
+      <point x="-7" y="104" type="line"/>
+      <point x="-12" y="103" type="line"/>
+      <point x="-17" y="100" type="line"/>
+      <point x="-118" y="20" type="line"/>
+    </contour>
+    <contour>
+      <point x="28" y="17" type="line"/>
+      <point x="26" y="12" type="line"/>
+      <point x="26" y="7" type="line"/>
+      <point x="27" y="4" type="line"/>
+      <point x="31" y="1" type="line"/>
+      <point x="35" y="0" type="line"/>
+      <point x="40" y="1" type="line"/>
+      <point x="44" y="4" type="line"/>
+      <point x="146" y="84" type="line"/>
+      <point x="150" y="87" type="line"/>
+      <point x="152" y="92" type="line"/>
+      <point x="152" y="97" type="line"/>
+      <point x="150" y="100" type="line"/>
+      <point x="147" y="103" type="line"/>
+      <point x="143" y="104" type="line"/>
+      <point x="138" y="103" type="line"/>
+      <point x="133" y="100" type="line"/>
+      <point x="32" y="20" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

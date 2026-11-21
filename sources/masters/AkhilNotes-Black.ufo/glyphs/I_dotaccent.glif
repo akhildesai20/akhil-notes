@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Idotaccent" format="2">
+  <advance width="171"/>
+  <unicode hex="0130"/>
+  <anchor x="63" y="925" name="top"/>
+  <anchor x="63" y="-53" name="bottom"/>
+  <anchor x="92" y="800" name="horn"/>
+  <anchor x="187" y="790" name="caron"/>
+  <outline>
+    <component base="I"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="-5" yOffset="823"/>
+  </outline>
+</glyph>

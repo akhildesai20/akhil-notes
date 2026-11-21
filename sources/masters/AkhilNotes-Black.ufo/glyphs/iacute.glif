@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="iacute" format="2">
+  <advance width="197"/>
+  <unicode hex="00ED"/>
+  <anchor x="89" y="581" name="top"/>
+  <anchor x="89" y="-44" name="bottom"/>
+  <anchor x="112" y="456" name="horn"/>
+  <anchor x="207" y="446" name="caron"/>
+  <outline>
+    <component base="i.dotlessInternal"/>
+    <component base="quoteright" xScale="0.54998779296875" yScale="0.54998779296875" xOffset="29" yOffset="152"/>
+  </outline>
+</glyph>

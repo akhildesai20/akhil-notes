@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.dnom" format="2">
+  <advance width="306"/>
+  <outline>
+    <contour>
+      <point x="300" y="467" type="line"/>
+      <point x="269" y="475" type="line"/>
+      <point x="259" y="442" type="line"/>
+      <point x="250" y="412" type="line"/>
+      <point x="242" y="381" type="line"/>
+      <point x="233" y="349" type="line"/>
+      <point x="233" y="348" type="line"/>
+      <point x="225" y="316" type="line"/>
+      <point x="216" y="283" type="line"/>
+      <point x="207" y="250" type="line"/>
+      <point x="200" y="218" type="line"/>
+      <point x="193" y="186" type="line"/>
+      <point x="186" y="157" type="line"/>
+      <point x="180" y="129" type="line"/>
+      <point x="174" y="102" type="line"/>
+      <point x="170" y="77" type="line"/>
+      <point x="168" y="57" type="line"/>
+      <point x="167" y="56" type="line"/>
+      <point x="166" y="39" type="line"/>
+      <point x="166" y="38" type="line"/>
+      <point x="166" y="18" type="line"/>
+      <point x="168" y="10" type="line"/>
+      <point x="173" y="3" type="line"/>
+      <point x="182" y="-2" type="line"/>
+      <point x="191" y="-5" type="line"/>
+      <point x="205" y="-5" type="line"/>
+      <point x="216" y="1" type="line"/>
+      <point x="223" y="6" type="line"/>
+      <point x="231" y="17" type="line"/>
+      <point x="235" y="27" type="line"/>
+      <point x="236" y="36" type="line"/>
+      <point x="237" y="50" type="line"/>
+      <point x="238" y="66" type="line"/>
+      <point x="241" y="85" type="line"/>
+      <point x="245" y="108" type="line"/>
+      <point x="251" y="132" type="line"/>
+      <point x="257" y="160" type="line"/>
+      <point x="263" y="189" type="line"/>
+      <point x="270" y="220" type="line"/>
+      <point x="279" y="252" type="line"/>
+      <point x="287" y="284" type="line"/>
+      <point x="295" y="316" type="line"/>
+      <point x="303" y="349" type="line"/>
+      <point x="312" y="381" type="line"/>
+      <point x="320" y="412" type="line"/>
+      <point x="328" y="441" type="line"/>
+      <point x="337" y="470" type="line"/>
+      <point x="343" y="496" type="line"/>
+      <point x="351" y="523" type="line"/>
+      <point x="350" y="531" type="line"/>
+      <point x="348" y="540" type="line"/>
+      <point x="339" y="550" type="line"/>
+      <point x="331" y="553" type="line"/>
+      <point x="324" y="555" type="line"/>
+      <point x="312" y="555" type="line"/>
+      <point x="301" y="550" type="line"/>
+      <point x="293" y="544" type="line"/>
+      <point x="150" y="410" type="line"/>
+      <point x="143" y="401" type="line"/>
+      <point x="139" y="390" type="line"/>
+      <point x="138" y="377" type="line"/>
+      <point x="142" y="368" type="line"/>
+      <point x="147" y="361" type="line"/>
+      <point x="156" y="356" type="line"/>
+      <point x="167" y="353" type="line"/>
+      <point x="178" y="355" type="line"/>
+      <point x="191" y="359" type="line"/>
+      <point x="199" y="367" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

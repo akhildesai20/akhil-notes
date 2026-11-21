@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflexcomb" format="2">
+  <unicode hex="0302"/>
+  <anchor x="0" y="0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-115" y="18" type="line"/>
+      <point x="-117" y="14" type="line"/>
+      <point x="-117" y="9" type="line"/>
+      <point x="-115" y="5" type="line"/>
+      <point x="-111" y="2" type="line"/>
+      <point x="-107" y="0" type="line"/>
+      <point x="-102" y="0" type="line"/>
+      <point x="-98" y="2" type="line"/>
+      <point x="0" y="74" type="line"/>
+      <point x="98" y="2" type="line"/>
+      <point x="102" y="0" type="line"/>
+      <point x="107" y="0" type="line"/>
+      <point x="111" y="2" type="line"/>
+      <point x="115" y="5" type="line"/>
+      <point x="117" y="9" type="line"/>
+      <point x="117" y="14" type="line"/>
+      <point x="115" y="18" type="line"/>
+      <point x="112" y="22" type="line"/>
+      <point x="0" y="104" type="line"/>
+      <point x="-112" y="22" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

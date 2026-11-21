@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni1E8D" format="2">
+  <advance width="504"/>
+  <unicode hex="1E8D"/>
+  <anchor x="231" y="643" name="top"/>
+  <anchor x="231" y="-53" name="bottom"/>
+  <anchor x="420" y="518" name="horn"/>
+  <anchor x="515" y="508" name="caron"/>
+  <outline>
+    <component base="x"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="95" yOffset="541"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="229" yOffset="541"/>
+  </outline>
+</glyph>

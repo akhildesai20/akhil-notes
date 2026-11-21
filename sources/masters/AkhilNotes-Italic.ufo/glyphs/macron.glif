@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="macron" format="2">
+  <advance width="329"/>
+  <unicode hex="00AF"/>
+  <outline>
+    <contour>
+      <point x="45" y="513" type="line"/>
+      <point x="40" y="510" type="line"/>
+      <point x="36" y="507" type="line"/>
+      <point x="34" y="502" type="line"/>
+      <point x="34" y="497" type="line"/>
+      <point x="36" y="494" type="line"/>
+      <point x="39" y="491" type="line"/>
+      <point x="43" y="490" type="line"/>
+      <point x="267" y="490" type="line"/>
+      <point x="272" y="491" type="line"/>
+      <point x="277" y="494" type="line"/>
+      <point x="280" y="497" type="line"/>
+      <point x="282" y="502" type="line"/>
+      <point x="283" y="507" type="line"/>
+      <point x="281" y="510" type="line"/>
+      <point x="278" y="513" type="line"/>
+      <point x="274" y="514" type="line"/>
+      <point x="50" y="514" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

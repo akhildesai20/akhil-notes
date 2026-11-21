@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ohungarumlaut" format="2">
+  <advance width="574"/>
+  <unicode hex="0151"/>
+  <anchor x="265" y="683" name="top"/>
+  <anchor x="265" y="-53" name="bottom"/>
+  <anchor x="489" y="558" name="horn"/>
+  <anchor x="584" y="548" name="caron"/>
+  <outline>
+    <component base="o"/>
+    <component base="quoteright" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="145" yOffset="55"/>
+    <component base="quoteright" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="239" yOffset="55"/>
+  </outline>
+</glyph>

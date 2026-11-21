@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="cdotaccent" format="2">
+  <advance width="579"/>
+  <unicode hex="010B"/>
+  <anchor x="384" y="573" name="top"/>
+  <anchor x="216" y="-53" name="bottom"/>
+  <anchor x="540" y="448" name="horn"/>
+  <anchor x="632" y="438" name="caron"/>
+  <outline>
+    <component base="c"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="207" yOffset="471"/>
+  </outline>
+</glyph>

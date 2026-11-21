@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Wdieresis" format="2">
+  <advance width="906"/>
+  <unicode hex="1E84"/>
+  <anchor x="431" y="925" name="top"/>
+  <anchor x="431" y="-53" name="bottom"/>
+  <anchor x="821" y="800" name="horn"/>
+  <anchor x="916" y="790" name="caron"/>
+  <outline>
+    <component base="W"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="296" yOffset="823"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="430" yOffset="823"/>
+  </outline>
+</glyph>

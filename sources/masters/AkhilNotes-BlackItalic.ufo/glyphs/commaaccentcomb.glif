@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commaaccentcomb" format="2">
+  <unicode hex="0326"/>
+  <anchor x="0" y="0" name="_bottom"/>
+  <outline>
+    <contour>
+      <point x="55" y="-25" type="line"/>
+      <point x="52" y="-13" type="line"/>
+      <point x="44" y="-4" type="line"/>
+      <point x="32" y="0" type="line"/>
+      <point x="18" y="-1" type="line"/>
+      <point x="4" y="-8" type="line"/>
+      <point x="-7" y="-18" type="line"/>
+      <point x="-15" y="-31" type="line"/>
+      <point x="-19" y="-43" type="line"/>
+      <point x="-23" y="-51" type="line"/>
+      <point x="-27" y="-58" type="line"/>
+      <point x="-33" y="-64" type="line"/>
+      <point x="-39" y="-71" type="line"/>
+      <point x="-46" y="-77" type="line"/>
+      <point x="-56" y="-85" type="line"/>
+      <point x="-66" y="-93" type="line"/>
+      <point x="-79" y="-102" type="line"/>
+      <point x="-90" y="-112" type="line"/>
+      <point x="-97" y="-126" type="line"/>
+      <point x="-99" y="-139" type="line"/>
+      <point x="-95" y="-151" type="line"/>
+      <point x="-87" y="-159" type="line"/>
+      <point x="-74" y="-163" type="line"/>
+      <point x="-60" y="-161" type="line"/>
+      <point x="-47" y="-154" type="line"/>
+      <point x="-34" y="-145" type="line"/>
+      <point x="-21" y="-135" type="line"/>
+      <point x="-8" y="-125" type="line"/>
+      <point x="5" y="-114" type="line"/>
+      <point x="17" y="-101" type="line"/>
+      <point x="29" y="-87" type="line"/>
+      <point x="39" y="-72" type="line"/>
+      <point x="47" y="-55" type="line"/>
+      <point x="53" y="-38" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="adieresis" format="2">
+  <advance width="748"/>
+  <unicode hex="00E4"/>
+  <anchor x="469" y="510" name="top"/>
+  <anchor x="298" y="-127" name="bottom"/>
+  <anchor x="703" y="385" name="horn"/>
+  <anchor x="796" y="375" name="caron"/>
+  <outline>
+    <component base="a"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="196" yOffset="428"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="330" yOffset="428"/>
+  </outline>
+</glyph>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="aacute" format="2">
+  <advance width="673"/>
+  <unicode hex="00E1"/>
+  <anchor x="332" y="605" name="top"/>
+  <anchor x="332" y="-127" name="bottom"/>
+  <anchor x="600" y="480" name="horn"/>
+  <anchor x="695" y="470" name="caron"/>
+  <outline>
+    <component base="a"/>
+    <component base="quoteright" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="259" yOffset="-4"/>
+  </outline>
+</glyph>

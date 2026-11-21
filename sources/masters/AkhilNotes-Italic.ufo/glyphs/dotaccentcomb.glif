@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotaccentcomb" format="2">
+  <unicode hex="0307"/>
+  <anchor x="0" y="0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="23" y="22" type="line"/>
+      <point x="22" y="26" type="line"/>
+      <point x="20" y="29" type="line"/>
+      <point x="17" y="32" type="line"/>
+      <point x="14" y="34" type="line"/>
+      <point x="9" y="35" type="line"/>
+      <point x="5" y="34" type="line"/>
+      <point x="0" y="32" type="line"/>
+      <point x="-4" y="29" type="line"/>
+      <point x="-8" y="26" type="line"/>
+      <point x="-11" y="22" type="line"/>
+      <point x="-13" y="17" type="line"/>
+      <point x="-13" y="13" type="line"/>
+      <point x="-13" y="9" type="line"/>
+      <point x="-11" y="5" type="line"/>
+      <point x="-8" y="2" type="line"/>
+      <point x="-4" y="1" type="line"/>
+      <point x="0" y="0" type="line"/>
+      <point x="5" y="1" type="line"/>
+      <point x="9" y="2" type="line"/>
+      <point x="14" y="5" type="line"/>
+      <point x="17" y="9" type="line"/>
+      <point x="20" y="13" type="line"/>
+      <point x="22" y="17" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="colonsign" format="2">
+  <advance width="1051"/>
+  <unicode hex="20A1"/>
+  <outline>
+    <component base="C"/>
+    <component base="l" xOffset="296"/>
+    <component base="l" xOffset="396"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

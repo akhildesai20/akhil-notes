@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="400" maximum="900" default="400"/>
+    <axis tag="slnt" name="Slant" minimum="-15" maximum="0" default="0"/>
+  </axes>
+  <sources>
+    <source filename="masters/AkhilNotes-Regular.ufo" name="AkhilNotes-Regular" familyname="Akhil Notes" stylename="Regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="masters/AkhilNotes-Black.ufo" name="AkhilNotes-Black" familyname="Akhil Notes" stylename="Black">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="masters/AkhilNotes-Italic.ufo" name="AkhilNotes-Italic" familyname="Akhil Notes" stylename="Italic">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="-15"/>
+      </location>
+    </source>
+    <source filename="masters/AkhilNotes-BlackItalic.ufo" name="AkhilNotes-BlackItalic" familyname="Akhil Notes" stylename="Black Italic">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="-15"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Akhil Notes Regular" familyname="Akhil Notes" stylename="Regular" filename="AkhilNotes-Regular.ttf">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes Italic" familyname="Akhil Notes" stylename="Italic" filename="AkhilNotes-Italic.ttf">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Slant" xvalue="-15"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes Medium" familyname="Akhil Notes" stylename="Medium" filename="AkhilNotes-Medium.ttf">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes Medium Italic" familyname="Akhil Notes" stylename="Medium Italic" filename="AkhilNotes-MediumItalic.ttf">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Slant" xvalue="-15"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes SemiBold" familyname="Akhil Notes" stylename="SemiBold" filename="AkhilNotes-SemiBold.ttf">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes SemiBold Italic" familyname="Akhil Notes" stylename="SemiBold Italic" filename="AkhilNotes-SemiBoldItalic.ttf">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+        <dimension name="Slant" xvalue="-15"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes Bold" familyname="Akhil Notes" stylename="Bold" filename="AkhilNotes-Bold.ttf">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes Bold Italic" familyname="Akhil Notes" stylename="Bold Italic" filename="AkhilNotes-BoldItalic.ttf">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Slant" xvalue="-15"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes ExtraBold" familyname="Akhil Notes" stylename="ExtraBold" filename="AkhilNotes-ExtraBold.ttf">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes ExtraBold Italic" familyname="Akhil Notes" stylename="ExtraBold Italic" filename="AkhilNotes-ExtraBoldItalic.ttf">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="-15"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes Black" familyname="Akhil Notes" stylename="Black" filename="AkhilNotes-Black.ttf">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="0"/>
+      </location>
+    </instance>
+    <instance name="Akhil Notes Black Italic" familyname="Akhil Notes" stylename="Black Italic" filename="AkhilNotes-BlackItalic.ttf">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="-15"/>
+      </location>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>com.github.googlei18n.ufo2ft.featureWriters</key>
+      <array/>
+    </dict>
+  </lib>
+</designspace>

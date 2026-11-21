@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflexcomb_gravecomb" format="2">
+  <anchor x="0" y="0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-110" y="18" type="line"/>
+      <point x="-113" y="14" type="line"/>
+      <point x="-114" y="9" type="line"/>
+      <point x="-113" y="5" type="line"/>
+      <point x="-111" y="2" type="line"/>
+      <point x="-107" y="0" type="line"/>
+      <point x="-102" y="0" type="line"/>
+      <point x="-97" y="2" type="line"/>
+      <point x="20" y="74" type="line"/>
+      <point x="98" y="2" type="line"/>
+      <point x="102" y="0" type="line"/>
+      <point x="107" y="0" type="line"/>
+      <point x="112" y="2" type="line"/>
+      <point x="116" y="5" type="line"/>
+      <point x="119" y="9" type="line"/>
+      <point x="121" y="14" type="line"/>
+      <point x="120" y="18" type="line"/>
+      <point x="118" y="22" type="line"/>
+      <point x="28" y="104" type="line"/>
+      <point x="-106" y="22" type="line"/>
+    </contour>
+    <contour>
+      <point x="-145" y="145" type="line"/>
+      <point x="-149" y="145" type="line"/>
+      <point x="-154" y="145" type="line"/>
+      <point x="-159" y="142" type="line"/>
+      <point x="-162" y="138" type="line"/>
+      <point x="-164" y="133" type="line"/>
+      <point x="-165" y="129" type="line"/>
+      <point x="-163" y="125" type="line"/>
+      <point x="-104" y="45" type="line"/>
+      <point x="-101" y="42" type="line"/>
+      <point x="-97" y="41" type="line"/>
+      <point x="-92" y="42" type="line"/>
+      <point x="-88" y="45" type="line"/>
+      <point x="-84" y="49" type="line"/>
+      <point x="-82" y="53" type="line"/>
+      <point x="-81" y="58" type="line"/>
+      <point x="-83" y="62" type="line"/>
+      <point x="-142" y="142" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

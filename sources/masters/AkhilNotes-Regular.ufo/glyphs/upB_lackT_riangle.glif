@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="upBlackTriangle" format="2">
+  <advance width="628"/>
+  <unicode hex="25B2"/>
+  <outline>
+    <contour>
+      <point x="34" y="192" type="line"/>
+      <point x="66" y="196" type="line"/>
+      <point x="102" y="200" type="line"/>
+      <point x="141" y="205" type="line"/>
+      <point x="184" y="209" type="line"/>
+      <point x="228" y="212" type="line"/>
+      <point x="273" y="216" type="line"/>
+      <point x="319" y="218" type="line"/>
+      <point x="364" y="220" type="line"/>
+      <point x="409" y="222" type="line"/>
+      <point x="451" y="222" type="line"/>
+      <point x="491" y="221" type="line"/>
+      <point x="527" y="219" type="line"/>
+      <point x="558" y="215" type="line"/>
+      <point x="585" y="210" type="line"/>
+      <point x="570" y="232" type="line"/>
+      <point x="551" y="258" type="line"/>
+      <point x="530" y="287" type="line"/>
+      <point x="507" y="317" type="line"/>
+      <point x="482" y="349" type="line"/>
+      <point x="455" y="381" type="line"/>
+      <point x="427" y="412" type="line"/>
+      <point x="399" y="443" type="line"/>
+      <point x="371" y="473" type="line"/>
+      <point x="342" y="499" type="line"/>
+      <point x="315" y="523" type="line"/>
+      <point x="288" y="542" type="line"/>
+    </contour>
+  </outline>
+</glyph>

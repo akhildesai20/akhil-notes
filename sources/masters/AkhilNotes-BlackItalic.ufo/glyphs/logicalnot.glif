@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="logicalnot" format="2">
+  <advance width="525"/>
+  <unicode hex="00AC"/>
+  <outline>
+    <contour>
+      <point x="65" y="542" type="line"/>
+      <point x="52" y="535" type="line"/>
+      <point x="41" y="523" type="line"/>
+      <point x="35" y="510" type="line"/>
+      <point x="34" y="497" type="line"/>
+      <point x="39" y="485" type="line"/>
+      <point x="48" y="478" type="line"/>
+      <point x="61" y="475" type="line"/>
+      <point x="391" y="475" type="line"/>
+      <point x="346" y="310" type="line"/>
+      <point x="345" y="297" type="line"/>
+      <point x="350" y="285" type="line"/>
+      <point x="359" y="278" type="line"/>
+      <point x="372" y="275" type="line"/>
+      <point x="386" y="278" type="line"/>
+      <point x="399" y="285" type="line"/>
+      <point x="410" y="297" type="line"/>
+      <point x="416" y="310" type="line"/>
+      <point x="479" y="545" type="line"/>
+      <point x="79" y="545" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

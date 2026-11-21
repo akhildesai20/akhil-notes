@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Edotaccent" format="2">
+  <advance width="806"/>
+  <unicode hex="0116"/>
+  <anchor x="592" y="862" name="top"/>
+  <anchor x="353" y="-30" name="bottom"/>
+  <anchor x="856" y="737" name="horn"/>
+  <anchor x="948" y="727" name="caron"/>
+  <outline>
+    <component base="E"/>
+    <component base="period" xScale="0.8800048828125" yScale="0.8800048828125" xOffset="413" yOffset="780"/>
+  </outline>
+</glyph>

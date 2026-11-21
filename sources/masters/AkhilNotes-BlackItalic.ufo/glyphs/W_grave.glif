@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Wgrave" format="2">
+  <advance width="981"/>
+  <unicode hex="1E80"/>
+  <anchor x="692" y="975" name="top"/>
+  <anchor x="416" y="-53" name="bottom"/>
+  <anchor x="1049" y="850" name="horn"/>
+  <anchor x="1141" y="840" name="caron"/>
+  <outline>
+    <component base="W"/>
+    <component base="grave" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="405" yOffset="439"/>
+  </outline>
+</glyph>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tilde" format="2">
+  <advance width="328"/>
+  <unicode hex="02DC"/>
+  <outline>
+    <contour>
+      <point x="35" y="505" type="line"/>
+      <point x="34" y="500" type="line"/>
+      <point x="34" y="495" type="line"/>
+      <point x="37" y="492" type="line"/>
+      <point x="41" y="490" type="line"/>
+      <point x="45" y="490" type="line"/>
+      <point x="50" y="492" type="line"/>
+      <point x="54" y="495" type="line"/>
+      <point x="79" y="520" type="line"/>
+      <point x="98" y="529" type="line"/>
+      <point x="117" y="529" type="line"/>
+      <point x="137" y="523" type="line"/>
+      <point x="160" y="514" type="line"/>
+      <point x="184" y="506" type="line"/>
+      <point x="213" y="505" type="line"/>
+      <point x="245" y="517" type="line"/>
+      <point x="277" y="544" type="line"/>
+      <point x="280" y="548" type="line"/>
+      <point x="282" y="552" type="line"/>
+      <point x="282" y="557" type="line"/>
+      <point x="280" y="561" type="line"/>
+      <point x="277" y="563" type="line"/>
+      <point x="272" y="564" type="line"/>
+      <point x="268" y="563" type="line"/>
+      <point x="263" y="560" type="line"/>
+      <point x="236" y="537" type="line"/>
+      <point x="215" y="529" type="line"/>
+      <point x="195" y="530" type="line"/>
+      <point x="173" y="537" type="line"/>
+      <point x="151" y="546" type="line"/>
+      <point x="126" y="553" type="line"/>
+      <point x="98" y="553" type="line"/>
+      <point x="68" y="538" type="line"/>
+      <point x="38" y="509" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

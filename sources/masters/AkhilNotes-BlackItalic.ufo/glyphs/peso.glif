@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="peso" format="2">
+  <advance width="596"/>
+  <unicode hex="20B1"/>
+  <outline>
+    <component base="P"/>
+    <component base="endash" xOffset="-241" yOffset="274"/>
+    <component base="endash" xOffset="-241" yOffset="159"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

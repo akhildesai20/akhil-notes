@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="igrave" format="2">
+  <advance width="197"/>
+  <unicode hex="00EC"/>
+  <anchor x="81" y="553" name="top"/>
+  <anchor x="81" y="-44" name="bottom"/>
+  <anchor x="112" y="428" name="horn"/>
+  <anchor x="207" y="418" name="caron"/>
+  <outline>
+    <component base="i.dotlessInternal"/>
+    <component base="grave" xScale="0.54998779296875" yScale="0.54998779296875" xOffset="14" yOffset="185"/>
+  </outline>
+</glyph>

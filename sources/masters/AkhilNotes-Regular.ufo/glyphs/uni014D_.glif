@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni014D" format="2">
+  <advance width="539"/>
+  <unicode hex="014D"/>
+  <anchor x="265" y="494" name="top"/>
+  <anchor x="265" y="-30" name="bottom"/>
+  <anchor x="466" y="369" name="horn"/>
+  <anchor x="561" y="359" name="caron"/>
+  <outline>
+    <component base="o"/>
+    <component base="hyphen" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="62" yOffset="172"/>
+  </outline>
+</glyph>

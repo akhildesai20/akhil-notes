@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflexcomb_tildecomb" format="2">
+  <anchor x="0" y="0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-110" y="18" type="line"/>
+      <point x="-113" y="14" type="line"/>
+      <point x="-114" y="9" type="line"/>
+      <point x="-113" y="5" type="line"/>
+      <point x="-111" y="2" type="line"/>
+      <point x="-107" y="0" type="line"/>
+      <point x="-102" y="0" type="line"/>
+      <point x="-97" y="2" type="line"/>
+      <point x="20" y="74" type="line"/>
+      <point x="98" y="2" type="line"/>
+      <point x="102" y="0" type="line"/>
+      <point x="107" y="0" type="line"/>
+      <point x="112" y="2" type="line"/>
+      <point x="116" y="5" type="line"/>
+      <point x="119" y="9" type="line"/>
+      <point x="121" y="14" type="line"/>
+      <point x="120" y="18" type="line"/>
+      <point x="118" y="22" type="line"/>
+      <point x="28" y="104" type="line"/>
+      <point x="-106" y="22" type="line"/>
+    </contour>
+    <contour>
+      <point x="-80" y="136" type="line"/>
+      <point x="-82" y="132" type="line"/>
+      <point x="-81" y="127" type="line"/>
+      <point x="-79" y="124" type="line"/>
+      <point x="-75" y="122" type="line"/>
+      <point x="-70" y="122" type="line"/>
+      <point x="-66" y="123" type="line"/>
+      <point x="-61" y="127" type="line"/>
+      <point x="-37" y="152" type="line"/>
+      <point x="-18" y="161" type="line"/>
+      <point x="1" y="161" type="line"/>
+      <point x="22" y="155" type="line"/>
+      <point x="44" y="146" type="line"/>
+      <point x="69" y="138" type="line"/>
+      <point x="97" y="137" type="line"/>
+      <point x="129" y="149" type="line"/>
+      <point x="161" y="176" type="line"/>
+      <point x="164" y="180" type="line"/>
+      <point x="166" y="184" type="line"/>
+      <point x="166" y="189" type="line"/>
+      <point x="165" y="192" type="line"/>
+      <point x="161" y="195" type="line"/>
+      <point x="157" y="196" type="line"/>
+      <point x="152" y="194" type="line"/>
+      <point x="147" y="192" type="line"/>
+      <point x="121" y="169" type="line"/>
+      <point x="100" y="161" type="line"/>
+      <point x="79" y="162" type="line"/>
+      <point x="58" y="168" type="line"/>
+      <point x="35" y="178" type="line"/>
+      <point x="10" y="185" type="line"/>
+      <point x="-18" y="184" type="line"/>
+      <point x="-48" y="170" type="line"/>
+      <point x="-77" y="141" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="etilde" format="2">
+  <advance width="613"/>
+  <unicode hex="1EBD"/>
+  <anchor x="371" y="666" name="top"/>
+  <anchor x="184" y="-30" name="bottom"/>
+  <anchor x="610" y="541" name="horn"/>
+  <anchor x="702" y="531" name="caron"/>
+  <outline>
+    <component base="e"/>
+    <component base="asciitilde" xScale="0.82000732421875" yScale="0.82000732421875" xOffset="-69" yOffset="258"/>
+  </outline>
+</glyph>

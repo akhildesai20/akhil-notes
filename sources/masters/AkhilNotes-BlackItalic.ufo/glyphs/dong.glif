@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dong" format="2">
+  <advance width="683"/>
+  <unicode hex="20AB"/>
+  <outline>
+    <component base="d"/>
+    <component base="endash" xOffset="-195" yOffset="-471"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>

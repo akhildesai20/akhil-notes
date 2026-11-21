@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dcroat" format="2">
+  <advance width="608"/>
+  <unicode hex="0111"/>
+  <anchor x="399" y="760" name="top"/>
+  <anchor x="399" y="-53" name="bottom"/>
+  <anchor x="772" y="635" name="horn"/>
+  <anchor x="867" y="625" name="caron"/>
+  <outline>
+    <component base="d"/>
+    <component base="endash" xOffset="-23" yOffset="225"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.truetype.overlap</key>
+      <true/>
+    </dict>
+  </lib>
+</glyph>
