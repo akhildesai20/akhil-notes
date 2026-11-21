@@ -1,4 +1,4 @@
-languagesystem DFLT dflt;
+﻿languagesystem DFLT dflt;
 languagesystem latn dflt;
 languagesystem latn CAT;
 languagesystem latn TRK;
@@ -1924,7 +1924,7 @@ feature kern {
   pos w d -50;
   pos w @kc_e -35;
   pos w f -45;
-  pos w h -40;
+  pos w h 20;
   pos w @kc_i -50;
   pos w k -45;
   pos w @kc_m -25;

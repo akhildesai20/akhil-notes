@@ -48,7 +48,7 @@ DLIG_SEQS=(
 LIGA_LOOSE=set('sp sk ck ch ll oo pp nn mm cc dd ii he in io le hi ic li sh ph gh ly'.split())
 LIGA_TIGHT=set('at as'.split())
 # Milder than default digraph — was cramped when pulled tight/double.
-LIGA_EASED=set('an uu ng'.split())
+LIGA_EASED=set('an uu ng wh'.split())  # wh: default digraph pull overlapped w/h stems
 # Trigraph with mixed spacing: looser i–n, eased n–g (ng was too tight).
 LIGA_MIXED=(('ing',('loose','eased')),)
 CORE_OFFICIAL='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzªºÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿĀāĂăĄąĆćĊċČčĎďĐđĒēĖėĘęĚěĞğĠġĢģĦħĪīĮįİıĶķĹĺĻļĽľŁłŃńŅņŇňŐőŒœŔŕŘřŚśŞşŠšŤťŪūŮůŰűŲųŴŵŶŷŸŹźŻżŽžȘșȚțȷẀẁẂẃẄẅẞỲỳ'+''.join(chr(c) for c in MARKS if c not in (0x309,0x31b,0x323))+'`¨¯´¸ˆˇ˘˙˚˛˜˝0123456789!\"#\'()*+,-./:;?[]\\_{}¡«·»¿–—‘’‚“”„•…‹› \u00a0$%&<=>@^|~¢£¥§©®°¶×÷€™−'
