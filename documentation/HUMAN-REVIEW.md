@@ -1,30 +1,21 @@
-# Review checklist
+# Human review checklist
 
-## Install
+Not automated. Leave these to the designer before Google Fonts submission.
 
-- [x] Static and variable fonts install and show Regular–Black, upright and italic.
+## Optical / product
 
-## Reading
+- [ ] Paragraph texture at 14–21px (upright + italic)  
+- [ ] Weight ramp recognizability (especially constructed Æ/Œ/ß/Þ/ð, currencies) — [`OPTICAL-REVIEW.md`](OPTICAL-REVIEW.md)  
+- [ ] `wh` / wherever spacing after kern fix  
+- [ ] Device matrix: Windows, macOS, iOS, Android, Figma, browsers  
 
-- [x] Reading sizes, kerning, multilingual samples, fractions, and ligatures checked.
+## Process / legal
 
-## Design
+- [ ] Microsoft vendor ID `AKHL` listing confirmed  
+- [ ] Contributor agreement / GF onboarding forms  
+- [ ] Approve push of local commits & GitHub Release  
+- [ ] Approve google/fonts PR using [`GF-SUBMISSION.md`](GF-SUBMISSION.md)  
 
-- [x] Digraphs, barred letters, currencies, and long s built from the handwritten stems.
-- [ ] Optical review of constructed set / stroke weight — [`OPTICAL-REVIEW.md`](OPTICAL-REVIEW.md) (no geometric cleanup).
-- [ ] Optional: raise typo ascender if Black Â (y≈1139) collides with the line above.
-- [ ] Optional: stylistic alternates only from real handwriting samples (not rotations).
+## Optional assets
 
-## Technical readiness
-
-- [x] Public UFO-only build (`--from-ufo`); see [`RELEASE-STATUS.md`](RELEASE-STATUS.md).
-- [x] Interpolation start points fixed (order-only); Fontspector FAIL 0.
-- [ ] Device matrix (Figma / browser / OS) on the shipping VF pair.
-
-## License and packaging
-
-- [x] OFL 1.1; reserved name Akhil Notes.
-- [x] Public repository: https://github.com/akhildesai20/akhil-notes
-- [x] `ofl/akhilnotes/` package ready.
-- [ ] Vendor ID `AKHL` registration with Microsoft (email sent; listing pending).
-- [ ] Pull request to google/fonts.
+- [ ] Provide original notebook photographs for README “01 — original handwriting” if desired (section omitted until available)  

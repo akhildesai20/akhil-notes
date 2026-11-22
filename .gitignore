@@ -42,6 +42,7 @@ qa/candidate/overlap-flag-fixes.json
 qa/build.log
 qa/proof_*.py
 
-# Build caches
+# Build caches / specimen temps
 master_ufo/
 instance_ufo/
+documentation/specimens/_tmp/

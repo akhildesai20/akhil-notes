@@ -1,38 +1,45 @@
 # Akhil Notes — release status
 
-Authoritative snapshot for technical readiness. Prefer this file over older notes when counts disagree. Warn exceptions: [`FONTSPECTOR-EXCEPTIONS.md`](FONTSPECTOR-EXCEPTIONS.md).
+Authoritative numbers for the current engineering candidate. Prefer this file when docs disagree. Warn policy: [`FONTSPECTOR-EXCEPTIONS.md`](FONTSPECTOR-EXCEPTIONS.md). Positioning: [`ABOUT.md`](ABOUT.md).
 
-## Glyph inventory
+**Not submitted to Google Fonts. Not optically signed off.**
 
-| Metric | Count | Notes |
-| --- | --- | --- |
-| Original release codepoints | **491** | Outline-faithful except intentional figure rebuilds |
-| Intentional figure rebuilds | **38** | `REBUILD_FIGURES` — supers, subs, fractions |
-| Encoded codepoints (shipping) | **698** | Core + Plus + Vietnamese + constructed |
-| Glyphs | **846** | Including unencoded |
+## Inventory (shipping binaries)
+
+| Metric | Count |
+| --- | --- |
+| Original release codepoints | 491 (outline-faithful except 38 intentional figure rebuilds) |
+| Encoded Unicode | **698** |
+| Glyphs | **846** |
+| Static styles | **12** (Regular–Black × upright/italic) |
+| Variable fonts | Upright + italic `wght` 400–900 |
 
 ## Build
 
-- **Public / CI:** `python scripts/build_candidate.py --from-ufo` (committed UFOs; no provenance).
-- Ensures Fontspector via `scripts/ensure_fontspector.py` before overlap hotfix.
-- Packages `ofl/akhilnotes/` (tracked shipping VF pair). Statics land under `fonts/ttf/` locally and are meant for **GitHub Releases**, not duplicate git tracking.
-- Vertical metrics: typo **976 / −530**, win **1140 / 523**.
+- Public: `python scripts/build_candidate.py --from-ufo`  
+- Fontspector ensured before overlap hotfix  
+- Package: `ofl/akhilnotes/`  
+- Statics: `fonts/ttf/` → GitHub Releases / CI artifacts (not duplicate-tracked)  
+- Specimens: `python scripts/make_specimens.py` → `documentation/specimens/`  
 
-## Fontspector (`ofl/akhilnotes` VF pair)
+## Fontspector (VF pair)
 
-```
-FAIL 0 · remaining WARN are documented exceptions (see FONTSPECTOR-EXCEPTIONS.md)
-```
+**FAIL / FATAL / ERROR: 0.** Remaining WARNs are documented exceptions (no `avar` for linear weight; vendor ID pending; handwriting outline direction / overlapping segments; contour_count; math widths; glyphset language auxiliaries; vertical metrics choice).
 
-Interpolation start-point issues on `ellipsis` / `registered` were fixed with **order-only** contour rotates (no outline redesign).
+## Automated QA
 
-## Parity
+| Check | Result |
+| --- | --- |
+| OTS | Pass |
+| Instantiate 400–900 | Pass |
+| Upright/italic glyph, cmap, feature parity | Pass |
+| HarfBuzz feature harness | Pass |
+| Binary hashes | `qa/candidate/hashes.json` |
 
-`scripts/audit_final.py`: OTS; instantiate 400–900 upright+italic; glyph/cmap/feature parity.
+## Human remaining
 
-## Not done without approval
-
-- Google Fonts PR / publish  
-- Vendor ID listing wait  
-- Human optical pass ([`OPTICAL-REVIEW.md`](OPTICAL-REVIEW.md))  
-- Device matrix
+- [ ] Optical review ([`OPTICAL-REVIEW.md`](OPTICAL-REVIEW.md))  
+- [ ] Device matrix  
+- [ ] Vendor ID listing confirmation  
+- [ ] Contributor agreement / GF onboarding steps  
+- [ ] Approval to push release & open google/fonts PR ([`GF-SUBMISSION.md`](GF-SUBMISSION.md))  

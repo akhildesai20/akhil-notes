@@ -13,7 +13,7 @@ After order-only start-point fixes on `ellipsis` / `registered` and overlap-flag
 
 | Check | Decision |
 | --- | --- |
-| `mandatory_avar_table` | No `avar`. Weight progression is linear; an identity avar would only silence the check. **Keep.** |
+| `mandatory_avar_table` | No `avar`. Weight progression is intentionally linear (masters at 400/900). GF guide notes avar is unused for linear axes; Fontspector itself says this WARN can be ignored when no user-mapping is expected. An identity table would only silence the check. **Keep — do not add dummy avar.** |
 | `googlefonts/vendor_id` | `AKHL` registered with Microsoft; listing pending. **Keep until listed.** |
 | `googlefonts/vertical_metrics` | Typo 976/−530 chosen for Ắ / ydotbelow. Win metrics cover Black Â. Not shrunk for ratio aesthetics. **Keep.** |
 | `outline_direction` | Handwriting + constructed `.notdef` / figures may use CCW outers matching provenance. Mass-reversing would redesign ink. **Keep.** |

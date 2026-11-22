@@ -1,61 +1,61 @@
 {
-  "source_commit": "9858467d56dc7c26021aa343d38a3f0b93111041",
+  "source_commit": "110d558b3926cd5be25a4fa9918a3e7cd6705fd3",
   "files": [
     {
       "path": "ofl/akhilnotes/AkhilNotes[wght].ttf",
-      "sha256": "95cdaeb47f6e64066407744f340796301059651315bf83e4dacb691b7b5bff50"
+      "sha256": "6b2bb9d5f4bb7c8d4127f23d3dde7c8f44e58d6daf84503f6caf82d1159a9184"
     },
     {
       "path": "ofl/akhilnotes/AkhilNotes-Italic[wght].ttf",
-      "sha256": "96c944f768b04fa6fdd91df90367f395c600b98109de7b469043511504dc0b87"
+      "sha256": "cc8d13ed2701b1180f3d992071a1f549b914d70fe32bd5b6392a070468a3f7bd"
     },
     {
       "path": "fonts/ttf/AkhilNotes-Black.ttf",
-      "sha256": "f8baa2b92a2120b0ffca073e3da59649965349dc6355616c1c1e1585e3341497"
+      "sha256": "e3aa0f82dfe41cd16c0f8ba0c639e7518e4b63bd0131d6369223cd592f0b5123"
     },
     {
       "path": "fonts/ttf/AkhilNotes-BlackItalic.ttf",
-      "sha256": "cc30106990f02b74e9eeb6d8a85a10aced1d5c300802ef923beeb6ca983b797d"
+      "sha256": "e3e911048f325846736eee682c63b7606712256ddf77a54194421cf1029fca1c"
     },
     {
       "path": "fonts/ttf/AkhilNotes-Bold.ttf",
-      "sha256": "8e5624f83cb61e5cda72fb8c5ef39c4c32a63cb71150fa786be9cefed0817e7c"
+      "sha256": "39b8aa9ef488ea3e4721be6e62b5f49ff1ecdea08b8d4707e81a4fcb8c0514fa"
     },
     {
       "path": "fonts/ttf/AkhilNotes-BoldItalic.ttf",
-      "sha256": "eb48852067c7205def65a43ea3bca155efa7657a974c3d8a518bbd844abeec9a"
+      "sha256": "66aa6f4b70a06b88d367af1dd6d6bdb8b2ba0138c65c3dfb5e08b75a39d3ce98"
     },
     {
       "path": "fonts/ttf/AkhilNotes-ExtraBold.ttf",
-      "sha256": "fe2834225fcde85796454c217a30b2dfde2afa2d2184e671b83f85c3ee2cda93"
+      "sha256": "377b9ba041035d11b5a93e6c7304a2992e91bcbe5343ba13bb44287a77f2d5ab"
     },
     {
       "path": "fonts/ttf/AkhilNotes-ExtraBoldItalic.ttf",
-      "sha256": "b78ee452a8e15c620d203cafe4ff928574f5e914140052272e4607b1d2d2ee4f"
+      "sha256": "467418d9a7a34fe46ad42a8f78bf8b3faab8cbd13122d064d9156947b28a16f8"
     },
     {
       "path": "fonts/ttf/AkhilNotes-Italic.ttf",
-      "sha256": "5329142cff7c33caf61e23fb6ae03cddd5705351f42cc807c9c7cda70a1cc797"
+      "sha256": "bc662837cce8f358c15cb41394b21125addd6ab30cab95b57e7a31c4a809995c"
     },
     {
       "path": "fonts/ttf/AkhilNotes-Medium.ttf",
-      "sha256": "944681dd64bd39de35d8db8897ea4a54cbf812ccae55166c2d20f167425a6358"
+      "sha256": "5fe77a0d0e9ad01fd28443fe59534ad90e5f64f2a7c95e317cb7bf4c845ac7f8"
     },
     {
       "path": "fonts/ttf/AkhilNotes-MediumItalic.ttf",
-      "sha256": "cd475889416eac270fbf28ae2a5571a8d55ee87eea710ca6ca807fead2681008"
+      "sha256": "ed9f56d5533882114b1616abd68676ba27fce479ede7fb276b807c3b31c012f8"
     },
     {
       "path": "fonts/ttf/AkhilNotes-Regular.ttf",
-      "sha256": "e35b5d2cdc058e95305ead06369434c8030bce846a2d016443d340d3105ba32d"
+      "sha256": "1b20dca06349d10a776523cfc6907e9efcc446041440f60af545578623355a55"
     },
     {
       "path": "fonts/ttf/AkhilNotes-SemiBold.ttf",
-      "sha256": "8f96fa40005bbe6048868de754150239617c279f2fa4962d2526ff847be8ece0"
+      "sha256": "07a234c70f830370aee17b44eec5cbb68344a70ab21c8e07b3c8d259ce256868"
     },
     {
       "path": "fonts/ttf/AkhilNotes-SemiBoldItalic.ttf",
-      "sha256": "c00fe2f0130eaed2a1c7eef137de7af528aeb84fa396c9e3129b0eaf948754c1"
+      "sha256": "169da55b537e9a374ca455274bcc61556d12bc67625ccaaead030cc8f40028d5"
     }
   ],
   "note": "ofl/ VF pair is the tracked shipping binary; fonts/ttf is local/CI/Releases."
