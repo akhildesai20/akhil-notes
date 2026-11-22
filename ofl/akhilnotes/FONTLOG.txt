@@ -29,6 +29,8 @@ ChangeLog
 - UFO-only public build; interpolation start-point hygiene (order only).
 - Extended proofs and Google Fonts-facing documentation.
 - Kerning adjustment for w–h spacing.
+- Reserved Font Name declaration removed for Google Fonts onboarding
+  (copyright, family name, and OFL 1.1 body unchanged).
 
 2.100 (21 November 2026)
 - Engineering candidate from the 1.000 release outlines.

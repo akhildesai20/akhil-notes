@@ -14,7 +14,7 @@ TTF uses SHA in `reference/input-sha256.txt`.
 
 ## Packaging
 
-- License: SIL OFL 1.1 (`OFL.txt`); Reserved Font Name **Akhil Notes**
+- License: SIL OFL 1.1 (`OFL.txt`); no Reserved Font Name
 - Copyright: The Akhil Notes Project Authors
   (https://github.com/akhildesai20/akhil-notes)
 - Designer / manufacturer (name IDs 8–10): **Akhil Desai**

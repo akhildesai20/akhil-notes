@@ -423,7 +423,6 @@ def apply_names(font, style, weight, italic, variable, license_str):
         4: f"{family} {style}",
         5: f"Version {VERSION[0]}.{VERSION[1]:03d}",
         6: ps,
-        7: "Akhil Notes is a Reserved Font Name.",
         8: "Akhil Desai",
         9: "Akhil Desai",
         10: description,

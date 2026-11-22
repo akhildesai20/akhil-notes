@@ -139,7 +139,7 @@ Handwriting irregularities are not “bugs.” Optical approval and device testi
 
 ## License
 
-SIL Open Font License 1.1 — see [OFL.txt](OFL.txt). Reserved Font Name: **Akhil Notes**.
+SIL Open Font License 1.1 — see [OFL.txt](OFL.txt). No Reserved Font Name.
 
 Written by hand. Made for everyone.
 
