@@ -1,48 +1,29 @@
-# GF submission preparation — deliverables
+# GF submission preparation — status
 
-Date: 2026-11-22. **Local only — not pushed, not released, not submitted.**
+Updated: 2026-11-22. **Published on GitHub; not submitted to Google Fonts.**
 
-## Positioning (locked copy)
+## Public artifacts
 
-- Core: *The familiarity of handwriting. The convenience of typing.*  
-- Philosophy: *Imperfect in isolation. Beautiful in context.*  
-- Open source: *Written by hand. Made for everyone.*  
-- Long form: [`ABOUT.md`](ABOUT.md)  
-- GF blurb: [`GF-DESCRIPTION.md`](GF-DESCRIPTION.md) / `DESCRIPTION.en_us.html`  
-- PR/issue draft: [`GF-SUBMISSION.md`](GF-SUBMISSION.md)  
-
-## Technical
-
-| Item | Decision / result |
+| Artifact | Location |
 | --- | --- |
-| `ellipsis` / `registered` interpolation | Order-only start fixes (already landed); no redesign |
-| Identity `avar` | **Not added** — linear `wght`; GF/Fontspector allow ignoring missing avar |
-| Overlap bits | Hotfix after `ensure_fontspector` |
-| Fontspector | **FAIL 0**, WARN 18 — [`FONTSPECTOR-EXCEPTIONS.md`](FONTSPECTOR-EXCEPTIONS.md) |
-| Counts | 698 encoded / 846 glyphs / 12 statics / VF pair |
+| Source | https://github.com/akhildesai20/akhil-notes |
+| Release v2.101 | https://github.com/akhildesai20/akhil-notes/releases/tag/v2.101 |
+| CI | https://github.com/akhildesai20/akhil-notes/actions/workflows/build.yml |
+| Narrative | [`ABOUT.md`](ABOUT.md) |
+| GF blurb | [`GF-DESCRIPTION.md`](GF-DESCRIPTION.md) / `DESCRIPTION.en_us.html` |
+| PR draft | [`GF-SUBMISSION.md`](GF-SUBMISSION.md) |
+| Specimens | `documentation/specimens/` only |
 
-## Specimens generated (actual binaries)
+## Technical (unchanged design)
 
-Under `documentation/specimens/` (also mirrored where useful into `qa/proofs/`):
+| Item | Status |
+| --- | --- |
+| Interpolation order fixes | Landed |
+| Identity `avar` | Not added (linear `wght`) |
+| Fontspector | FAIL 0; WARN 18 ceiling documented |
+| Vendor ID | Registration requested; confirmation pending |
+| Counts | 698 encoded / 846 glyphs / 12 statics |
 
-01 hero · 02 paragraph · 03 waterfall sizes · 04 weight ramp · 05 upright/italic · 06 coverage · 07 multilingual · 08 applications · 09 kern/liga · 10 interpolation · 11 constructed  
+## Left for the designer
 
-No fabricated notebook photographs (section omitted until you provide them).
-
-## README
-
-Specimen-led README with narrative, downloads, badges, install, build, QA pointers.
-
-## Retained / removed / generated (this pass)
-
-**Generated:** specimen PNGs, refreshed ofl DESCRIPTION/FONTLOG copies, QA hashes as applicable.  
-**Updated docs:** ABOUT, GF-DESCRIPTION, GF-SUBMISSION, RELEASE-STATUS, HUMAN-REVIEW, FONTSPECTOR-EXCEPTIONS, FONTLOG, DESCRIPTION.en_us.html, README.  
-**Not deleted:** UFO masters, designspace, features, build scripts, OFL, provenance checksum reference.  
-
-## Validation
-
-- `--from-ufo` build · `audit_final` · `qa_features` · Fontspector FAIL 0  
-
-## Left for you
-
-Optical approval · devices · vendor listing · CLA · **approval to push / release / open GF PR**  
+Optical approval · devices · vendor confirmation · CLA · **approval to open google/fonts PR**  

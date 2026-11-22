@@ -6,7 +6,7 @@ These are not approved. Codepoints refer to the candidate Regular at `fonts/ttf/
 
 These were not in the original release. They are built from the handwritten stems and letters. Review them against the rest of the hand before calling the set finished.
 
-Look at `qa/proofs/focus-symbols-regular.png` and `qa/proofs/added-glyphs-regular.png` (and the Black and Italic sheets beside them).
+Look at `qa/proofs/focus-symbols-regular.png` and `documentation/specimens/11-constructed.png`.
 
 | Priority | Codepoints | What to look at |
 | --- | --- | --- |

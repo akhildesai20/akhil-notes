@@ -23,7 +23,11 @@ jobs:
       - name: Ensure Fontspector (before hotfix-dependent build)
         env:
           PYTHONUTF8: "1"
-        run: python scripts/ensure_fontspector.py
+        run: |
+          set -euo pipefail
+          python scripts/ensure_fontspector.py
+          # FONTSPECTOR_BIN / GITHUB_PATH are set for subsequent steps by the script.
+          echo "FONTSPECTOR_BIN (this step may be empty until next step): ${FONTSPECTOR_BIN:-}"
 
       - name: Compile from committed UFOs (no provenance)
         env:
@@ -47,17 +51,38 @@ jobs:
 
       - name: Fontspector googlefonts profile on VF pair
         working-directory: ofl/akhilnotes
+        env:
+          PYTHONUTF8: "1"
         run: |
-          fontspector -p googlefonts --skip-network \
+          set -euo pipefail
+          FS_BIN="${FONTSPECTOR_BIN:-}"
+          if [ -z "$FS_BIN" ] || [ ! -x "$FS_BIN" ]; then
+            FS_BIN="$(command -v fontspector)"
+          fi
+          if [ -z "$FS_BIN" ] || [ ! -x "$FS_BIN" ]; then
+            echo "Fontspector executable not found (FONTSPECTOR_BIN / PATH)" >&2
+            exit 127
+          fi
+          echo "Using Fontspector: $FS_BIN"
+          "$FS_BIN" --version
+          "$FS_BIN" -p googlefonts --skip-network \
             --json ../../qa/fontspector/googlefonts.json \
             --ghmarkdown ../../qa/fontspector/googlefonts.md \
             "AkhilNotes[wght].ttf" "AkhilNotes-Italic[wght].ttf"
           python - <<'PY'
           import json, sys
           from pathlib import Path
-          s = json.loads(Path("../../qa/fontspector/googlefonts.json").read_text())["summary"]
+          s = json.loads(Path("../../qa/fontspector/googlefonts.json").read_text(encoding="utf-8"))["summary"]
           print(s)
+          warn = int(s.get("WARN", 0) or 0)
+          Path("../../qa/fontspector/ci-summary.json").write_text(
+              json.dumps({"summary": s, "expected_warn_ceiling": 18}, indent=2) + "\n",
+              encoding="utf-8",
+          )
           if s.get("FAIL", 0) or s.get("FATAL", 0) or s.get("ERROR", 0):
+              sys.exit(1)
+          if warn > 18:
+              print(f"WARN count {warn} exceeds documented ceiling 18", file=sys.stderr)
               sys.exit(1)
           PY
 
@@ -72,3 +97,14 @@ jobs:
         with:
           name: akhil-notes-ofl
           path: ofl/akhilnotes/
+
+      - name: Upload Fontspector reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: akhil-notes-fontspector
+          path: |
+            qa/fontspector/googlefonts.json
+            qa/fontspector/googlefonts.md
+            qa/fontspector/ci-summary.json
+            qa/candidate/hashes.json

@@ -79,9 +79,26 @@ def ensure_fontspector(*, download: bool = True) -> Path:
     return found
 
 
+def export_github_path(executable: Path) -> None:
+    """Make Fontspector visible to later GitHub Actions steps via GITHUB_PATH."""
+    github_path = os.environ.get("GITHUB_PATH")
+    if not github_path:
+        return
+    bindir = str(executable.resolve().parent)
+    with open(github_path, "a", encoding="utf-8") as fh:
+        fh.write(bindir + "\n")
+    print(f"Added to GITHUB_PATH: {bindir}", flush=True)
+
+
 def main() -> None:
-    path = ensure_fontspector(download=True)
+    path = ensure_fontspector(download=True).resolve()
+    export_github_path(path)
+    # Absolute path on stdout for workflows that prefer FONTSPECTOR_BIN.
     print(path)
+    github_env = os.environ.get("GITHUB_ENV")
+    if github_env:
+        with open(github_env, "a", encoding="utf-8") as fh:
+            fh.write(f"FONTSPECTOR_BIN={path}\n")
 
 
 if __name__ == "__main__":

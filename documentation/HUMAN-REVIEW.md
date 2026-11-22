@@ -11,7 +11,7 @@ Not automated. Leave these to the designer before Google Fonts submission.
 
 ## Process / legal
 
-- [ ] Microsoft vendor ID `AKHL` listing confirmed  
+- [ ] Microsoft vendor ID `AKHL` — registration requested; confirmation pending → confirm listing  
 - [ ] Contributor agreement / GF onboarding forms  
 - [ ] Approve push of local commits & GitHub Release  
 - [ ] Approve google/fonts PR using [`GF-SUBMISSION.md`](GF-SUBMISSION.md)  

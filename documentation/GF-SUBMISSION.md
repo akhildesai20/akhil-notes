@@ -36,5 +36,5 @@ Akhil Notes began as a deeply personal project. By making it freely available, I
 ## Engineering notes for reviewers
 
 - Public build: `python scripts/build_candidate.py --from-ufo` (no private provenance required).  
-- Fontspector googlefonts profile on the packaged VF pair: **FAIL 0**; remaining WARNs are documented in `FONTSPECTOR-EXCEPTIONS.md` (handwriting outlines, linear `wght` without `avar`, vendor ID pending, intentional glyphset scope).  
+- Fontspector googlefonts profile on the packaged VF pair: **FAIL 0**; remaining WARNs are documented in `FONTSPECTOR-EXCEPTIONS.md` (intentional handwriting characteristics vs accepted technical limitations; vendor ID registration requested, confirmation pending).  
 - Package path: `ofl/akhilnotes/`.  

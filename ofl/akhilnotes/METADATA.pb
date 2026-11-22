@@ -1,4 +1,4 @@
-﻿name: "Akhil Notes"
+name: "Akhil Notes"
 designer: "Akhil Desai"
 license: "OFL"
 category: "HANDWRITING"
@@ -31,7 +31,7 @@ axes {
 }
 source {
   repository_url: "https://github.com/akhildesai20/akhil-notes"
-  commit: "27d61c367d47583438a89e1012ce6911bb3d6d37"
+  commit: "1fab26f71628300578ad3454ccb6c7f99540aa0c"
   files {
     source_file: "OFL.txt"
     dest_file: "OFL.txt"

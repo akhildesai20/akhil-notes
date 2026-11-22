@@ -9,14 +9,12 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "documentation" / "specimens"
-PROOFS = ROOT / "qa" / "proofs"
+OUT = ROOT / "documentation" / "specimens"  # canonical specimen location (README)
 VF = ROOT / "fonts" / "variable" / "AkhilNotes[wght].ttf"
 VF_IT = ROOT / "fonts" / "variable" / "AkhilNotes-Italic[wght].ttf"
 REG = ROOT / "fonts" / "ttf" / "AkhilNotes-Regular.ttf"
 TMP = OUT / "_tmp"
 OUT.mkdir(parents=True, exist_ok=True)
-PROOFS.mkdir(parents=True, exist_ok=True)
 TMP.mkdir(parents=True, exist_ok=True)
 
 BG = (252, 250, 247)
@@ -76,11 +74,9 @@ def canvas(width: int, height: int) -> tuple[Image.Image, ImageDraw.ImageDraw]:
     return img, ImageDraw.Draw(img)
 
 
-def save(img: Image.Image, name: str, also_proofs: bool = True) -> None:
+def save(img: Image.Image, name: str) -> None:
     path = OUT / name
     img.save(path, optimize=True)
-    if also_proofs:
-        img.save(PROOFS / name, optimize=True)
     print("wrote", path.relative_to(ROOT))
 
 
@@ -138,7 +134,6 @@ def sheet_waterfall() -> None:
         img.paste(r, (0, y))
         y += r.height
     save(img, "03-waterfall-sizes.png")
-    img.save(PROOFS / "waterfall-regular.png", optimize=True)
 
 
 def sheet_weights() -> None:
@@ -152,7 +147,6 @@ def sheet_weights() -> None:
         draw.text((72, y), sample.format(w=w), font=font, fill=INK)
         y += 110
     save(img, "04-weight-ramp.png")
-    img.save(PROOFS / "weight-ramp.png", optimize=True)
 
 
 def sheet_italic() -> None:
@@ -213,7 +207,6 @@ def sheet_multilingual() -> None:
         draw.text((160, y), text, font=body, fill=INK)
         y += 90
     save(img, "07-multilingual.png")
-    img.save(PROOFS / "multilingual.png", optimize=True)
 
 
 def sheet_applications() -> None:
@@ -250,8 +243,6 @@ def sheet_kern_liga() -> None:
     draw.text((72, 320), "fi fl  ·  ct st th  ·  1/2 3/4", font=body, fill=INK)
     draw.text((72, 420), "Tabular: 0123456789    Default: 0123456789", font=body, fill=INK)
     save(img, "09-kern-liga.png")
-    img.save(PROOFS / "ligatures-Regular.png", optimize=True)
-    img.save(PROOFS / "ligatures-spacing.png", optimize=True)
 
 
 def sheet_interp() -> None:
@@ -276,7 +267,6 @@ def sheet_constructed() -> None:
     draw.text((72, 120), "ÆæŒœÐðÞþØøẞß§¶", font=body, fill=INK)
     draw.text((72, 240), "₦₩₪₫₹₺₿  ①☑☒✓✗", font=body, fill=INK)
     save(img, "11-constructed.png")
-    img.save(PROOFS / "constructed-set.png", optimize=True)
 
 
 def main() -> None:
@@ -293,8 +283,6 @@ def main() -> None:
     sheet_kern_liga()
     sheet_interp()
     sheet_constructed()
-    # Refresh a few classic proof names used by docs
-    sheet_paragraph()  # already saved
     print("specimens complete:", len(list(OUT.glob("*.png"))))
 
 

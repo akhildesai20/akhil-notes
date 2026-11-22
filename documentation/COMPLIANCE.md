@@ -16,4 +16,4 @@ OFL 1.1; copyright Project Authors + https://github.com/akhildesai20/akhil-notes
 
 ## License
 
-See `OFL.txt`. Reserved Font Name: **Akhil Notes**. Vendor registration emailed; listing pending ([`LICENSE-STATUS.md`](LICENSE-STATUS.md) one-liner).
+See `OFL.txt`. Reserved Font Name: **Akhil Notes**. Vendor ID `AKHL`: registration requested; confirmation pending ([`LICENSE-STATUS.md`](LICENSE-STATUS.md)).
