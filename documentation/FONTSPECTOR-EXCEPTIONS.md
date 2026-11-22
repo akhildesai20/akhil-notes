@@ -28,6 +28,7 @@ Engineering or process constraints that are correct for this family, not design 
 | `googlefonts/vendor_id` | Vendor ID `AKHL`. Registration requested; confirmation pending. **Keep until Microsoft lists it.** |
 | `googlefonts/vertical_metrics` | Typo 976/−530 chosen for Ắ / ydotbelow. Win metrics cover Black Â. Not shrunk for ratio aesthetics. **Keep.** |
 | `googlefonts/glyphsets/shape_languages` | Auxiliaries outside Core / Plus / Vietnamese intentionally omitted. **Keep.** |
+| `googlefonts/metadata/unreachable_subsetting` | Spacing / mark glyphs declared for subsets in METADATA but not mapped as typical letters. Expected for this inventory. **Keep.** |
 
 ## Resolved earlier (order-only / flags)
 

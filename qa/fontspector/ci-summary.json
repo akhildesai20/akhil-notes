@@ -1,0 +1,9 @@
+{
+  "summary": {
+    "SKIP": 95,
+    "PASS": 247,
+    "INFO": 22,
+    "WARN": 18
+  },
+  "expected_warn_ceiling": 18
+}

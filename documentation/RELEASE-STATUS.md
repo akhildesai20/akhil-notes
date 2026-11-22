@@ -1,6 +1,6 @@
 # Akhil Notes — release status
 
-Authoritative numbers for the public repository. Prefer this file when docs disagree.
+Authoritative numbers for the public repository after a **successful** CI run.
 
 Warn policy: [`FONTSPECTOR-EXCEPTIONS.md`](FONTSPECTOR-EXCEPTIONS.md)  
 Positioning: [`ABOUT.md`](ABOUT.md)  
@@ -11,8 +11,9 @@ Positioning: [`ABOUT.md`](ABOUT.md)
 | Item | Value |
 | --- | --- |
 | Repository | https://github.com/akhildesai20/akhil-notes |
+| `main` HEAD (CI green) | `f9bd81f` |
+| CI run | https://github.com/akhildesai20/akhil-notes/actions/runs/45000874359 (**success**) |
 | Release | [v2.101](https://github.com/akhildesai20/akhil-notes/releases/tag/v2.101) |
-| CI | [Build workflow](https://github.com/akhildesai20/akhil-notes/actions/workflows/build.yml) |
 | Package | `ofl/akhilnotes/` |
 | Specimens (canonical) | `documentation/specimens/` |
 
@@ -29,29 +30,41 @@ Positioning: [`ABOUT.md`](ABOUT.md)
 ## Build
 
 - Public: `python scripts/build_candidate.py --from-ufo`  
-- Fontspector via `scripts/ensure_fontspector.py` (exports `GITHUB_PATH` / `FONTSPECTOR_BIN` in CI)  
-- Statics: GitHub Releases / CI artifacts (not duplicate-tracked in git)  
-- Specimens: `python scripts/make_specimens.py` → `documentation/specimens/` only  
+- Fontspector: `scripts/ensure_fontspector.py` exports `GITHUB_PATH` + `FONTSPECTOR_BIN` for later CI steps  
+- Statics: GitHub Releases / CI artifacts  
+- Specimens: `documentation/specimens/` only (no duplicate mirror in `qa/proofs/`)  
 
-## Fontspector (VF pair)
+## Fontspector (CI VF pair)
 
-**FAIL / FATAL / ERROR: 0.** Documented WARN ceiling: **18** (both faces). See CI artifact `akhil-notes-fontspector` and `qa/fontspector/googlefonts.json` after a green run.
+From run `45000874359` / `qa/fontspector/googlefonts.json`:
 
-## Automated QA
+```
+SKIP 95  INFO 22  PASS 247  WARN 18  FAIL 0  FATAL 0  ERROR 0
+```
 
-| Check | Expected |
+All 18 WARN subresults are listed in [`FONTSPECTOR-EXCEPTIONS.md`](FONTSPECTOR-EXCEPTIONS.md) as either intentional handwriting characteristics or accepted technical limitations (including family-level `unreachable_subsetting`).
+
+## Automated QA (same CI run)
+
+| Check | Result |
 | --- | --- |
-| OTS | Pass |
-| Instantiate 400–900 | Pass |
-| Upright/italic parity | Pass |
+| Ensure Fontspector | Pass |
+| UFO compile + package | Pass |
+| OTS + instantiate + parity | Pass |
 | HarfBuzz features | Pass |
-| Hashes | `qa/candidate/hashes.json` (commit + ofl VF + local statics when present) |
-| METADATA.pb `source.commit` | Matches the commit that produced the packaged tree |
+| Fontspector googlefonts | Pass (FAIL 0; WARN 18 ≤ ceiling) |
+| Artifacts | statics, ofl package, fontspector reports |
+
+## Metadata / hashes
+
+- `ofl/akhilnotes/METADATA.pb` `source.commit` → content commit `0a693d9…` (maintenance); tip `f9bd81f` syncs hashes pointer.  
+- `qa/candidate/hashes.json` refreshed from CI artifact / local write.  
+- Release v2.101 ships statics + ofl + webfonts; rebuild ofl from `main` matches CI artifact `akhil-notes-ofl`.
 
 ## Human remaining
 
 - [ ] Optical review ([`OPTICAL-REVIEW.md`](OPTICAL-REVIEW.md))  
 - [ ] Device matrix  
-- [ ] Vendor ID confirmation (registration requested; confirmation pending)  
+- [ ] Vendor ID — registration requested; confirmation pending  
 - [ ] Contributor agreement / GF onboarding  
 - [ ] Approval to open a google/fonts PR ([`GF-SUBMISSION.md`](GF-SUBMISSION.md))  

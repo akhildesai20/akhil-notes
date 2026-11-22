@@ -32,6 +32,7 @@ fonts/webfonts/
 qa/baseline/
 qa/artifacts/
 qa/fontspector/tmp/
+qa/fontspector/ci-download/
 qa/fontspector/interpolation-recheck.json
 qa/fontspector/overlaps-full.json
 qa/fontspector/ci.json
