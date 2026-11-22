@@ -108,3 +108,4 @@ jobs:
             qa/fontspector/googlefonts.md
             qa/fontspector/ci-summary.json
             qa/candidate/hashes.json
+          # Full Fontspector JSON/MD are CI artifacts only (gitignored in the tree).

@@ -120,7 +120,8 @@ Fontspector is installed automatically when the overlap-flag hotfix needs it (`s
 | --- | --- |
 | `ofl/akhilnotes/` | Shipping VF pair + metadata (tracked) |
 | `fonts/ttf/` | Static instances (local / Releases; not git-tracked) |
-| `documentation/specimens/` | Regenerated with `scripts/make_specimens.py` |
+| `documentation/specimens/` | Presentation placeholders (`scripts/make_specimens.py`) |
+| `documentation/proofs/` | Technical FreeType proofs for design review |
 
 ---
 
@@ -147,4 +148,5 @@ Written by hand. Made for everyone.
 
 - Designer: [Akhil Desai](https://www.instagram.com/akhilius_)  
 - Source: https://github.com/akhildesai20/akhil-notes  
-- Story & submission draft: [`documentation/ABOUT.md`](documentation/ABOUT.md), [`documentation/GF-SUBMISSION.md`](documentation/GF-SUBMISSION.md)  
+- Story & submission draft: [`documentation/ABOUT.md`](documentation/ABOUT.md), [`documentation/GF-SUBMISSION.md`](documentation/GF-SUBMISSION.md)
+- Docs map & attribution: [`documentation/COMPLIANCE.md`](documentation/COMPLIANCE.md)  

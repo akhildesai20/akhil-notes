@@ -258,17 +258,6 @@ def sheet_interp() -> None:
     save(img, "10-interpolation.png")
 
 
-def sheet_constructed() -> None:
-    path = REG if REG.exists() else instance(400)
-    img, draw = canvas(1400, 420)
-    lab = load_font(path, 22)
-    body = load_font(path, 48)
-    draw.text((72, 40), "Constructed & utility set", font=lab, fill=MUTED)
-    draw.text((72, 120), "ÆæŒœÐðÞþØøẞß§¶", font=body, fill=INK)
-    draw.text((72, 240), "₦₩₪₫₹₺₿  ①☑☒✓✗", font=body, fill=INK)
-    save(img, "11-constructed.png")
-
-
 def main() -> None:
     if not VF.exists():
         raise SystemExit(f"Missing {VF}; run scripts/build_candidate.py --from-ufo first")
@@ -282,7 +271,6 @@ def main() -> None:
     sheet_applications()
     sheet_kern_liga()
     sheet_interp()
-    sheet_constructed()
     print("specimens complete:", len(list(OUT.glob("*.png"))))
 
 

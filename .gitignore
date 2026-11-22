@@ -36,12 +36,18 @@ qa/fontspector/ci-download/
 qa/fontspector/interpolation-recheck.json
 qa/fontspector/overlaps-full.json
 qa/fontspector/ci.json
+qa/fontspector/googlefonts.md
+qa/fontspector/googlefonts.json
 qa/candidate/fontmake.log
 qa/candidate/compile-report.json
 qa/candidate/start-point-fixes.json
 qa/candidate/overlap-flag-fixes.json
+qa/candidate/audit.json
+qa/candidate/qa.json
+qa/candidate/source-report.json
 qa/build.log
 qa/proof_*.py
+qa/proofs/
 
 # Build caches / specimen temps / release zip staging
 master_ufo/

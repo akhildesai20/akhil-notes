@@ -6,7 +6,7 @@ These are not approved. Codepoints refer to the candidate Regular at `fonts/ttf/
 
 These were not in the original release. They are built from the handwritten stems and letters. Review them against the rest of the hand before calling the set finished.
 
-Look at `qa/proofs/focus-symbols-regular.png` and `documentation/specimens/11-constructed.png`.
+Look at `documentation/proofs/focus-symbols-regular.png`.
 
 | Priority | Codepoints | What to look at |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Checkboxes U+2610 and U+2611 are already in the release and were not redrawn.
 
 ## 2. Accents that stayed yours
 
-`qa/proofs/accent-preservation.png` shows the release, the 2.000 rebuild, and this candidate. The candidate matches the release on the accents that were already drawn. The 2.000 build replaced those with new marks. That replacement is undone here.
+`documentation/proofs/accent-preservation.png` shows the release, the 2.000 rebuild, and this candidate. The candidate matches the release on the accents that were already drawn. The 2.000 build replaced those with new marks. That replacement is undone here.
 
 Still look at clearance yourself, especially:
 
@@ -36,7 +36,7 @@ Repeated-letter rotations of about 1.6° were removed from the font. They are no
 
 ## 4. Kerning
 
-Kerning is on by default. Pairs that the old generator pinned at −75 were removed. Other negative pairs are capped at −50. `qa/proofs/texture-kern-compare.png` compares the release (no kerning), the 2.000 build, and this candidate with kerning on and off. On the sentence "The way I write, wherever I type." the candidate with kerning is 375 units shorter than with kerning off. That is a mild tighten, not a finished kerning pass. Accented capitals whose sidebearings differ from the base letter are listed in `qa/candidate/source-report.json` under `accented_kerning_excluded` and are not in the class.
+Kerning is on by default. Pairs that the old generator pinned at −75 were removed. Other negative pairs are capped at −50. `documentation/proofs/texture-kern-compare.png` compares the release (no kerning), the 2.000 build, and this candidate with kerning on and off. On the sentence "The way I write, wherever I type." the candidate with kerning is 375 units shorter than with kerning off. That is a mild tighten, not a finished kerning pass. Accented capitals whose sidebearings differ from the base letter enough to break class kerning are excluded from the shared class at build time.
 
 ## 5. Shaping compromises
 

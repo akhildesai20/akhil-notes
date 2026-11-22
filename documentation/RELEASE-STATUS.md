@@ -16,7 +16,8 @@ Positioning: [`ABOUT.md`](ABOUT.md)
 | Prior green | https://github.com/akhildesai20/akhil-notes/actions/runs/45000874359 |
 | Release | [v2.101](https://github.com/akhildesai20/akhil-notes/releases/tag/v2.101) |
 | Package | `ofl/akhilnotes/` |
-| Specimens (canonical) | `documentation/specimens/` |
+| Specimens (presentation) | `documentation/specimens/` |
+| Technical proofs | `documentation/proofs/` |
 
 ## Inventory (shipping binaries)
 
@@ -30,20 +31,23 @@ Positioning: [`ABOUT.md`](ABOUT.md)
 
 ## Build
 
-- Public: `python scripts/build_candidate.py --from-ufo`  
-- Fontspector: `scripts/ensure_fontspector.py` exports `GITHUB_PATH` + `FONTSPECTOR_BIN` for later CI steps  
-- Statics: GitHub Releases / CI artifacts  
-- Specimens: `documentation/specimens/` only (no duplicate mirror in `qa/proofs/`)  
+- Public: `python scripts/build_candidate.py --from-ufo`
+- Fontspector: `scripts/ensure_fontspector.py` exports `GITHUB_PATH` + `FONTSPECTOR_BIN`
+- Statics: GitHub Releases / CI artifacts (not tracked under `fonts/`)
+- Specimens: `documentation/specimens/` · Proofs: `documentation/proofs/`
 
 ## Fontspector (CI VF pair)
 
-From run `45000874359` / `qa/fontspector/googlefonts.json`:
+From run `45000874359` / `qa/fontspector/ci-summary.json`:
 
 ```
 SKIP 95  INFO 22  PASS 247  WARN 18  FAIL 0  FATAL 0  ERROR 0
 ```
 
-All 18 WARN subresults are listed in [`FONTSPECTOR-EXCEPTIONS.md`](FONTSPECTOR-EXCEPTIONS.md) as either intentional handwriting characteristics or accepted technical limitations (including family-level `unreachable_subsetting`).
+All 18 WARN subresults are listed in [`FONTSPECTOR-EXCEPTIONS.md`](FONTSPECTOR-EXCEPTIONS.md)
+as either intentional handwriting characteristics or accepted technical limitations
+(including family-level `unreachable_subsetting`). Full JSON/Markdown reports are
+CI artifacts (regenerated each run; not retained as source-of-truth docs).
 
 ## Automated QA (same CI run)
 
@@ -58,14 +62,16 @@ All 18 WARN subresults are listed in [`FONTSPECTOR-EXCEPTIONS.md`](FONTSPECTOR-E
 
 ## Metadata / hashes
 
-- `ofl/akhilnotes/METADATA.pb` `source.commit` → content commit `0a693d9…` (maintenance); tip `f9bd81f` syncs hashes pointer.  
-- `qa/candidate/hashes.json` refreshed from CI artifact / local write.  
-- Release v2.101 ships statics + ofl + webfonts; rebuild ofl from `main` matches CI artifact `akhil-notes-ofl`.
+- `ofl/akhilnotes/METADATA.pb` `source.commit` tracks the content commit at package time
+- `qa/candidate/hashes.json` refreshed by `scripts/write_hashes.py` / CI
+- Release v2.101 ships statics + ofl + webfonts; rebuild ofl from `main` matches CI artifact `akhil-notes-ofl`
 
 ## Human remaining
 
-- [ ] Optical review ([`OPTICAL-REVIEW.md`](OPTICAL-REVIEW.md))  
-- [ ] Device matrix  
-- [ ] Vendor ID — registration requested; confirmation pending  
-- [ ] Contributor agreement / GF onboarding  
-- [ ] Approval to open a google/fonts PR ([`GF-SUBMISSION.md`](GF-SUBMISSION.md))  
+See [`HUMAN-REVIEW.md`](HUMAN-REVIEW.md). Summary:
+
+- [ ] Optical review of constructed set
+- [ ] Device matrix
+- [ ] Vendor ID — registration requested; confirmation pending
+- [ ] Contributor agreement / GF onboarding
+- [ ] Approval to open a google/fonts PR ([`GF-SUBMISSION.md`](GF-SUBMISSION.md))
