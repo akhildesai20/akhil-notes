@@ -41,9 +41,9 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4097 and http
 * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
 * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, tifinagh, coptic
 * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-* U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, coptic, hebrew, old-permic, duployan, math, malayalam, tai-le, tifinagh, todhri, syriac
+* U+0307 COMBINING DOT ABOVE: try adding one of: duployan, syriac, tai-le, tifinagh, coptic, todhri, math, canadian-aboriginal, malayalam, old-permic, hebrew
 * U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
-* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
 * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 ... and 136 others
 
@@ -59,9 +59,9 @@ Or you can add the above codepoints to one of the subsets supported by the font:
 * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
 * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, tifinagh, coptic
 * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-* U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, coptic, hebrew, old-permic, duployan, math, malayalam, tai-le, tifinagh, todhri, syriac
+* U+0307 COMBINING DOT ABOVE: try adding one of: duployan, syriac, tai-le, tifinagh, coptic, todhri, math, canadian-aboriginal, malayalam, old-permic, hebrew
 * U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
-* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
 * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 ... and 136 others
 
@@ -77,7 +77,7 @@ Or you can add the above codepoints to one of the subsets supported by the font:
 </details>
 
 
-<details><summary>[9] AkhilNotes[wght].ttf</summary>
+<details><summary>[8] AkhilNotes[wght].ttf</summary>
 <div>
 
 
@@ -122,35 +122,6 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 * semicolon (U+003B): found 4, expected one of: [2, 6]
 * quotedbl (U+0022): found 4, expected one of: [2, 6]
 ... and 53 others [code: contour-count]
-  
-  
-
-</div>
-</details>
-
-
-
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Detect any interpolation issues in the font. (interpolation_issues)</summary>
-    <div>
-
-
-> When creating a variable font, the designer must make sure that corresponding paths have the same start points across masters, as well as that corresponding component shapes are placed in the same order within a glyph across masters. If this is not done, the glyph will not interpolate correctly.
-> 
-> Here we check for the presence of potential interpolation errors using the interpolatable crate.
-
-
-
-
-Original proposal: [https://github.com/fonttools/fontbakery/issues/3930]
-
-
-
-
-
-- ⚠️ **WARN** Interpolation issue in registered: Contour 5 becomes underweight in wght=900 compared to default [code: interpolation-issue]
   
   
 
@@ -210,17 +181,17 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 
 
-- ⚠️ **WARN** The most common width is 730 among a set of 18  math glyphs.
+- ⚠️ **WARN** The most common width is 644 among a set of 18  math glyphs.
 The following math glyphs have a different width, though:
-width=574: greaterequal
-width=451: multiply, greater
-width=661: plusminus
+width=451: greater, multiply
 width=512: divide, minus
-width=605: uni223C
+width=679: notequal, equal, uni2262
+width=730: uni2252, uni2243, congruent
 width=731: approxequal
-width=679: notequal, uni2262, equal
-width=469: logicalnot
-width=644: lessequal, less, plus [code: width-outliers]
+width=605: uni223C
+width=574: greaterequal
+width=661: plusminus
+width=469: logicalnot [code: width-outliers]
   
   
 
@@ -251,6 +222,14 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 
 | Message                                                           | Languages                    |
 |-------------------------------------------------------------------|------------------------------|
+| Auxiliary orthography codepoints:                                 | * nl_Latn (Dutch)            |
+|   The following auxiliary characters are missing from the font: Ĳ |                              |
+|   The following auxiliary characters are missing from the font: ĳ |                              |
+| Auxiliary orthography codepoints:                                 | * da_Latn (Danish)           |
+|   The following auxiliary characters are missing from the font: Ǿ |                              |
+|   The following auxiliary characters are missing from the font: ǿ |                              |
+| Auxiliary orthography codepoints:                                 | * en_Latn (English)          |
+|   The following auxiliary characters are missing from the font: ʻ |                              |
 | Auxiliary orthography codepoints:                                 | * ca_Latn (Catalan)          |
 |   The following auxiliary characters are missing from the font: Ŀ |                              |
 |   The following auxiliary characters are missing from the font: ŀ |                              |
@@ -269,15 +248,7 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: Ŋ |                              |
 |   The following auxiliary characters are missing from the font: Ŧ |                              |
 |   The following auxiliary characters are missing from the font: ŋ |                              |
-|   The following auxiliary characters are missing from the font: ŧ |                              |
-| Auxiliary orthography codepoints:                                 | * da_Latn (Danish)           |
-|   The following auxiliary characters are missing from the font: Ǿ |                              |
-|   The following auxiliary characters are missing from the font: ǿ |                              |
-| Auxiliary orthography codepoints:                                 | * en_Latn (English)          |
-|   The following auxiliary characters are missing from the font: ʻ |                              |
-| Auxiliary orthography codepoints:                                 | * nl_Latn (Dutch)            |
-|   The following auxiliary characters are missing from the font: Ĳ |                              |
-|   The following auxiliary characters are missing from the font: ĳ |                              | [code: warning-language-shaping]
+|   The following auxiliary characters are missing from the font: ŧ |                              | [code: warning-language-shaping]
   
   
 
@@ -435,7 +406,7 @@ Original proposal: [https://github.com/fonttools/fontbakery/pull/3762 and https:
 </details>
 
 
-<details><summary>[10] AkhilNotes-Italic[wght].ttf</summary>
+<details><summary>[8] AkhilNotes-Italic[wght].ttf</summary>
 <div>
 
 
@@ -480,40 +451,6 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/4829]
 * semicolon (U+003B): found 4, expected one of: [2, 6]
 * quotedbl (U+0022): found 4, expected one of: [2, 6]
 ... and 53 others [code: contour-count]
-  
-  
-
-</div>
-</details>
-
-
-
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Detect any interpolation issues in the font. (interpolation_issues)</summary>
-    <div>
-
-
-> When creating a variable font, the designer must make sure that corresponding paths have the same start points across masters, as well as that corresponding component shapes are placed in the same order within a glyph across masters. If this is not done, the glyph will not interpolate correctly.
-> 
-> Here we check for the presence of potential interpolation errors using the interpolatable crate.
-
-
-
-
-Original proposal: [https://github.com/fonttools/fontbakery/issues/3930]
-
-
-
-
-
-- ⚠️ **WARN** Interpolation issue in ellipsis: Wrong start point: contour 1 should start at 13 in wght=900 [code: interpolation-issue]
-  
-  
-
-
-- ⚠️ **WARN** Interpolation issue in ellipsis: Wrong start point: contour 3 should start at 13 in wght=900 [code: interpolation-issue]
   
   
 
@@ -573,57 +510,17 @@ Original proposal: [https://github.com/fonttools/fontbakery/issues/3832]
 
 
 
-- ⚠️ **WARN** The most common width is 754 among a set of 18  math glyphs.
+- ⚠️ **WARN** The most common width is 719 among a set of 18  math glyphs.
 The following math glyphs have a different width, though:
-width=649: greaterequal
-width=605: uni223C
-width=806: approxequal
 width=587: divide, minus
-width=719: less, lessequal, plus
-width=730: uni2243, uni2252, congruent
+width=730: uni2243, congruent, uni2252
+width=526: greater, multiply
+width=605: uni223C
 width=736: plusminus
-width=473: logicalnot
-width=526: multiply, greater [code: width-outliers]
-  
-  
-
-</div>
-</details>
-
-
-
-
-
-<details>
-    <summary>⚠️ <b>WARN</b> Ensure font has overlaps bit set correctly. (overlaps_bit)</summary>
-    <div>
-
-
-> Fonts whose glyphs contain overlapping paths should have the overlaps bit set correctly to avoid rendering errors. (See for example https://github.com/google/fonts/issues/11120)
-> 
-> This should normally be done by the font compiler, but some compilers do not correctly set the bit.
-
-
-
-
-Original proposal: [https://github.com/googlefonts/gftools/pulls/965]
-
-
-
-
-
-- ⚠️ **WARN** The following glyphs have overlaps but the overlaps bit is not set:
-* plusminus (U+00B1)
-* plus (U+002B) [code: no-overlaps-bit]
-  
-  
-
-
-- ⚠️ **WARN** The following glyphs do not have overlaps but the overlaps bit is set:
-* uni2714 (U+2714)
-* perthousand (U+2030)
-* checkmark (U+2713)
-* radical (U+221A) [code: overlaps-bit-set]
+width=754: notequal, equal, uni2262
+width=649: greaterequal
+width=806: approxequal
+width=473: logicalnot [code: width-outliers]
   
   
 
@@ -654,6 +551,8 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 
 | Message                                                           | Languages                    |
 |-------------------------------------------------------------------|------------------------------|
+| Auxiliary orthography codepoints:                                 | * en_Latn (English)          |
+|   The following auxiliary characters are missing from the font: ʻ |                              |
 | Auxiliary orthography codepoints:                                 | * ca_Latn (Catalan)          |
 |   The following auxiliary characters are missing from the font: Ŀ |                              |
 |   The following auxiliary characters are missing from the font: ŀ |                              |
@@ -665,8 +564,9 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: Ŧ |                              |
 |   The following auxiliary characters are missing from the font: ŋ |                              |
 |   The following auxiliary characters are missing from the font: ŧ |                              |
-| Auxiliary orthography codepoints:                                 | * en_Latn (English)          |
-|   The following auxiliary characters are missing from the font: ʻ |                              |
+| Auxiliary orthography codepoints:                                 | * nl_Latn (Dutch)            |
+|   The following auxiliary characters are missing from the font: Ĳ |                              |
+|   The following auxiliary characters are missing from the font: ĳ |                              |
 | Auxiliary orthography codepoints:                                 | * fi_Latn (Finnish)          |
 |   The following auxiliary characters are missing from the font: Ǥ |                              |
 |   The following auxiliary characters are missing from the font: Ŋ |                              |
@@ -677,10 +577,7 @@ Original proposal: [https://github.com/googlefonts/fontbakery/issues/4147]
 |   The following auxiliary characters are missing from the font: ŋ |                              |
 |   The following auxiliary characters are missing from the font: ŧ |                              |
 |   The following auxiliary characters are missing from the font: ʒ |                              |
-|   The following auxiliary characters are missing from the font: ǯ |                              |
-| Auxiliary orthography codepoints:                                 | * nl_Latn (Dutch)            |
-|   The following auxiliary characters are missing from the font: Ĳ |                              |
-|   The following auxiliary characters are missing from the font: ĳ |                              | [code: warning-language-shaping]
+|   The following auxiliary characters are missing from the font: ǯ |                              | [code: warning-language-shaping]
   
   
 
@@ -846,8 +743,8 @@ Original proposal: [https://github.com/fonttools/fontbakery/pull/3762 and https:
 
 | ⚠️ WARN | ℹ️ INFO | ✅ PASS | ⏩ SKIP | 
 | ---|---|---|---|
-| 23 | 22 | 244 | 95 | 
-| 6% | 6% | 64% | 25% | 
+| 18 | 22 | 247 | 95 | 
+| 5% | 6% | 65% | 25% | 
 
 
 

@@ -20,6 +20,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Ensure Fontspector (before hotfix-dependent build)
+        env:
+          PYTHONUTF8: "1"
+        run: python scripts/ensure_fontspector.py
+
       - name: Compile from committed UFOs (no provenance)
         env:
           PYTHONUTF8: "1"
@@ -35,31 +40,35 @@ jobs:
           PYTHONUTF8: "1"
         run: python scripts/qa_features.py
 
-      - name: Install Fontspector
-        run: |
-          set -e
-          VER=1.9.1
-          ASSET="fontspector-${VER}-x86_64-unknown-linux-gnu"
-          curl -fsSL -o /tmp/fontspector.tar.gz \
-            "https://github.com/fonttools/fontspector/releases/download/fontspector-v${VER}/${ASSET}.tar.gz"
-          mkdir -p /tmp/fontspector
-          tar -xzf /tmp/fontspector.tar.gz -C /tmp/fontspector
-          BIN=$(find /tmp/fontspector -name fontspector -type f | head -n1)
-          sudo cp "$BIN" /usr/local/bin/fontspector
-          sudo chmod +x /usr/local/bin/fontspector
-          fontspector --version
+      - name: Record binary hashes
+        env:
+          PYTHONUTF8: "1"
+        run: python scripts/write_hashes.py
 
       - name: Fontspector googlefonts profile on VF pair
         working-directory: ofl/akhilnotes
         run: |
           fontspector -p googlefonts --skip-network \
-            --json ../../qa/fontspector/ci.json \
+            --json ../../qa/fontspector/googlefonts.json \
+            --ghmarkdown ../../qa/fontspector/googlefonts.md \
             "AkhilNotes[wght].ttf" "AkhilNotes-Italic[wght].ttf"
           python - <<'PY'
           import json, sys
           from pathlib import Path
-          s = json.loads(Path("../../qa/fontspector/ci.json").read_text())["summary"]
+          s = json.loads(Path("../../qa/fontspector/googlefonts.json").read_text())["summary"]
           print(s)
           if s.get("FAIL", 0) or s.get("FATAL", 0) or s.get("ERROR", 0):
               sys.exit(1)
           PY
+
+      - name: Upload static TTFs (Release candidates)
+        uses: actions/upload-artifact@v4
+        with:
+          name: akhil-notes-statics
+          path: fonts/ttf/*.ttf
+
+      - name: Upload ofl package
+        uses: actions/upload-artifact@v4
+        with:
+          name: akhil-notes-ofl
+          path: ofl/akhilnotes/

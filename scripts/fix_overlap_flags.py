@@ -134,14 +134,27 @@ def apply_ttf_flags(path: Path, need: set[str], clear: set[str]) -> dict:
 
 
 def find_fontspector() -> Path | None:
-    cand = ROOT / "tools" / "fontspector" / "fontspector-1.9.1-x86_64-pc-windows-gnu" / "fontspector.exe"
-    return cand if cand.exists() else None
+    scripts = Path(__file__).resolve().parent
+    if str(scripts) not in sys.path:
+        sys.path.insert(0, str(scripts))
+    from ensure_fontspector import find_fontspector as _find
+
+    return _find()
 
 
-def run_fontspector_hotfix(fonts: list[Path]) -> None:
-    fs = find_fontspector()
-    if not fs:
-        print("fontspector not found; skip --hotfix", flush=True)
+def run_fontspector_hotfix(fonts: list[Path], *, require: bool = True) -> None:
+    """Apply overlaps_bit hotfix. Downloads Fontspector when missing if require=True."""
+    scripts = Path(__file__).resolve().parent
+    if str(scripts) not in sys.path:
+        sys.path.insert(0, str(scripts))
+    from ensure_fontspector import ensure_fontspector
+
+    try:
+        fs = ensure_fontspector(download=require)
+    except SystemExit as exc:
+        if require:
+            raise
+        print(f"fontspector unavailable; skip --hotfix ({exc})", flush=True)
         return
     # Copy to temp names without brackets for Windows, hotfix, copy back
     import shutil

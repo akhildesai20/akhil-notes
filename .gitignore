@@ -7,20 +7,10 @@ __pycache__/
 provenance/*.ttf
 tools/
 
-# Not part of the public upstream
+# Local experiments (not public upstream)
 baseline/
 playground/
 features/
-fonts/webfonts/
-fonts/variable-slant/
-# Proof PNGs under qa/proofs/ are committed for GF review.
-qa/baseline/
-qa/fontspector/tmp/
-qa/fontspector/interpolation-recheck.json
-qa/fontspector/overlaps-full.json
-
-qa/build.log
-qa/proof_*.py
 CURSOR-PROMPT.md
 OFL-PROPOSED.txt
 report.json
@@ -29,6 +19,28 @@ reference/draft.png
 reference/reference.png
 scripts/audit_baseline.py
 scripts/_publish_clean_repo.ps1
+
+# Generated font binaries outside the GF package
+# Shipping VF pair for google/fonts lives in ofl/akhilnotes/ (tracked).
+# Statics and local VF/webfont copies are build outputs → GitHub Releases / CI artifacts.
+fonts/ttf/
+fonts/variable/
+fonts/variable-slant/
+fonts/webfonts/
+
+# QA noise / local regenerations
+qa/baseline/
+qa/artifacts/
+qa/fontspector/tmp/
+qa/fontspector/interpolation-recheck.json
+qa/fontspector/overlaps-full.json
+qa/fontspector/ci.json
+qa/candidate/fontmake.log
+qa/candidate/compile-report.json
+qa/candidate/start-point-fixes.json
+qa/candidate/overlap-flag-fixes.json
+qa/build.log
+qa/proof_*.py
 
 # Build caches
 master_ufo/

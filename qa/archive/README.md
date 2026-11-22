@@ -1,5 +1,3 @@
-﻿# Archived QA artifacts
+﻿# Archived QA
 
-Stale or superseded local QA outputs. Kept for archaeology only.
-
-- `fontmake-error.txt` — old fontmake failure log from a prior candidate build; current compile uses `qa/candidate/fontmake.log`.
+Superseded local notes. Prefer `qa/artifacts/` for bulky dumps and `documentation/RELEASE-STATUS.md` for current status.

@@ -1,53 +1,38 @@
 # Akhil Notes — release status
 
-Authoritative snapshot for Google Fonts technical readiness. Counts and Fontspector numbers below supersede older notes when they disagree.
+Authoritative snapshot for technical readiness. Prefer this file over older notes when counts disagree. Warn exceptions: [`FONTSPECTOR-EXCEPTIONS.md`](FONTSPECTOR-EXCEPTIONS.md).
 
 ## Glyph inventory
 
 | Metric | Count | Notes |
 | --- | --- | --- |
 | Original release codepoints | **491** | Outline-faithful except intentional figure rebuilds |
-| Intentional figure rebuilds | **38** | `REBUILD_FIGURES` — supers, subs, fractions (not a regression) |
-| Encoded codepoints (shipping) | **698** | Core + Plus + Vietnamese + constructed additions |
-| Glyphs (including unencoded) | **846** | Masters / Regular static |
+| Intentional figure rebuilds | **38** | `REBUILD_FIGURES` — supers, subs, fractions |
+| Encoded codepoints (shipping) | **698** | Core + Plus + Vietnamese + constructed |
+| Glyphs | **846** | Including unencoded |
 
 ## Build
 
-- **Public / CI:** `python scripts/build_candidate.py --from-ufo` (committed UFOs only; no `provenance/*.ttf`).
-- **Maintainer:** `--from-provenance` regenerates masters from the private TTF, then compiles.
-- Finalize applies OFL names, STAT, gasp, nested-component flatten, then packages `ofl/akhilnotes/`.
-- Vertical metrics: typo **976 / −530**, win **1140 / 523**, line gap 0. Kept for Ắ / ydotbelow; not shrunk for Black Â unless real-app clipping is confirmed.
+- **Public / CI:** `python scripts/build_candidate.py --from-ufo` (committed UFOs; no provenance).
+- Ensures Fontspector via `scripts/ensure_fontspector.py` before overlap hotfix.
+- Packages `ofl/akhilnotes/` (tracked shipping VF pair). Statics land under `fonts/ttf/` locally and are meant for **GitHub Releases**, not duplicate git tracking.
+- Vertical metrics: typo **976 / −530**, win **1140 / 523**.
 
 ## Fontspector (`ofl/akhilnotes` VF pair)
 
-Latest local run (see `qa/fontspector/`):
-
 ```
-SKIP 95  INFO 22  PASS 244  WARN 23  FAIL 0  FATAL 0  ERROR 0
+FAIL 0 · remaining WARN are documented exceptions (see FONTSPECTOR-EXCEPTIONS.md)
 ```
 
-| Area | Status |
-| --- | --- |
-| FAIL | **0** |
-| `interpolation_issues` | Sharply reduced after start-point rotate/reverse on Black / BlackItalic UFOs (`scripts/fix_start_points.py`). A few residual WARNs remain (underweight / edge cases). |
-| Overlap flags | UFO `public.truetype.overlap` synced from Fontspector lists; build also runs Fontspector `--hotfix` on the VF pair. |
-| `googlefonts/vendor_id` | `AKHL` — wait on Microsoft listing (intentional WARN). |
-| Outline jaggy / direction / overlapping segments on provenance handwriting | Left alone on purpose. |
-| Math widths / contour_count / shape_languages auxiliaries | Intentional handwriting / scope limits. |
+Interpolation start-point issues on `ellipsis` / `registered` were fixed with **order-only** contour rotates (no outline redesign).
 
-## Parity / instantiate
+## Parity
 
-`scripts/audit_final.py`: OTS clean; instantiate weights **400, 500, 650, 700, 900** on upright + italic VFs; upright/italic glyph set, cmap, and GSUB/GPOS feature tags match.
+`scripts/audit_final.py`: OTS; instantiate 400–900 upright+italic; glyph/cmap/feature parity.
 
-## Remaining (P2 / human)
+## Not done without approval
 
-- Optical review of constructed letters (Æ/Œ/ß/Þ/ð, barred forms, currencies) for recognizability and stroke weight — no geometric “cleanup.”
-- Device matrix (Figma / browsers / OS) — human checklist.
-- Contextual alternates only from real handwriting samples.
-- Vendor ID registration when Microsoft responds.
-
-## Package
-
-- Repo: https://github.com/akhildesai20/akhil-notes  
-- Local GF tree: `ofl/akhilnotes/`  
-- Copyright: Project Authors line with that URL; OFL 1.1; Reserved Font Name “Akhil Notes.”
+- Google Fonts PR / publish  
+- Vendor ID listing wait  
+- Human optical pass ([`OPTICAL-REVIEW.md`](OPTICAL-REVIEW.md))  
+- Device matrix

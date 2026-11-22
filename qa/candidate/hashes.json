@@ -1,0 +1,62 @@
+{
+  "source_commit": "9858467d56dc7c26021aa343d38a3f0b93111041",
+  "files": [
+    {
+      "path": "ofl/akhilnotes/AkhilNotes[wght].ttf",
+      "sha256": "95cdaeb47f6e64066407744f340796301059651315bf83e4dacb691b7b5bff50"
+    },
+    {
+      "path": "ofl/akhilnotes/AkhilNotes-Italic[wght].ttf",
+      "sha256": "96c944f768b04fa6fdd91df90367f395c600b98109de7b469043511504dc0b87"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-Black.ttf",
+      "sha256": "f8baa2b92a2120b0ffca073e3da59649965349dc6355616c1c1e1585e3341497"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-BlackItalic.ttf",
+      "sha256": "cc30106990f02b74e9eeb6d8a85a10aced1d5c300802ef923beeb6ca983b797d"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-Bold.ttf",
+      "sha256": "8e5624f83cb61e5cda72fb8c5ef39c4c32a63cb71150fa786be9cefed0817e7c"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-BoldItalic.ttf",
+      "sha256": "eb48852067c7205def65a43ea3bca155efa7657a974c3d8a518bbd844abeec9a"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-ExtraBold.ttf",
+      "sha256": "fe2834225fcde85796454c217a30b2dfde2afa2d2184e671b83f85c3ee2cda93"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-ExtraBoldItalic.ttf",
+      "sha256": "b78ee452a8e15c620d203cafe4ff928574f5e914140052272e4607b1d2d2ee4f"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-Italic.ttf",
+      "sha256": "5329142cff7c33caf61e23fb6ae03cddd5705351f42cc807c9c7cda70a1cc797"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-Medium.ttf",
+      "sha256": "944681dd64bd39de35d8db8897ea4a54cbf812ccae55166c2d20f167425a6358"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-MediumItalic.ttf",
+      "sha256": "cd475889416eac270fbf28ae2a5571a8d55ee87eea710ca6ca807fead2681008"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-Regular.ttf",
+      "sha256": "e35b5d2cdc058e95305ead06369434c8030bce846a2d016443d340d3105ba32d"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-SemiBold.ttf",
+      "sha256": "8f96fa40005bbe6048868de754150239617c279f2fa4962d2526ff847be8ece0"
+    },
+    {
+      "path": "fonts/ttf/AkhilNotes-SemiBoldItalic.ttf",
+      "sha256": "c00fe2f0130eaed2a1c7eef137de7af528aeb84fa396c9e3129b0eaf948754c1"
+    }
+  ],
+  "note": "ofl/ VF pair is the tracked shipping binary; fonts/ttf is local/CI/Releases."
+}

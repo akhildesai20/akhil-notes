@@ -864,23 +864,28 @@ def compile_from_ufo(*, package: bool = True) -> dict:
     slant_path, static_dir, logs = fontmake(ds_path)
     (QA / "fontmake.log").write_text(json.dumps(logs, indent=2), encoding="utf-8")
     produced = finalize_outputs(metrics)
-    # Overlap flags: Fontspector hotfix on shipping VF pair (flags only).
-    try:
-        import importlib.util
+    # Overlap flags: require Fontspector, then hotfix shipping VF pair (flags only).
+    import importlib.util
 
-        spec = importlib.util.spec_from_file_location(
-            "fix_overlap_flags", ROOT / "scripts" / "fix_overlap_flags.py"
-        )
-        mod = importlib.util.module_from_spec(spec)
-        assert spec.loader is not None
-        spec.loader.exec_module(mod)
-        vfs = [
-            FONT_DIR / "variable" / "AkhilNotes[wght].ttf",
-            FONT_DIR / "variable" / "AkhilNotes-Italic[wght].ttf",
-        ]
-        mod.run_fontspector_hotfix([p for p in vfs if p.exists()])
-    except Exception as exc:
-        print(f"overlap hotfix skipped: {exc}", flush=True)
+    ensure_spec = importlib.util.spec_from_file_location(
+        "ensure_fontspector", ROOT / "scripts" / "ensure_fontspector.py"
+    )
+    ensure_mod = importlib.util.module_from_spec(ensure_spec)
+    assert ensure_spec.loader is not None
+    ensure_spec.loader.exec_module(ensure_mod)
+    ensure_mod.ensure_fontspector(download=True)
+
+    fix_spec = importlib.util.spec_from_file_location(
+        "fix_overlap_flags", ROOT / "scripts" / "fix_overlap_flags.py"
+    )
+    fix_mod = importlib.util.module_from_spec(fix_spec)
+    assert fix_spec.loader is not None
+    fix_spec.loader.exec_module(fix_mod)
+    vfs = [
+        FONT_DIR / "variable" / "AkhilNotes[wght].ttf",
+        FONT_DIR / "variable" / "AkhilNotes-Italic[wght].ttf",
+    ]
+    fix_mod.run_fontspector_hotfix([p for p in vfs if p.exists()], require=True)
     report = {
         "mode": "from-ufo",
         "designspace": str(ds_path.relative_to(ROOT)),

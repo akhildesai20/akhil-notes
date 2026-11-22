@@ -520,6 +520,7 @@
       <point x="365" y="353" type="line"/>
     </contour>
     <contour>
+      <point x="294" y="353" type="line"/>
       <point x="291" y="367" type="line"/>
       <point x="292" y="359" type="line"/>
       <point x="293" y="353" type="line"/>
@@ -538,7 +539,6 @@
       <point x="308" y="352" type="line"/>
       <point x="310" y="352" type="line"/>
       <point x="314" y="353" type="line"/>
-      <point x="294" y="353" type="line"/>
     </contour>
   </outline>
   <lib>

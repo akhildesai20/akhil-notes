@@ -92,7 +92,7 @@
       "evidence": "documentation/HUMAN-REVIEW.md"
     }
   ],
-  "regenerated": "2026-11-21",
+  "regenerated": "2026-11-22",
   "note": "Regenerated during GF technical readiness; see RELEASE-STATUS.md and ots-instantiate.json",
   "ots_failures": 0,
   "parity": {
@@ -141,5 +141,12 @@
     "glyph_set_match": true,
     "cmap_match": true,
     "features_match": true
+  },
+  "cleanup": "see documentation/CLEANUP-REPORT.md",
+  "fontspector_summary": {
+    "SKIP": 95,
+    "PASS": 247,
+    "INFO": 22,
+    "WARN": 18
   }
 }
