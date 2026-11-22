@@ -120,7 +120,8 @@ Fontspector is installed automatically when the overlap-flag hotfix needs it (`s
 | --- | --- |
 | `ofl/akhilnotes/` | Shipping VF pair + metadata (tracked) |
 | `fonts/ttf/` | Static instances (local / Releases; not git-tracked) |
-| `documentation/specimens/` | Presentation placeholders (`scripts/make_specimens.py`) |
+| `documentation/specimens/` | Designer-authored presentation specimens (README) |
+| `output/generated-specimens/` | Automated technical sheets (`scripts/make_specimens.py`; gitignored) |
 | `documentation/proofs/` | Technical FreeType proofs for design review |
 
 ---

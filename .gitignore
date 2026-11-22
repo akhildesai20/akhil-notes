@@ -52,5 +52,9 @@ qa/proofs/
 # Build caches / specimen temps / release zip staging
 master_ufo/
 instance_ufo/
-documentation/specimens/_tmp/
+output/
 dist/
+
+# Safety: never track accidental temps under designer specimens
+documentation/specimens/_tmp/
+

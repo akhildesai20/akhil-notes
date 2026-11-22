@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
-"""Generate README / GF specimen sheets from shipping binaries (Akhil Notes only)."""
+"""Generate technical specimen sheets from shipping binaries (Akhil Notes only).
+
+Default output: ``output/generated-specimens/`` (gitignored).
+
+Designer-authored presentation artwork lives in ``documentation/specimens/`` and
+is never written by this script. Pass ``--output`` for a custom directory; paths
+under ``documentation/specimens/`` are rejected.
+"""
 from __future__ import annotations
 
+import argparse
+import sys
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -9,13 +18,15 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "documentation" / "specimens"  # canonical specimen location (README)
+DEFAULT_OUT = ROOT / "output" / "generated-specimens"
+PROTECTED = (ROOT / "documentation" / "specimens").resolve()
 VF = ROOT / "fonts" / "variable" / "AkhilNotes[wght].ttf"
 VF_IT = ROOT / "fonts" / "variable" / "AkhilNotes-Italic[wght].ttf"
 REG = ROOT / "fonts" / "ttf" / "AkhilNotes-Regular.ttf"
-TMP = OUT / "_tmp"
-OUT.mkdir(parents=True, exist_ok=True)
-TMP.mkdir(parents=True, exist_ok=True)
+
+# Set in main() after resolving --output
+OUT: Path
+TMP: Path
 
 BG = (252, 250, 247)
 INK = (28, 26, 24)
@@ -35,6 +46,41 @@ MONEY = "$12.50  £9.99  €40  ¥100  ₹500  ₫20  ₦5  ₩1000  ₪40  ₺2
 UTILS = "→ ← ↑ ↓ ☑ ☐ ☒ ● ○ ■ □ ★ ☆ ✓ ✗ ¶ §"
 FEATURES = "fi fl ct st th wh  1/2 3/4  0123456789"
 
+EXPECTED = (
+    "01-hero.png",
+    "02-paragraph.png",
+    "03-waterfall-sizes.png",
+    "04-weight-ramp.png",
+    "05-upright-italic.png",
+    "06-character-coverage.png",
+    "07-multilingual.png",
+    "08-applications.png",
+    "09-kern-liga.png",
+    "10-interpolation.png",
+)
+
+
+def resolve_output(raw: str | None) -> Path:
+    """Resolve output dir relative to repo root; reject designer specimen tree."""
+    if raw is None:
+        out = DEFAULT_OUT
+    else:
+        candidate = Path(raw)
+        out = candidate if candidate.is_absolute() else (ROOT / candidate)
+    out = out.resolve()
+    try:
+        out.relative_to(PROTECTED)
+        blocked = True
+    except ValueError:
+        blocked = out == PROTECTED
+    if blocked:
+        raise SystemExit(
+            f"Refusing to write into designer specimen directory: {PROTECTED}\n"
+            f"Use the default ({DEFAULT_OUT.relative_to(ROOT)}) or another path outside "
+            f"documentation/specimens/."
+        )
+    return out
+
 
 def load_font(path: Path, size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(str(path), size)
@@ -44,7 +90,7 @@ def instance(weight: int, italic: bool = False) -> Path:
     src = VF_IT if italic else VF
     out = TMP / f"w{weight}{'-Italic' if italic else ''}.ttf"
     if not out.exists() or out.stat().st_mtime < src.stat().st_mtime:
-        instantiateVariableFont(TTFont(src), {"wght": weight}, inplace=False).save(out)
+        instantiateVariableFont(TTFont(str(src)), {"wght": weight}, inplace=False).save(str(out))
     return out
 
 
@@ -74,10 +120,15 @@ def canvas(width: int, height: int) -> tuple[Image.Image, ImageDraw.ImageDraw]:
     return img, ImageDraw.Draw(img)
 
 
-def save(img: Image.Image, name: str) -> None:
+def save(img: Image.Image, name: str) -> Path:
     path = OUT / name
     img.save(path, optimize=True)
-    print("wrote", path.relative_to(ROOT))
+    try:
+        rel = path.relative_to(ROOT)
+    except ValueError:
+        rel = path
+    print("wrote", rel)
+    return path
 
 
 def sheet_hero() -> None:
@@ -258,9 +309,38 @@ def sheet_interp() -> None:
     save(img, "10-interpolation.png")
 
 
-def main() -> None:
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    p = argparse.ArgumentParser(
+        description=(
+            "Generate technical Akhil Notes specimen PNGs. "
+            "Does not write to documentation/specimens/ (designer artwork)."
+        )
+    )
+    p.add_argument(
+        "--output",
+        metavar="DIR",
+        help=(
+            f"Output directory for generated PNGs "
+            f"(default: {DEFAULT_OUT.relative_to(ROOT).as_posix()}). "
+            "Must not be documentation/specimens/ or a path inside it."
+        ),
+    )
+    return p.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> None:
+    global OUT, TMP
+    args = parse_args(argv)
+    OUT = resolve_output(args.output)
+    TMP = OUT / "_tmp"
+    OUT.mkdir(parents=True, exist_ok=True)
+    TMP.mkdir(parents=True, exist_ok=True)
+
     if not VF.exists():
-        raise SystemExit(f"Missing {VF}; run scripts/build_candidate.py --from-ufo first")
+        raise SystemExit(
+            f"Missing {VF.relative_to(ROOT)}; run scripts/build_candidate.py --from-ufo first"
+        )
+
     sheet_hero()
     sheet_paragraph()
     sheet_waterfall()
@@ -271,7 +351,12 @@ def main() -> None:
     sheet_applications()
     sheet_kern_liga()
     sheet_interp()
-    print("specimens complete:", len(list(OUT.glob("*.png"))))
+
+    written = sorted(p.name for p in OUT.glob("*.png"))
+    missing = [n for n in EXPECTED if n not in written]
+    if missing:
+        raise SystemExit(f"Missing generated specimens: {missing}")
+    print(f"specimens complete: {len(EXPECTED)} → {OUT}")
 
 
 if __name__ == "__main__":
