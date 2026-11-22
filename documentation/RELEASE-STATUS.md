@@ -11,8 +11,9 @@ Positioning: [`ABOUT.md`](ABOUT.md)
 | Item | Value |
 | --- | --- |
 | Repository | https://github.com/akhildesai20/akhil-notes |
-| `main` HEAD (CI green) | `f9bd81f` |
-| CI run | https://github.com/akhildesai20/akhil-notes/actions/runs/45000874359 (**success**) |
+| `main` HEAD (CI green) | `6684d60` |
+| CI run | https://github.com/akhildesai20/akhil-notes/actions/runs/45001242763 (**success**) |
+| Prior green | https://github.com/akhildesai20/akhil-notes/actions/runs/45000874359 |
 | Release | [v2.101](https://github.com/akhildesai20/akhil-notes/releases/tag/v2.101) |
 | Package | `ofl/akhilnotes/` |
 | Specimens (canonical) | `documentation/specimens/` |
